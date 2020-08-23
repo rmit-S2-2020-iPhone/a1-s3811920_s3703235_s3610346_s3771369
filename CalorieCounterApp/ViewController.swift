@@ -11,15 +11,8 @@ class ViewController: UIViewController {
     
     @IBOutlet var options: [UIButton]!
     
-    @IBOutlet var waterglass: [UIButton]!
-    
-    
     func configureButtons(){
         for button in options {
-            button.layer.cornerRadius = 20.8
-        }
-        
-        for button in waterglass {
             button.layer.cornerRadius = 20.8
         }
     }
@@ -28,5 +21,5 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         configureButtons()
 }
-    
+
 }
