@@ -83,6 +83,7 @@
 		035FC82D24D9DE3D00A83BD8 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				B372BEFA24D2A46B00F9957A /* LaunchScreen.storyboard */,
 				B372BEF224D2A46300F9957A /* Main.storyboard */,
 			);
 			path = View;
@@ -133,7 +134,6 @@
 				035FC82D24D9DE3D00A83BD8 /* View */,
 				B372BEEE24D2A46300F9957A /* AppDelegate.swift */,
 				B372BEF824D2A46B00F9957A /* Assets.xcassets */,
-				B372BEFA24D2A46B00F9957A /* LaunchScreen.storyboard */,
 				B372BEFD24D2A46B00F9957A /* Info.plist */,
 				B372BEF524D2A46300F9957A /* CalorieCounterApp.xcdatamodeld */,
 			);

@@ -23,6 +23,8 @@ enum ClientGoal {
         case .gainWeight:
             return 2
         case .maintainWeight:
+            
+
             return 3
         }
     }

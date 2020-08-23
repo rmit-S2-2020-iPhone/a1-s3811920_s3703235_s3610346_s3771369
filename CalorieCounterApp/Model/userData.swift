@@ -18,6 +18,8 @@ class userData {
         
         self.name = name
         self.dateOfBirth = dateOfBirth
+        
+        
         self.currentWeight = currentWeight
         self.currentHeight = currentHeight
     }
