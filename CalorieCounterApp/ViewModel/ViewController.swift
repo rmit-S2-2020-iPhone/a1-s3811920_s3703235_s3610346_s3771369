@@ -2,8 +2,6 @@
 //  ViewController.swift
 //  CalorieCounterApp
 //
-//  Created by Abida Mohammadi on 30/7/20.
-//
 
 import UIKit
 
@@ -15,6 +13,7 @@ class ViewController: UIViewController {
         for button in options {
             button.layer.cornerRadius = 20.8
         }
+    }
 
     @IBOutlet weak var nameField: UITextField!
     @IBOutlet weak var dobField: UITextField!
@@ -39,6 +38,6 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         configureButtons()
-}
+    }
 
 }
