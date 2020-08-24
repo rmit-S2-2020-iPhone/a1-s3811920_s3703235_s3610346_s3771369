@@ -13,8 +13,8 @@
 		032ACD6F24F4052F009607F1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B372BEEE24D2A46300F9957A /* AppDelegate.swift */; };
 		032ACD7024F4052F009607F1 /* CalorieCounterApp.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = B372BEF524D2A46300F9957A /* CalorieCounterApp.xcdatamodeld */; };
 		032ACD7324F405E8009607F1 /* userKcalTracking.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 032ACD7124F405E8009607F1 /* userKcalTracking.storyboard */; };
+		038D374E24F4110F008C516B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 038D374D24F4110F008C516B /* LaunchScreen.storyboard */; };
 		B372BEF924D2A46B00F9957A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B372BEF824D2A46B00F9957A /* Assets.xcassets */; };
-		B372BEFC24D2A46B00F9957A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B372BEFA24D2A46B00F9957A /* LaunchScreen.storyboard */; };
 		B372BF0724D2A46B00F9957A /* CalorieCounterAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B372BF0624D2A46B00F9957A /* CalorieCounterAppTests.swift */; };
 		B372BF1224D2A46B00F9957A /* CalorieCounterAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B372BF1124D2A46B00F9957A /* CalorieCounterAppUITests.swift */; };
 /* End PBXBuildFile section */
@@ -40,12 +40,12 @@
 		03128D9224F40DCD000D7E9A /* Main.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 		032ACD6C24F3E1EF009607F1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = CalorieCounterApp/View/Base.lproj/userInfo.storyboard; sourceTree = "<group>"; };
 		032ACD7224F405E8009607F1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = CalorieCounterApp/View/Base.lproj/userKcalTracking.storyboard; sourceTree = "<group>"; };
+		038D374D24F4110F008C516B /* LaunchScreen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
 		B372BEEB24D2A46300F9957A /* CalorieCounterApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CalorieCounterApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B372BEEE24D2A46300F9957A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B372BEF024D2A46300F9957A /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		B372BEF624D2A46300F9957A /* CalorieCounterApp.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = CalorieCounterApp.xcdatamodel; sourceTree = "<group>"; };
 		B372BEF824D2A46B00F9957A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		B372BEFB24D2A46B00F9957A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		B372BEFD24D2A46B00F9957A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B372BF0224D2A46B00F9957A /* CalorieCounterAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CalorieCounterAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		B372BF0624D2A46B00F9957A /* CalorieCounterAppTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalorieCounterAppTests.swift; sourceTree = "<group>"; };
@@ -116,8 +116,8 @@
 				B3DCE0F724F37A4600ECEA14 /* View */,
 				B372BEEE24D2A46300F9957A /* AppDelegate.swift */,
 				B372BEF824D2A46B00F9957A /* Assets.xcassets */,
-				B372BEFA24D2A46B00F9957A /* LaunchScreen.storyboard */,
 				B372BEFD24D2A46B00F9957A /* Info.plist */,
+				038D374D24F4110F008C516B /* LaunchScreen.storyboard */,
 				B372BEF524D2A46300F9957A /* CalorieCounterApp.xcdatamodeld */,
 			);
 			path = CalorieCounterApp;
@@ -269,10 +269,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B372BEFC24D2A46B00F9957A /* LaunchScreen.storyboard in Resources */,
 				03128D9324F40DCD000D7E9A /* Main.storyboard in Resources */,
 				032ACD6D24F3E1EF009607F1 /* userInfo.storyboard in Resources */,
 				B372BEF924D2A46B00F9957A /* Assets.xcassets in Resources */,
+				038D374E24F4110F008C516B /* LaunchScreen.storyboard in Resources */,
 				032ACD7324F405E8009607F1 /* userKcalTracking.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -350,14 +350,6 @@
 				032ACD7224F405E8009607F1 /* Base */,
 			);
 			name = userKcalTracking.storyboard;
-			sourceTree = "<group>";
-		};
-		B372BEFA24D2A46B00F9957A /* LaunchScreen.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				B372BEFB24D2A46B00F9957A /* Base */,
-			);
-			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
