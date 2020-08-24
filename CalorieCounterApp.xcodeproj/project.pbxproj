@@ -7,8 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		86F40FE624F243DD0087F1B0 /* userData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86F40FE524F243DD0087F1B0 /* userData.swift */; };
-		86F4100D24F293FA0087F1B0 /* loginInfoEnum.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86F4100C24F293FA0087F1B0 /* loginInfoEnum.swift */; };
+		032ACD6D24F3E1EF009607F1 /* userInfo.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 032ACD6B24F3E1EF009607F1 /* userInfo.storyboard */; };
 		B372BEEF24D2A46300F9957A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B372BEEE24D2A46300F9957A /* AppDelegate.swift */; };
 		B372BEF124D2A46300F9957A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B372BEF024D2A46300F9957A /* ViewController.swift */; };
 		B372BEF424D2A46300F9957A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B372BEF224D2A46300F9957A /* Main.storyboard */; };
@@ -37,8 +36,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		86F40FE524F243DD0087F1B0 /* userData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = userData.swift; sourceTree = "<group>"; };
-		86F4100C24F293FA0087F1B0 /* loginInfoEnum.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = loginInfoEnum.swift; sourceTree = "<group>"; };
+		032ACD6C24F3E1EF009607F1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = CalorieCounterApp/View/Base.lproj/userInfo.storyboard; sourceTree = "<group>"; };
 		B372BEEB24D2A46300F9957A /* CalorieCounterApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CalorieCounterApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B372BEEE24D2A46300F9957A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B372BEF024D2A46300F9957A /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -83,7 +81,6 @@
 		035FC82D24D9DE3D00A83BD8 /* View */ = {
 			isa = PBXGroup;
 			children = (
-				B372BEFA24D2A46B00F9957A /* LaunchScreen.storyboard */,
 				B372BEF224D2A46300F9957A /* Main.storyboard */,
 			);
 			path = View;
@@ -100,8 +97,6 @@
 		035FC82F24D9DE5D00A83BD8 /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				86F40FE524F243DD0087F1B0 /* userData.swift */,
-				86F4100C24F293FA0087F1B0 /* loginInfoEnum.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -109,6 +104,7 @@
 		B372BEE224D2A46300F9957A = {
 			isa = PBXGroup;
 			children = (
+				032ACD6B24F3E1EF009607F1 /* userInfo.storyboard */,
 				B372BEED24D2A46300F9957A /* CalorieCounterApp */,
 				B372BF0524D2A46B00F9957A /* CalorieCounterAppTests */,
 				B372BF1024D2A46B00F9957A /* CalorieCounterAppUITests */,
@@ -134,6 +130,7 @@
 				035FC82D24D9DE3D00A83BD8 /* View */,
 				B372BEEE24D2A46300F9957A /* AppDelegate.swift */,
 				B372BEF824D2A46B00F9957A /* Assets.xcassets */,
+				B372BEFA24D2A46B00F9957A /* LaunchScreen.storyboard */,
 				B372BEFD24D2A46B00F9957A /* Info.plist */,
 				B372BEF524D2A46300F9957A /* CalorieCounterApp.xcdatamodeld */,
 			);
@@ -262,6 +259,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				B372BEFC24D2A46B00F9957A /* LaunchScreen.storyboard in Resources */,
+				032ACD6D24F3E1EF009607F1 /* userInfo.storyboard in Resources */,
 				B372BEF924D2A46B00F9957A /* Assets.xcassets in Resources */,
 				B372BEF424D2A46300F9957A /* Main.storyboard in Resources */,
 			);
@@ -290,8 +288,6 @@
 			files = (
 				B372BEF124D2A46300F9957A /* ViewController.swift in Sources */,
 				B372BEF724D2A46300F9957A /* CalorieCounterApp.xcdatamodeld in Sources */,
-				86F40FE624F243DD0087F1B0 /* userData.swift in Sources */,
-				86F4100D24F293FA0087F1B0 /* loginInfoEnum.swift in Sources */,
 				B372BEEF24D2A46300F9957A /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -328,6 +324,14 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
+		032ACD6B24F3E1EF009607F1 /* userInfo.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				032ACD6C24F3E1EF009607F1 /* Base */,
+			);
+			name = userInfo.storyboard;
+			sourceTree = "<group>";
+		};
 		B372BEF224D2A46300F9957A /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -467,9 +471,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_IDENTITY = "iPhone Developer";
-				CODE_SIGN_STYLE = Manual;
-				DEVELOPMENT_TEAM = "";
+				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = CalorieCounterApp/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -477,7 +479,6 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = rmit.edu.au.CalorieCounterApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -487,9 +488,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_IDENTITY = "iPhone Developer";
-				CODE_SIGN_STYLE = Manual;
-				DEVELOPMENT_TEAM = "";
+				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = CalorieCounterApp/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -497,7 +496,6 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = rmit.edu.au.CalorieCounterApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
