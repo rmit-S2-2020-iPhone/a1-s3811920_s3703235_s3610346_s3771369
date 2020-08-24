@@ -81,6 +81,7 @@
 		035FC82D24D9DE3D00A83BD8 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				032ACD6B24F3E1EF009607F1 /* userInfo.storyboard */,
 				B372BEF224D2A46300F9957A /* Main.storyboard */,
 			);
 			path = View;
@@ -104,7 +105,6 @@
 		B372BEE224D2A46300F9957A = {
 			isa = PBXGroup;
 			children = (
-				032ACD6B24F3E1EF009607F1 /* userInfo.storyboard */,
 				B372BEED24D2A46300F9957A /* CalorieCounterApp */,
 				B372BF0524D2A46B00F9957A /* CalorieCounterAppTests */,
 				B372BF1024D2A46B00F9957A /* CalorieCounterAppUITests */,
