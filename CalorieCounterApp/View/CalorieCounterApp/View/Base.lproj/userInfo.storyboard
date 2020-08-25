@@ -20,6 +20,7 @@
                     </navigationBar>
                     <connections>
                         <segue destination="IHm-54-ALZ" kind="relationship" relationship="rootViewController" id="zK8-os-bj8"/>
+                        <segue destination="IHm-54-ALZ" kind="show" id="1lF-B6-L0S"/>
                     </connections>
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="nRR-cP-nGT" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -86,7 +87,6 @@
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
                                 <connections>
-                                    <action selector="nextPressed1:" destination="IHm-54-ALZ" eventType="touchUpInside" id="PW8-a5-EbM"/>
                                     <segue destination="WWE-Y5-ZcQ" kind="show" id="OXj-gc-SzP"/>
                                 </connections>
                             </button>
@@ -150,16 +150,6 @@
                     </view>
                     <navigationItem key="navigationItem" id="4fX-K2-5nn"/>
                     <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" translucent="NO" prompted="NO"/>
-                    <connections>
-                        <outlet property="currentHeightLabel" destination="P49-Qd-Oy2" id="p89-j3-gZD"/>
-                        <outlet property="currentWeightLabel" destination="nJV-ED-xHk" id="I7c-si-xG1"/>
-                        <outlet property="dobField" destination="2Au-Xz-MgS" id="jjq-h0-fP9"/>
-                        <outlet property="femaleTapped" destination="pAD-aF-cDL" id="Fkx-6t-Q5K"/>
-                        <outlet property="heightField" destination="P49-Qd-Oy2" id="DQb-8C-RV1"/>
-                        <outlet property="maleTapped" destination="f3k-zZ-rRG" id="rXH-lH-bQS"/>
-                        <outlet property="nameField" destination="P7d-NL-NVg" id="s1U-31-tbu"/>
-                        <outlet property="weightField" destination="nJV-ED-xHk" id="8cc-it-qLN"/>
-                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Z1D-f9-unh" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -326,4 +316,7 @@
             <point key="canvasLocation" x="3447" y="119"/>
         </scene>
     </scenes>
+    <inferredMetricsTieBreakers>
+        <segue reference="1lF-B6-L0S"/>
+    </inferredMetricsTieBreakers>
 </document>

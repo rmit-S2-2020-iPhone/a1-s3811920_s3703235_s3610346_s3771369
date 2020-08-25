@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="xfL-S4-5TN">
     <device id="retina6_1" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -19,7 +19,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="icons8-healthy-eating-100" translatesAutoresizingMaskIntoConstraints="NO" id="fYK-QX-jJw">
-                                <rect key="frame" x="146" y="94" width="122" height="107"/>
+                                <rect key="frame" x="146" y="138" width="122" height="107"/>
                                 <color key="tintColor" red="0.88510757679999996" green="0.62009686230000005" blue="0.3017691374" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="107" id="C2v-V3-aK1"/>
@@ -90,22 +90,45 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
+                    <navigationItem key="navigationItem" id="BUU-bA-OBF"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="137.68115942028987" y="118.52678571428571"/>
+            <point key="canvasLocation" x="184" y="148"/>
         </scene>
         <!--userInfo-->
         <scene sceneID="Fe6-2Z-0dO">
             <objects>
-                <viewControllerPlaceholder storyboardName="userInfo" id="eTW-uG-hai" sceneMemberID="viewController"/>
+                <viewControllerPlaceholder storyboardName="userInfo" id="eTW-uG-hai" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="PW3-it-iH6"/>
+                </viewControllerPlaceholder>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="BNa-K4-cOz" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1061" y="119"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="jmL-5u-48E">
+            <objects>
+                <navigationController id="xfL-S4-5TN" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="9cW-kn-Coj">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="show" id="sqd-jc-MqE"/>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="5F1-DR-cOO"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ag8-Hq-qNB" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-690" y="148"/>
         </scene>
     </scenes>
     <resources>
         <image name="icons8-filled-circle-100" width="50" height="50"/>
         <image name="icons8-healthy-eating-100" width="100" height="100"/>
     </resources>
+    <inferredMetricsTieBreakers>
+        <segue reference="5F1-DR-cOO"/>
+    </inferredMetricsTieBreakers>
 </document>
