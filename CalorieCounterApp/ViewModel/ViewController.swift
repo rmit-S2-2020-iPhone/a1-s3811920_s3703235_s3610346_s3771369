@@ -17,9 +17,9 @@ class ViewController: UIViewController {
 
     @IBOutlet weak var nameField: UITextField!
     @IBOutlet weak var dobField: UITextField!
-    @IBOutlet weak var currentWeightLabel: UITextField!
+    @IBOutlet weak var weightField: UITextField!
     
-    @IBOutlet weak var currentHeightLabel: UITextField!
+    @IBOutlet weak var heightField: UITextField!
     
     @IBOutlet weak var maleTapped: UIButton!
     
@@ -30,8 +30,8 @@ class ViewController: UIViewController {
         
         let inputName = String(nameField.text!)
         let inputdob  = Double(dobField.text!)
-        let inputCurrentWeight  = Double(currentWeightLabel.text!)
-        let inputCurrentHeight  = Double(currentHeightLabel.text!)
+        let inputCurrentWeight  = Double(weightField.text!)
+        let inputCurrentHeight  = Double(heightField.text!)
         
     }
     
