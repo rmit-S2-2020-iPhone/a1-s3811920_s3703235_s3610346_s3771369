@@ -7,14 +7,14 @@
 
 import Foundation
 
-enum gender {
+enum Gender {
     case Male , Female
 }
-enum goal :String{
+enum Goal :String{
     case loseWeight = "Loss Weight", gainWeight = "Gain Weight", maintainWeight = "Maintain Weight"
 }
 
-enum activityLevel:String {
+enum ActivityLevel:String {
     case sedentary = "Sedentary", lightlyActive = "lightly Active", active = "Active", veryActive = "Very Active"
 }
 
@@ -23,6 +23,9 @@ struct personalInfoSet {
     private var name: String
     private var currentWeight:Double
     private var currentHeight:Double
+    private var genderType:Gender?
+    private var userGoal:Goal?
+    private var userActive:ActivityLevel?
     
     init(name:String, currentWeight:Double, currentHeight:Double) {
         
