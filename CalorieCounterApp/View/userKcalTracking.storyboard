@@ -281,10 +281,10 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="S8S-0c-Lne">
-                                <rect key="frame" x="0.0" y="88" width="414" height="774"/>
+                                <rect key="frame" x="0.0" y="88" width="414" height="725"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="2" translatesAutoresizingMaskIntoConstraints="NO" id="tOJ-UD-PEc">
-                                        <rect key="frame" x="0.0" y="0.0" width="414" height="774"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="725"/>
                                         <subviews>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ihC-dE-xIY">
                                                 <rect key="frame" x="0.0" y="0.0" width="414" height="97.5"/>
@@ -337,7 +337,7 @@
                                                 </constraints>
                                             </view>
                                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="lM9-Bq-HWC">
-                                                <rect key="frame" x="0.0" y="165" width="414" height="609"/>
+                                                <rect key="frame" x="0.0" y="165" width="414" height="560"/>
                                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <prototypes>
                                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="99" id="b9h-KO-HvP">
@@ -1423,8 +1423,13 @@
     </resources>
     <inferredMetricsTieBreakers>
         <segue reference="Je0-Bt-oiO"/>
+<<<<<<< HEAD:CalorieCounterApp/View/userKcalTracking.storyboard
         <segue reference="3hj-r6-IM8"/>
         <segue reference="SMQ-tO-HaR"/>
+=======
+        <segue reference="zwA-mI-s4f"/>
+        <segue reference="Ux9-oL-3j8"/>
+>>>>>>> 6e28af0fc6c3d6573455ee5afb29b62c385e7b1b:CalorieCounterApp/View/CalorieCounterApp/View/Base.lproj/userKcalTracking.storyboard
     </inferredMetricsTieBreakers>
     <color key="tintColor" red="0.21176470589999999" green="0.23921568630000001" blue="0.27058823529999998" alpha="1" colorSpace="calibratedRGB"/>
 </document>
