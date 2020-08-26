@@ -1,19 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="IHm-54-ALZ">
-    <device id="retina6_1" orientation="portrait">
-        <adaptation id="fullscreen"/>
-    </device>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097.2" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="IHm-54-ALZ">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Personal Info View Controller-->
+        <!--View Controller-->
         <scene sceneID="E9L-Al-Ahc">
             <objects>
-                <viewController id="IHm-54-ALZ" customClass="personalInfoViewController" customModule="CalorieCounterApp" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="IHm-54-ALZ" customClass="ViewController" customModule="CalorieCounterApp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="ZfS-cB-cxP">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="808"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -117,25 +115,22 @@
                     </view>
                     <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" translucent="NO" prompted="NO"/>
                     <connections>
-                        <outlet property="currentHeight" destination="P49-Qd-Oy2" id="wZe-cX-HSA"/>
                         <outlet property="currentHeightLabel" destination="P49-Qd-Oy2" id="p89-j3-gZD"/>
-                        <outlet property="currentWeight" destination="nJV-ED-xHk" id="LRL-Pj-Jec"/>
                         <outlet property="currentWeightLabel" destination="nJV-ED-xHk" id="I7c-si-xG1"/>
-                        <outlet property="dobField" destination="rUz-Cr-KeM" id="pYC-rZ-0Xc"/>
+                        <outlet property="dobField" destination="rUz-Cr-KeM" id="pg6-Fc-d1c"/>
                         <outlet property="femaleTapped" destination="pAD-aF-cDL" id="9nS-9x-hl1"/>
-                        <outlet property="genderButtonPressed" destination="f3k-zZ-rRG" id="z1z-4q-Apq"/>
                         <outlet property="maleTapped" destination="f3k-zZ-rRG" id="iYd-1V-Uhk"/>
-                        <outlet property="nameField" destination="P7d-NL-NVg" id="AXg-kw-myj"/>
+                        <outlet property="nameField" destination="P7d-NL-NVg" id="s1U-31-tbu"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Z1D-f9-unh" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1061" y="119"/>
         </scene>
-        <!--User Goals View Controller-->
+        <!--View Controller-->
         <scene sceneID="0NP-Th-n4U">
             <objects>
-                <viewController id="WWE-Y5-ZcQ" customClass="userGoalsViewController" customModule="CalorieCounterApp" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="WWE-Y5-ZcQ" customClass="ViewController" customModule="CalorieCounterApp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="0U7-el-yJH">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="808"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -191,10 +186,10 @@
             </objects>
             <point key="canvasLocation" x="1832" y="119"/>
         </scene>
-        <!--Activity Level View Controller-->
+        <!--View Controller-->
         <scene sceneID="SG1-Qa-d4b">
             <objects>
-                <viewController id="EvI-tv-lf0" customClass="activityLevelViewController" customModule="CalorieCounterApp" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="EvI-tv-lf0" customClass="ViewController" customModule="CalorieCounterApp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="lLe-CY-1EO">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="808"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
