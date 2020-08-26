@@ -6,9 +6,40 @@
 //
 
 import Foundation
-import CoreData
 
 
+
+enum gender {
+    case Male , Female
+}
+enum goal :String{
+    case loseWeight = "Loss Weight", gainWeight = "Gain Weight", maintainWeight = "Maintain Weight"
+}
+
+enum activityLevel:String {
+    case sedentary = "Sedentary", lightlyActive = "lightly Active", active = "Active", veryActive = "Very Active"
+}
+
+struct personalInfoSet {
+   
+    private var name: String
+    private var currentWeight:Double
+    private var currentHeight:Double
+    
+    init(name:String, currentWeight:Double, currentHeight:Double) {
+        
+        self.name = name
+        self.currentHeight = currentHeight
+        self.currentWeight = currentWeight
+        
+        }
+    
+    
+    func calculateBMI() -> Int {
+        let bmi = (Int(currentWeight/(currentHeight)) ^ 2) * 703
+        return bmi
+    }
+    }
 
 
 
@@ -40,4 +71,8 @@ struct CustomDate{
         dateFormatter.dateFormat = format
         return dateFormatter.string(from: date)
     }
+
 }
+
+
+

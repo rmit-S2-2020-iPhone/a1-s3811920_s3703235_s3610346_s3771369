@@ -16,11 +16,8 @@ class personalInfoViewController: UIViewController {
     @IBOutlet weak var nameField: UITextField!
     @IBOutlet weak var dobField: UITextField!
     @IBOutlet weak var currentWeight: UITextField!
-    
     @IBOutlet weak var currentHeight: UITextField!
-    
-    
-    
+   
     @IBOutlet weak var genderButtonPressed: UIButton!
     
     
@@ -28,6 +25,7 @@ class personalInfoViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+       
         
 
         // Do any additional setup after loading the view.
@@ -53,4 +51,5 @@ class personalInfoViewController: UIViewController {
     
     
     
+
 }

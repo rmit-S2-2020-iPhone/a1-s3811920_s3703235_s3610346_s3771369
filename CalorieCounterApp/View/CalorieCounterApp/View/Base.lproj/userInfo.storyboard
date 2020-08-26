@@ -86,7 +86,7 @@
                                 <rect key="frame" x="45" y="474" width="134" height="60"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.93289974620000005" green="0.60551593029999995" blue="0.22184178190000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <accessibility key="accessibilityConfiguration">
+                                <accessibility key="accessibilityConfiguration" label="male">
                                     <accessibilityTraits key="traits" button="YES" selected="YES"/>
                                 </accessibility>
                                 <state key="normal" title="MALE">
@@ -97,7 +97,7 @@
                                 <rect key="frame" x="222" y="474" width="134" height="60"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.93289974620000005" green="0.60551593029999995" blue="0.22184178190000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <accessibility key="accessibilityConfiguration">
+                                <accessibility key="accessibilityConfiguration" label="female">
                                     <accessibilityTraits key="traits" button="YES" selected="YES"/>
                                 </accessibility>
                                 <state key="normal" title="FEMALE">
