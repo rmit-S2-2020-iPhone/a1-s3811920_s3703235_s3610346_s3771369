@@ -41,7 +41,7 @@ struct personalInfoSet {
     }
     
     
-    var 
+    
     }
 
 
