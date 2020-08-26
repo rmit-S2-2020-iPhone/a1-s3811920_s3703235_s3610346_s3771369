@@ -7,8 +7,6 @@
 
 import Foundation
 
-
-
 enum gender {
     case Male , Female
 }
@@ -34,45 +32,46 @@ struct personalInfoSet {
         
         }
     
+    var getName: String {
+        get {
+            return name
+        }
+    }
+    
     
     func calculateBMI() -> Int {
         let bmi = (Int(currentWeight/(currentHeight)) ^ 2) * 703
         return bmi
     }
     
-    
-    
+    func getCalories() -> Int {
+        
+        let bmicount = calculateBMI()
+        if bmicount < Int(18.5) {
+            return 1
+        }
+        else if bmicount < Int(24.5) && bmicount >= Int(18.5)  {
+            return 2
+        }
+        else if bmicount < Int(29) && bmicount >= Int(24.5) {
+            return 3
+        }
+        else if bmicount >= Int(29) {
+            return 4
+        }
+        return 0
+        
     }
-
-
-
-//class Temperature {
-//    var celsius: Float = 0.0
-//    var fahrenheit: Float {
-//        get {
-//            return ((celsius * 1.8) + 32.0)
-//        }
-//        set {
-//            celsius = (newValue - 32)/1.8
-//        }
-//    }
-//}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+    
+    func printCalorie() -> String{
+    
+        if getCalories() == 1 {
+            return "Nice"
+        }
+        else {
+           return "Bad"
+        }
+}
 
 struct CustomDate{
     // Marked as optional as invalid construction data will produce a nil value
@@ -103,4 +102,4 @@ struct CustomDate{
 }
 
 
-
+}

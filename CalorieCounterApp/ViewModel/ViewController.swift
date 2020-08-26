@@ -19,14 +19,13 @@ class ViewController: UIViewController {
     
     
     var personalDataObj = personalInfoSet.init(name: "Timal", currentWeight: 80, currentHeight: 150)
-
-    
     
 
 
     override func viewDidLoad() {
         super.viewDidLoad()
     //    configureButtons()
-    }
+       
+           }
 
 }
