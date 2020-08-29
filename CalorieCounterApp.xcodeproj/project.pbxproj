@@ -19,6 +19,10 @@
 		86D1AE9424F6B07A00D82990 /* personalInfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86D1AE9324F6B07A00D82990 /* personalInfoViewController.swift */; };
 		86D1AE9624F6B08A00D82990 /* userGoalsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86D1AE9524F6B08A00D82990 /* userGoalsViewController.swift */; };
 		86D1AE9824F6B09B00D82990 /* activityLevelViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86D1AE9724F6B09B00D82990 /* activityLevelViewController.swift */; };
+		B32A091224FA3BEA006E83DE /* SearchResultViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B32A091124FA3BEA006E83DE /* SearchResultViewController.swift */; };
+		B32A091424FA3C05006E83DE /* SearchResultViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B32A091324FA3C05006E83DE /* SearchResultViewModel.swift */; };
+		B32A091624FA4FF6006E83DE /* MockData.swift in Sources */ = {isa = PBXBuildFile; fileRef = B32A091524FA4FF6006E83DE /* MockData.swift */; };
+		B32A091824FA51AB006E83DE /* Meal.swift in Sources */ = {isa = PBXBuildFile; fileRef = B32A091724FA51AB006E83DE /* Meal.swift */; };
 		B372BEF924D2A46B00F9957A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B372BEF824D2A46B00F9957A /* Assets.xcassets */; };
 		B372BF0724D2A46B00F9957A /* CalorieCounterAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B372BF0624D2A46B00F9957A /* CalorieCounterAppTests.swift */; };
 		B372BF1224D2A46B00F9957A /* CalorieCounterAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B372BF1124D2A46B00F9957A /* CalorieCounterAppUITests.swift */; };
@@ -51,6 +55,10 @@
 		86D1AE9324F6B07A00D82990 /* personalInfoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = personalInfoViewController.swift; sourceTree = "<group>"; };
 		86D1AE9524F6B08A00D82990 /* userGoalsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = userGoalsViewController.swift; sourceTree = "<group>"; };
 		86D1AE9724F6B09B00D82990 /* activityLevelViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = activityLevelViewController.swift; sourceTree = "<group>"; };
+		B32A091124FA3BEA006E83DE /* SearchResultViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchResultViewController.swift; sourceTree = "<group>"; };
+		B32A091324FA3C05006E83DE /* SearchResultViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchResultViewModel.swift; sourceTree = "<group>"; };
+		B32A091524FA4FF6006E83DE /* MockData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockData.swift; sourceTree = "<group>"; };
+		B32A091724FA51AB006E83DE /* Meal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Meal.swift; sourceTree = "<group>"; };
 		B372BEEB24D2A46300F9957A /* CalorieCounterApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CalorieCounterApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B372BEEE24D2A46300F9957A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B372BEF024D2A46300F9957A /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -155,6 +163,7 @@
 			isa = PBXGroup;
 			children = (
 				86D1AE8D24F6ADB700D82990 /* personalData.swift */,
+				B32A091724FA51AB006E83DE /* Meal.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -166,6 +175,9 @@
 				86D1AE9324F6B07A00D82990 /* personalInfoViewController.swift */,
 				86D1AE9524F6B08A00D82990 /* userGoalsViewController.swift */,
 				86D1AE9724F6B09B00D82990 /* activityLevelViewController.swift */,
+				B32A091124FA3BEA006E83DE /* SearchResultViewController.swift */,
+				B32A091324FA3C05006E83DE /* SearchResultViewModel.swift */,
+				B32A091524FA4FF6006E83DE /* MockData.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -318,9 +330,13 @@
 				032ACD6F24F4052F009607F1 /* AppDelegate.swift in Sources */,
 				032ACD7024F4052F009607F1 /* CalorieCounterApp.xcdatamodeld in Sources */,
 				86D1AE8E24F6ADB700D82990 /* personalData.swift in Sources */,
+				B32A091824FA51AB006E83DE /* Meal.swift in Sources */,
 				86D1AE9624F6B08A00D82990 /* userGoalsViewController.swift in Sources */,
 				86D1AE9424F6B07A00D82990 /* personalInfoViewController.swift in Sources */,
+				B32A091224FA3BEA006E83DE /* SearchResultViewController.swift in Sources */,
+				B32A091424FA3C05006E83DE /* SearchResultViewModel.swift in Sources */,
 				86D1AE9824F6B09B00D82990 /* activityLevelViewController.swift in Sources */,
+				B32A091624FA4FF6006E83DE /* MockData.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
