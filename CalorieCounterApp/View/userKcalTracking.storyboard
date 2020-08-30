@@ -424,6 +424,43 @@
             </objects>
             <point key="canvasLocation" x="6883" y="1"/>
         </scene>
+        <!--Item-->
+        <scene sceneID="ABU-aw-Ck5">
+            <objects>
+                <tableViewController id="ITh-RX-CMk" customClass="SearchResultViewController" customModule="CalorieCounterApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="dg1-hc-oRx">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <searchBar key="tableHeaderView" contentMode="redraw" id="eh3-c5-tR6">
+                            <rect key="frame" x="0.0" y="0.0" width="414" height="44"/>
+                            <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                            <textInputTraits key="textInputTraits"/>
+                        </searchBar>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="Cell" id="1eJ-fn-I1u">
+                                <rect key="frame" x="0.0" y="72" width="414" height="43.5"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="1eJ-fn-I1u" id="c1I-o0-3mz">
+                                    <rect key="frame" x="0.0" y="0.0" width="414" height="43.5"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </tableViewCellContentView>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="ITh-RX-CMk" id="OQS-rg-NVE"/>
+                            <outlet property="delegate" destination="ITh-RX-CMk" id="jQX-Rc-mUr"/>
+                        </connections>
+                    </tableView>
+                    <tabBarItem key="tabBarItem" title="Item" id="drT-qN-bcm"/>
+                    <connections>
+                        <outlet property="searchBar" destination="eh3-c5-tR6" id="k2d-jJ-VJW"/>
+                    </connections>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="FNm-wG-yzz" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="5765" y="29"/>
+        </scene>
         <!--View Controller-->
         <scene sceneID="FNq-1j-wm1">
             <objects>
@@ -999,8 +1036,8 @@
                     <connections>
                         <segue destination="BYZ-38-t0r" kind="relationship" relationship="viewControllers" id="fQi-Kh-abE"/>
                         <segue destination="Zge-9C-au4" kind="relationship" relationship="viewControllers" id="Je0-Bt-oiO"/>
-                        <segue destination="IkV-1C-j73" kind="relationship" relationship="viewControllers" id="Ux9-oL-3j8"/>
                         <segue destination="g3F-Kn-xBd" kind="relationship" relationship="viewControllers" id="3hj-r6-IM8"/>
+                        <segue destination="ITh-RX-CMk" kind="relationship" relationship="viewControllers" id="oTY-Gs-4Bs"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="3m7-ML-cxD" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -1020,8 +1057,7 @@
     </scenes>
     <inferredMetricsTieBreakers>
         <segue reference="3hj-r6-IM8"/>
-        <segue reference="ooh-Av-qfj"/>
-        <segue reference="SMQ-tO-HaR"/>
+        <segue reference="Je0-Bt-oiO"/>
     </inferredMetricsTieBreakers>
     <color key="tintColor" red="0.21176470589999999" green="0.23921568630000001" blue="0.27058823529999998" alpha="1" colorSpace="calibratedRGB"/>
     <resources>

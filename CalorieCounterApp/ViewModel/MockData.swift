@@ -20,6 +20,13 @@ class MockData {
         meals.append(Meal("chicken wings"))
         meals.append(Meal("fish tacos"))
         meals.append(Meal("salmon patties"))
+        meals.append(Meal("chicken pasta"))
+        meals.append(Meal("tuscan Bean Soup"))
+        meals.append(Meal("chicken Skillet"))
+        meals.append(Meal("kabuli pulao"))
+        meals.append(Meal("Plov"))
+        meals.append(Meal("tortellini soup"))
+        meals.append(Meal("crab cakes"))
         
         return meals
     }

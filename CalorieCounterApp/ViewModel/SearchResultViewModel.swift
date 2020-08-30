@@ -9,6 +9,8 @@ import Foundation
 
 class MealsListViewModel{
     var mealViewModel: [MealViewModel] = [MealViewModel]()
+    var filterViewModel: [MealViewModel] = [MealViewModel]()
+    
     private var mealData: MockData
     
     init(mealData: MockData){
@@ -22,9 +24,11 @@ class MealsListViewModel{
             return MealViewModel(meal)
         }
     }
+    
+    public func addFilteredMeals(_ meal: MealViewModel){
+        filterViewModel.append(meal)
+    }
 }
-
-
 
 
 class MealViewModel {
