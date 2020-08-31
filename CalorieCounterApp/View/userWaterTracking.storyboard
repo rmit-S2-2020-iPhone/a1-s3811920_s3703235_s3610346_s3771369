@@ -113,7 +113,7 @@
                                                                         <constraints>
                                                                             <constraint firstAttribute="height" constant="45" id="i5F-Xo-xKw"/>
                                                                         </constraints>
-                                                                        <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="24"/>
+                                                                        <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="20"/>
                                                                         <state key="normal" title="1 glass (5 oz)">
                                                                             <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                         </state>
@@ -157,7 +157,7 @@
                                                                         <constraints>
                                                                             <constraint firstAttribute="height" constant="45" id="kZh-Hf-xE8"/>
                                                                         </constraints>
-                                                                        <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="24"/>
+                                                                        <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="20"/>
                                                                         <state key="normal" title="5 glass (25 oz)">
                                                                             <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                         </state>
@@ -201,7 +201,7 @@
                                                                         <constraints>
                                                                             <constraint firstAttribute="height" constant="45" id="2Vo-Bl-3xA"/>
                                                                         </constraints>
-                                                                        <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="24"/>
+                                                                        <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="20"/>
                                                                         <state key="normal" title="8 glass (40 oz)">
                                                                             <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                         </state>
@@ -245,7 +245,7 @@
                                                                         <constraints>
                                                                             <constraint firstAttribute="height" constant="45" id="keZ-hW-mjR"/>
                                                                         </constraints>
-                                                                        <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="24"/>
+                                                                        <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="20"/>
                                                                         <state key="normal" title="12 glass (60 oz)">
                                                                             <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                         </state>
@@ -405,6 +405,10 @@
                     <navigationItem key="navigationItem" id="tWz-hn-Jho"/>
                     <connections>
                         <outlet property="oz" destination="GOJ-FY-nag" id="XPI-ze-l1J"/>
+                        <outletCollection property="options" destination="avh-wa-ChD" collectionClass="NSMutableArray" id="Pty-S2-K3u"/>
+                        <outletCollection property="options" destination="LZY-4V-Be3" collectionClass="NSMutableArray" id="Zcr-QW-jaw"/>
+                        <outletCollection property="options" destination="6MH-yc-84G" collectionClass="NSMutableArray" id="Sbh-97-JtU"/>
+                        <outletCollection property="options" destination="fHh-hG-GgS" collectionClass="NSMutableArray" id="hrU-qs-ffg"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="wt9-T3-hgO" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>

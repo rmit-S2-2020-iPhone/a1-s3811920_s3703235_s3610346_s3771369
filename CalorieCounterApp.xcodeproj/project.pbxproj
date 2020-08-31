@@ -135,6 +135,7 @@
 		B372BEED24D2A46300F9957A /* CalorieCounterApp */ = {
 			isa = PBXGroup;
 			children = (
+				B389681B24FCEE7400A3F2BD /* Data */,
 				B3DCE0F324F379EC00ECEA14 /* Model */,
 				B3DCE0F524F37A2600ECEA14 /* ViewModel */,
 				B3DCE0F724F37A4600ECEA14 /* View */,
@@ -165,6 +166,14 @@
 			path = CalorieCounterAppUITests;
 			sourceTree = "<group>";
 		};
+		B389681B24FCEE7400A3F2BD /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				B32A091524FA4FF6006E83DE /* MockData.swift */,
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
 		B3DCE0F324F379EC00ECEA14 /* Model */ = {
 			isa = PBXGroup;
 			children = (
@@ -183,7 +192,6 @@
 				86D1AE9724F6B09B00D82990 /* activityLevelViewController.swift */,
 				B32A091124FA3BEA006E83DE /* SearchResultViewController.swift */,
 				B32A091324FA3C05006E83DE /* SearchResultViewModel.swift */,
-				B32A091524FA4FF6006E83DE /* MockData.swift */,
 				B3FD853B24FC790500073FC4 /* MealPageViewController.swift */,
 				B3CD87CE24FCD70300CA151A /* TrackWaterViewController.swift */,
 				B3CD87D024FCE19900CA151A /* HomePageViewController.swift */,

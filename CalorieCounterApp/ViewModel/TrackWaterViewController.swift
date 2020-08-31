@@ -10,6 +10,12 @@ import UIKit
 
 class TrackWaterViewController: ViewController {
     
+    
+    @IBOutlet var options: [UIButton]!
+    
+    
+    
+    
     @IBOutlet weak var oz: UILabel!
     
     var totalGls: Int!
@@ -18,6 +24,7 @@ class TrackWaterViewController: ViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        configureButtons()
         totalGls = 0
         totalOz = 0
         oz.text = String(totalGls) + "gl " + String(totalOz) + "oz"
@@ -51,5 +58,11 @@ class TrackWaterViewController: ViewController {
         oz.text = String(totalGls) + "gl " + String(totalOz) + "oz"
     }
     
+    
+    func configureButtons(){
+       for button in options {
+           button.layer.cornerRadius = 16.8
+       }
+    }
     
 }
