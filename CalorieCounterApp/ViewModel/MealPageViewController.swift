@@ -22,7 +22,21 @@ class MealPageViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        let addButton = UIBarButtonItem(barButtonSystemItem: .add, target: self, action: #selector(add))
+        self.navigationItem.rightBarButtonItem = addButton
         setUI()
+    }
+    
+    @objc func add(){
+        func alert(message: String) -> Void {
+         let alert = UIAlertController(title: "", message: message, preferredStyle: UIAlertController.Style.alert)
+         present(alert, animated: true, completion: nil)
+            DispatchQueue.main.asyncAfter(deadline: .now() + 1) { [unowned self] in
+          self.dismiss(animated: true)
+         }
+        }
+        alert(message: "Calories Added")
     }
     
     func setUI(){
@@ -36,5 +50,6 @@ class MealPageViewController: UIViewController {
         vitC.text = meal?.vitamicC
         irons.text = meal?.iron
     }
+    
     
 }

@@ -26,6 +26,8 @@
 		B372BEF924D2A46B00F9957A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B372BEF824D2A46B00F9957A /* Assets.xcassets */; };
 		B372BF0724D2A46B00F9957A /* CalorieCounterAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B372BF0624D2A46B00F9957A /* CalorieCounterAppTests.swift */; };
 		B372BF1224D2A46B00F9957A /* CalorieCounterAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B372BF1124D2A46B00F9957A /* CalorieCounterAppUITests.swift */; };
+		B3CD87CF24FCD70300CA151A /* TrackWaterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3CD87CE24FCD70300CA151A /* TrackWaterViewController.swift */; };
+		B3CD87D124FCE19900CA151A /* HomePageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3CD87D024FCE19900CA151A /* HomePageViewController.swift */; };
 		B3FD853C24FC790500073FC4 /* MealPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3FD853B24FC790500073FC4 /* MealPageViewController.swift */; };
 /* End PBXBuildFile section */
 
@@ -72,6 +74,8 @@
 		B372BF0D24D2A46B00F9957A /* CalorieCounterAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CalorieCounterAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		B372BF1124D2A46B00F9957A /* CalorieCounterAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalorieCounterAppUITests.swift; sourceTree = "<group>"; };
 		B372BF1324D2A46B00F9957A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B3CD87CE24FCD70300CA151A /* TrackWaterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrackWaterViewController.swift; sourceTree = "<group>"; };
+		B3CD87D024FCE19900CA151A /* HomePageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomePageViewController.swift; sourceTree = "<group>"; };
 		B3FD853B24FC790500073FC4 /* MealPageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MealPageViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -181,6 +185,8 @@
 				B32A091324FA3C05006E83DE /* SearchResultViewModel.swift */,
 				B32A091524FA4FF6006E83DE /* MockData.swift */,
 				B3FD853B24FC790500073FC4 /* MealPageViewController.swift */,
+				B3CD87CE24FCD70300CA151A /* TrackWaterViewController.swift */,
+				B3CD87D024FCE19900CA151A /* HomePageViewController.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -336,6 +342,8 @@
 				86D1AE8E24F6ADB700D82990 /* personalData.swift in Sources */,
 				B32A091824FA51AB006E83DE /* Meal.swift in Sources */,
 				86D1AE9624F6B08A00D82990 /* userGoalsViewController.swift in Sources */,
+				B3CD87CF24FCD70300CA151A /* TrackWaterViewController.swift in Sources */,
+				B3CD87D124FCE19900CA151A /* HomePageViewController.swift in Sources */,
 				86D1AE9424F6B07A00D82990 /* personalInfoViewController.swift in Sources */,
 				B32A091224FA3BEA006E83DE /* SearchResultViewController.swift in Sources */,
 				B32A091424FA3C05006E83DE /* SearchResultViewModel.swift in Sources */,
