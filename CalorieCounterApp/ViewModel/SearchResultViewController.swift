@@ -35,6 +35,15 @@ class SearchResultViewController: UITableViewController, UISearchBarDelegate {
         self.tableView.reloadData()
     }
     
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "MasterToDetail" {
+            let mealPageVC = segue.destination as! MealPageViewController
+            mealPageVC.meal = sender as? MealViewModel
+        }
+        
+    }
+    
     // returns number of rows
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return self.filterMealsListViewModel.filterViewModel.count
@@ -49,6 +58,12 @@ class SearchResultViewController: UITableViewController, UISearchBarDelegate {
         cell.textLabel?.text = "\(mealViewModel.mealName!)"
 
         return cell
+    }
+    
+    
+    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        let mealViewModel = self.filterMealsListViewModel.filterViewModel[indexPath.row]
+        performSegue(withIdentifier: "MasterToDetail", sender: mealViewModel)
     }
     
     
