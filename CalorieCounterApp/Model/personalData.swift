@@ -5,7 +5,15 @@
 //  Created by Timal Pathirana on 27/8/20.
 //
 
+import UIKit
 import Foundation
+
+
+enum Colors {
+   static let orangeColour = UIColor(red: 238/255, green: 154/255, blue: 57/255, alpha: 1.0)
+    static let blueColour = UIColor(red: 78/255, green: 85/255, blue: 116/255, alpha: 1.0)
+    
+}
 
 enum Gender {
     case Male , Female
