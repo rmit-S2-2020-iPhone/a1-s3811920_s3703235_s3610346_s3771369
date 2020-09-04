@@ -105,6 +105,13 @@
 			name = "Recovered References";
 			sourceTree = "<group>";
 		};
+		865311762502868100175C0E /* Data */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
 		B372BEE224D2A46300F9957A = {
 			isa = PBXGroup;
 			children = (
@@ -129,6 +136,7 @@
 		B372BEED24D2A46300F9957A /* CalorieCounterApp */ = {
 			isa = PBXGroup;
 			children = (
+				865311762502868100175C0E /* Data */,
 				B3DCE0F324F379EC00ECEA14 /* Model */,
 				B3DCE0F524F37A2600ECEA14 /* ViewModel */,
 				B3DCE0F724F37A4600ECEA14 /* View */,
