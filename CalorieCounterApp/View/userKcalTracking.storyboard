@@ -57,7 +57,7 @@
                                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Gs1-67-6UY">
                                                         <rect key="frame" x="0.0" y="0.0" width="398" height="84.5"/>
                                                         <subviews>
-                                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="C5e-vd-4zF" userLabel="breakfast">
+                                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="C5e-vd-4zF" userLabel="breakfast" customClass="orangeButton" customModule="CalorieCounterApp" customModuleProvider="target">
                                                                 <rect key="frame" x="0.0" y="0.0" width="398" height="84.5"/>
                                                                 <color key="backgroundColor" red="0.98431372549999996" green="0.69411764710000001" blue="0.23529411759999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                                 <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="20"/>
@@ -87,7 +87,7 @@
                                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Q3c-qs-rgu">
                                                         <rect key="frame" x="0.0" y="91.5" width="398" height="84.5"/>
                                                         <subviews>
-                                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JEp-yA-E2d" userLabel="lunch">
+                                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JEp-yA-E2d" userLabel="lunch" customClass="orangeButton" customModule="CalorieCounterApp" customModuleProvider="target">
                                                                 <rect key="frame" x="0.0" y="0.0" width="398" height="84.5"/>
                                                                 <color key="backgroundColor" red="0.98431372549999996" green="0.69411764710000001" blue="0.23529411759999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                                 <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="20"/>
@@ -117,7 +117,7 @@
                                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="nGS-LU-oaE">
                                                         <rect key="frame" x="0.0" y="183" width="398" height="84.5"/>
                                                         <subviews>
-                                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="b4l-HL-G0e" userLabel="dinner">
+                                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="b4l-HL-G0e" userLabel="dinner" customClass="orangeButton" customModule="CalorieCounterApp" customModuleProvider="target">
                                                                 <rect key="frame" x="0.0" y="0.0" width="398" height="84.5"/>
                                                                 <color key="backgroundColor" red="0.98431372549999996" green="0.69411764710000001" blue="0.23529411759999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                                 <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="20"/>
@@ -147,7 +147,7 @@
                                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="GVf-D2-2yh">
                                                         <rect key="frame" x="0.0" y="274.5" width="398" height="84.5"/>
                                                         <subviews>
-                                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="k30-ge-FXh" userLabel="snack">
+                                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="k30-ge-FXh" userLabel="snack" customClass="orangeButton" customModule="CalorieCounterApp" customModuleProvider="target">
                                                                 <rect key="frame" x="0.0" y="0.0" width="398" height="84.5"/>
                                                                 <color key="backgroundColor" red="0.98431372549999996" green="0.69411764710000001" blue="0.23529411759999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                                 <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="20"/>
@@ -177,7 +177,7 @@
                                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="usT-cY-lPS">
                                                         <rect key="frame" x="0.0" y="366" width="398" height="84.5"/>
                                                         <subviews>
-                                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NOf-Kr-xfK" userLabel="water">
+                                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NOf-Kr-xfK" userLabel="water" customClass="orangeButton" customModule="CalorieCounterApp" customModuleProvider="target">
                                                                 <rect key="frame" x="0.0" y="0.0" width="398" height="84.5"/>
                                                                 <color key="backgroundColor" red="0.98431372549999996" green="0.69411764710000001" blue="0.23529411759999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                                 <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="20"/>

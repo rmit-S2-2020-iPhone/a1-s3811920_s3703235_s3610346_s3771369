@@ -1,9 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097.2" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BQT-78-dut">
-    <device id="retina6_1" orientation="portrait" appearance="light"/>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BQT-78-dut">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -107,7 +109,7 @@
                                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Tg7-0f-B23">
                                                                 <rect key="frame" x="0.0" y="0.0" width="390" height="45"/>
                                                                 <subviews>
-                                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="avh-wa-ChD">
+                                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="avh-wa-ChD" customClass="orangeButton" customModule="CalorieCounterApp" customModuleProvider="target">
                                                                         <rect key="frame" x="0.0" y="0.0" width="390" height="45"/>
                                                                         <color key="backgroundColor" red="0.98431372549999996" green="0.69411764710000001" blue="0.23529411759999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                                         <constraints>
@@ -151,7 +153,7 @@
                                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="68I-Kd-HhZ">
                                                                 <rect key="frame" x="0.0" y="55" width="390" height="45"/>
                                                                 <subviews>
-                                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LZY-4V-Be3">
+                                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LZY-4V-Be3" customClass="orangeButton" customModule="CalorieCounterApp" customModuleProvider="target">
                                                                         <rect key="frame" x="0.0" y="0.0" width="390" height="45"/>
                                                                         <color key="backgroundColor" red="0.98431372549999996" green="0.69411764710000001" blue="0.23529411759999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                                         <constraints>
@@ -195,7 +197,7 @@
                                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="LXU-q7-COj">
                                                                 <rect key="frame" x="0.0" y="110" width="390" height="45"/>
                                                                 <subviews>
-                                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6MH-yc-84G">
+                                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6MH-yc-84G" customClass="orangeButton" customModule="CalorieCounterApp" customModuleProvider="target">
                                                                         <rect key="frame" x="0.0" y="0.0" width="390" height="45"/>
                                                                         <color key="backgroundColor" red="0.98431372549999996" green="0.69411764710000001" blue="0.23529411759999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                                         <constraints>
@@ -239,7 +241,7 @@
                                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="IJr-af-n9s">
                                                                 <rect key="frame" x="0.0" y="165" width="390" height="45"/>
                                                                 <subviews>
-                                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fHh-hG-GgS">
+                                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fHh-hG-GgS" customClass="orangeButton" customModule="CalorieCounterApp" customModuleProvider="target">
                                                                         <rect key="frame" x="0.0" y="0.0" width="390" height="45"/>
                                                                         <color key="backgroundColor" red="0.98431372549999996" green="0.69411764710000001" blue="0.23529411759999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                                         <constraints>
@@ -416,8 +418,8 @@
             <point key="canvasLocation" x="4658" y="2056"/>
         </scene>
     </scenes>
-    <color key="tintColor" red="0.21176470589999999" green="0.23921568630000001" blue="0.27058823529999998" alpha="1" colorSpace="calibratedRGB"/>
     <resources>
         <image name="icons8-sparkling-water-150" width="150" height="150"/>
     </resources>
+    <color key="tintColor" red="0.21176470589999999" green="0.23921568630000001" blue="0.27058823529999998" alpha="1" colorSpace="calibratedRGB"/>
 </document>

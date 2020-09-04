@@ -27,12 +27,12 @@
 		B372BEF924D2A46B00F9957A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B372BEF824D2A46B00F9957A /* Assets.xcassets */; };
 		B372BF0724D2A46B00F9957A /* CalorieCounterAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B372BF0624D2A46B00F9957A /* CalorieCounterAppTests.swift */; };
 		B372BF1224D2A46B00F9957A /* CalorieCounterAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B372BF1124D2A46B00F9957A /* CalorieCounterAppUITests.swift */; };
-		BA81E0C524FBE2C900214665 /* Helpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA81E0C424FBE2C900214665 /* Helpers.swift */; };
-		BA81E0C724FBE67800214665 /* SplashController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA81E0C624FBE67800214665 /* SplashController.swift */; };
-		BA81E0C924FBE9F200214665 /* UserKcalTrackingController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA81E0C824FBE9F200214665 /* UserKcalTrackingController.swift */; };
 		B3CD87CF24FCD70300CA151A /* TrackWaterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3CD87CE24FCD70300CA151A /* TrackWaterViewController.swift */; };
 		B3CD87D124FCE19900CA151A /* HomePageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3CD87D024FCE19900CA151A /* HomePageViewController.swift */; };
 		B3FD853C24FC790500073FC4 /* MealPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3FD853B24FC790500073FC4 /* MealPageViewController.swift */; };
+		BA81E0C524FBE2C900214665 /* Helpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA81E0C424FBE2C900214665 /* Helpers.swift */; };
+		BA81E0C724FBE67800214665 /* SplashController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA81E0C624FBE67800214665 /* SplashController.swift */; };
+		BA81E0C924FBE9F200214665 /* UserKcalTrackingController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA81E0C824FBE9F200214665 /* UserKcalTrackingController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -79,12 +79,12 @@
 		B372BF0D24D2A46B00F9957A /* CalorieCounterAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CalorieCounterAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		B372BF1124D2A46B00F9957A /* CalorieCounterAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalorieCounterAppUITests.swift; sourceTree = "<group>"; };
 		B372BF1324D2A46B00F9957A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		BA81E0C424FBE2C900214665 /* Helpers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Helpers.swift; sourceTree = "<group>"; };
-		BA81E0C624FBE67800214665 /* SplashController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashController.swift; sourceTree = "<group>"; };
-		BA81E0C824FBE9F200214665 /* UserKcalTrackingController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserKcalTrackingController.swift; sourceTree = "<group>"; };
 		B3CD87CE24FCD70300CA151A /* TrackWaterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrackWaterViewController.swift; sourceTree = "<group>"; };
 		B3CD87D024FCE19900CA151A /* HomePageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomePageViewController.swift; sourceTree = "<group>"; };
 		B3FD853B24FC790500073FC4 /* MealPageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MealPageViewController.swift; sourceTree = "<group>"; };
+		BA81E0C424FBE2C900214665 /* Helpers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Helpers.swift; sourceTree = "<group>"; };
+		BA81E0C624FBE67800214665 /* SplashController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashController.swift; sourceTree = "<group>"; };
+		BA81E0C824FBE9F200214665 /* UserKcalTrackingController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserKcalTrackingController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -119,13 +119,6 @@
 			name = "Recovered References";
 			sourceTree = "<group>";
 		};
-		865311762502868100175C0E /* Data */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Data;
-			sourceTree = "<group>";
-		};
 		B372BEE224D2A46300F9957A = {
 			isa = PBXGroup;
 			children = (
@@ -150,7 +143,6 @@
 		B372BEED24D2A46300F9957A /* CalorieCounterApp */ = {
 			isa = PBXGroup;
 			children = (
-				865311762502868100175C0E /* Data */,
 				B389681B24FCEE7400A3F2BD /* Data */,
 				B3DCE0F324F379EC00ECEA14 /* Model */,
 				B3DCE0F524F37A2600ECEA14 /* ViewModel */,
