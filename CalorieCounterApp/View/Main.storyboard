@@ -10,91 +10,98 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Splash Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="CalorieCounterApp" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="SplashController" customModule="CalorieCounterApp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="icons8-healthy-eating-100" translatesAutoresizingMaskIntoConstraints="NO" id="fYK-QX-jJw">
-                                <rect key="frame" x="146" y="138" width="122" height="107"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="right" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Track Calories" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="k6j-rR-Mdw">
+                                <rect key="frame" x="198" y="334" width="110.5" height="22.5"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Follow the meal plans" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HCY-tJ-bRt">
+                                <rect key="frame" x="198" y="546" width="168" height="22.5"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Track water" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PLQ-aa-U3O">
+                                <rect key="frame" x="208" y="437" width="90" height="22.5"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button autoresizesSubviews="NO" opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" reversesTitleShadowWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="atl-dG-pSQ" customClass="orangeButton" customModule="CalorieCounterApp" customModuleProvider="target">
+                                <rect key="frame" x="108" y="716" width="199" height="54"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.88510757679999996" green="0.62009686230000005" blue="0.3017691374" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="17"/>
+                                <state key="normal" title="Go To Dashboard">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="get_started_listener:" destination="BYZ-38-t0r" eventType="touchUpInside" id="8Qd-Fc-VQb"/>
+                                </connections>
+                            </button>
+                            <button autoresizesSubviews="NO" opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" reversesTitleShadowWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="n2P-cN-ZCl" customClass="BlueButton" customModule="CalorieCounterApp" customModuleProvider="target" colorLabel="IBBuiltInLabel-Red">
+                                <rect key="frame" x="108" y="791" width="199" height="51"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.30588235294117649" green="0.33333333333333331" blue="0.45490196078431372" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <rect key="contentStretch" x="1" y="0.0" width="1" height="1"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <state key="normal" title="Log Out">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="logoutBtn:" destination="BYZ-38-t0r" eventType="touchUpInside" id="hNR-Yg-aes"/>
+                                </connections>
+                            </button>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="icons8-healthy-eating-100" translatesAutoresizingMaskIntoConstraints="NO" id="fYK-QX-jJw">
+                                <rect key="frame" x="133" y="88" width="148" height="130"/>
                                 <color key="tintColor" red="0.88510757679999996" green="0.62009686230000005" blue="0.3017691374" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="107" id="C2v-V3-aK1"/>
                                 </constraints>
                             </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="right" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Track Calories" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="k6j-rR-Mdw">
-                                <rect key="frame" x="173" y="312" width="110.5" height="22.5"/>
-                                <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Follow the meal plans" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HCY-tJ-bRt">
-                                <rect key="frame" x="173" y="512" width="168" height="22.5"/>
-                                <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Track water" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PLQ-aa-U3O">
-                                <rect key="frame" x="173" y="412" width="90" height="22.5"/>
-                                <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="icons8-filled-circle-100" adjustsImageSizeForAccessibilityContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="tlZ-Ai-sw7">
-                                <rect key="frame" x="82" y="298" width="50" height="50"/>
-                                <color key="tintColor" red="0.1215686277" green="0.1294117719" blue="0.1411764771" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="trackCalories_100" translatesAutoresizingMaskIntoConstraints="NO" id="uZK-J2-x31">
+                                <rect key="frame" x="77" y="310" width="85" height="70"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="icons8-filled-circle-100" adjustsImageSizeForAccessibilityContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="WJJ-3k-I7T">
-                                <rect key="frame" x="82" y="498" width="50" height="50"/>
-                                <color key="tintColor" red="0.1215686277" green="0.1294117719" blue="0.1411764771" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="healthy_100" translatesAutoresizingMaskIntoConstraints="NO" id="sZ3-VD-jDc">
+                                <rect key="frame" x="77" y="522" width="85" height="70"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="icons8-filled-circle-100" adjustsImageSizeForAccessibilityContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="EgI-lL-6iF">
-                                <rect key="frame" x="82" y="398" width="50" height="50"/>
-                                <color key="tintColor" red="0.1215686277" green="0.1294117719" blue="0.1411764771" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="waterCalories_100" translatesAutoresizingMaskIntoConstraints="NO" id="dIX-FY-BkZ">
+                                <rect key="frame" x="70" y="413" width="85" height="70"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
-                            <button autoresizesSubviews="NO" opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" reversesTitleShadowWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="atl-dG-pSQ">
-                                <rect key="frame" x="82" y="722" width="250" height="60"/>
-                                <color key="backgroundColor" red="0.88510757679999996" green="0.62009686230000005" blue="0.3017691374" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
-                                <state key="normal" title="Get Started">
-                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                </state>
-                                <connections>
-                                    <segue destination="eTW-uG-hai" kind="show" identifier="infoSeg" id="O3S-FD-inY"/>
-                                </connections>
-                            </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="HCY-tJ-bRt" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="75" id="6BE-Ib-eOL"/>
                             <constraint firstItem="fYK-QX-jJw" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="146" id="7vD-6e-t2j"/>
                             <constraint firstItem="fYK-QX-jJw" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Bvc-TR-XX9"/>
-                            <constraint firstItem="fYK-QX-jJw" firstAttribute="centerX" secondItem="atl-dG-pSQ" secondAttribute="centerX" id="GHr-V2-Ji7"/>
-                            <constraint firstItem="HCY-tJ-bRt" firstAttribute="centerX" secondItem="tlZ-Ai-sw7" secondAttribute="trailing" constant="125" id="H1v-sG-j26"/>
                             <constraint firstItem="fYK-QX-jJw" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="50" id="IBq-UH-AOj"/>
-                            <constraint firstItem="WJJ-3k-I7T" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" constant="-100" id="M7D-FB-t5X"/>
-                            <constraint firstItem="WJJ-3k-I7T" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="75" id="Pnj-ae-iXq"/>
-                            <constraint firstItem="PLQ-aa-U3O" firstAttribute="leading" secondItem="HCY-tJ-bRt" secondAttribute="leading" id="Z6z-3G-Rks"/>
-                            <constraint firstItem="tlZ-Ai-sw7" firstAttribute="centerY" secondItem="EgI-lL-6iF" secondAttribute="centerY" constant="-100" id="bEP-nI-vEN"/>
-                            <constraint firstItem="atl-dG-pSQ" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="d2i-6F-nHb"/>
-                            <constraint firstItem="tlZ-Ai-sw7" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" constant="-100" id="dPh-H7-IoG"/>
-                            <constraint firstItem="k6j-rR-Mdw" firstAttribute="centerY" secondItem="PLQ-aa-U3O" secondAttribute="centerY" constant="-100" id="h5r-BD-QrS"/>
-                            <constraint firstItem="PLQ-aa-U3O" firstAttribute="centerY" secondItem="HCY-tJ-bRt" secondAttribute="centerY" constant="-100" id="jch-Fh-UBR"/>
-                            <constraint firstItem="atl-dG-pSQ" firstAttribute="centerY" secondItem="6Tk-OE-BBY" secondAttribute="bottom" constant="-110" id="kmv-2k-thb"/>
-                            <constraint firstItem="k6j-rR-Mdw" firstAttribute="leading" secondItem="PLQ-aa-U3O" secondAttribute="leading" id="rTh-ds-Ugl"/>
-                            <constraint firstItem="EgI-lL-6iF" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" constant="-100" id="sHJ-oB-jnx"/>
-                            <constraint firstItem="EgI-lL-6iF" firstAttribute="centerY" secondItem="WJJ-3k-I7T" secondAttribute="centerY" constant="-100" id="xLe-Hb-tvU"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <navigationItem key="navigationItem" id="BUU-bA-OBF"/>
+                    <connections>
+                        <outlet property="getStartButton" destination="atl-dG-pSQ" id="dIh-uC-Xne"/>
+                        <segue destination="eTW-uG-hai" kind="presentation" identifier="started" modalPresentationStyle="fullScreen" id="Kah-GP-0ji"/>
+                        <segue destination="ybq-5S-jDj" kind="presentation" identifier="home" modalPresentationStyle="fullScreen" id="iLW-sI-WLv"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="184" y="148"/>
+            <point key="canvasLocation" x="182.60869565217394" y="147.99107142857142"/>
         </scene>
         <!--userInfo-->
         <scene sceneID="Fe6-2Z-0dO">
@@ -106,6 +113,16 @@
             </objects>
             <point key="canvasLocation" x="1061" y="119"/>
         </scene>
+        <!--userKcalTracking-->
+        <scene sceneID="e48-VX-hfA">
+            <objects>
+                <viewControllerPlaceholder storyboardName="userKcalTracking" id="ybq-5S-jDj" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="MjY-He-sOD"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="TFU-QQ-iQc" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1060" y="321"/>
+        </scene>
         <!--Navigation Controller-->
         <scene sceneID="jmL-5u-48E">
             <objects>
@@ -115,7 +132,7 @@
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <connections>
-                        <segue destination="BYZ-38-t0r" kind="show" id="sqd-jc-MqE"/>
+                        <segue destination="BYZ-38-t0r" kind="show" identifier="mainScreen" id="sqd-jc-MqE"/>
                         <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="5F1-DR-cOO"/>
                     </connections>
                 </navigationController>
@@ -125,10 +142,12 @@
         </scene>
     </scenes>
     <resources>
-        <image name="icons8-filled-circle-100" width="50" height="50"/>
+        <image name="healthy_100" width="100" height="100"/>
         <image name="icons8-healthy-eating-100" width="100" height="100"/>
+        <image name="trackCalories_100" width="100" height="100"/>
+        <image name="waterCalories_100" width="100" height="100"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="5F1-DR-cOO"/>
+        <segue reference="sqd-jc-MqE"/>
     </inferredMetricsTieBreakers>
 </document>
