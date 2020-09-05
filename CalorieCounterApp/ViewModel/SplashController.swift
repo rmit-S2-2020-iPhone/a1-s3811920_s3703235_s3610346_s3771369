@@ -9,16 +9,18 @@ import UIKit
 
 class SplashController: UIViewController {
 
+    @IBOutlet weak var trackCImage: UIImageView!
+    @IBOutlet weak var trackWaterImg: UIImageView!
+    @IBOutlet weak var followMImg: UIImageView!
+    @IBOutlet weak var mainImage: UIImageView!
+    
+    
     @IBOutlet weak var getStartButton: orangeButton!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        //reading userDefaults
-
-       // if (name != "" && dob != "" && weight != "" && height != ""){
-            
         
-        // Do any additional setup after loading the view.
     }
     
     @IBAction func get_started_listener(_ sender: UIButton) {

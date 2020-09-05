@@ -10,7 +10,7 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--track kal-->
+        <!--Home-->
         <scene sceneID="tne-QT-ifu">
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="HomePageViewController" customModule="CalorieCounterApp" customModuleProvider="target" sceneMemberID="viewController">
@@ -258,7 +258,7 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="track kal" id="b6s-qC-o5J"/>
+                    <tabBarItem key="tabBarItem" title="Home" image="tabBarHome" landscapeImage="tabBarHome" id="b6s-qC-o5J"/>
                     <navigationItem key="navigationItem" id="s3I-WG-ARR"/>
                     <connections>
                         <outlet property="calorieLbl" destination="4T7-Lj-1oC" id="Z5S-s6-JMT"/>
@@ -273,7 +273,7 @@
             </objects>
             <point key="canvasLocation" x="5916" y="1195"/>
         </scene>
-        <!--add meal-->
+        <!--Add Meal-->
         <scene sceneID="ya2-BG-aAb">
             <objects>
                 <viewController id="IkV-1C-j73" sceneMemberID="viewController">
@@ -420,7 +420,7 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="EjO-QW-4Iv"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="add meal" id="GSA-TF-Emq"/>
+                    <tabBarItem key="tabBarItem" title="Add Meal" image="addFoodTab" id="GSA-TF-Emq"/>
                     <navigationItem key="navigationItem" id="x25-r4-mPr"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4bM-Vv-IVc" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -455,7 +455,7 @@
                             <outlet property="delegate" destination="ITh-RX-CMk" id="jQX-Rc-mUr"/>
                         </connections>
                     </tableView>
-                    <tabBarItem key="tabBarItem" title="Search" id="drT-qN-bcm"/>
+                    <tabBarItem key="tabBarItem" title="Search" image="searchTab" id="drT-qN-bcm"/>
                     <navigationItem key="navigationItem" id="eWe-TJ-cpH"/>
                     <connections>
                         <outlet property="searchBar" destination="eh3-c5-tR6" id="k2d-jJ-VJW"/>
@@ -845,6 +845,7 @@
         </scene>
     </scenes>
     <resources>
+        <image name="addFoodTab" width="30" height="30"/>
         <image name="icons8-dinner-100" width="100" height="100"/>
         <image name="icons8-healthy-eating-100" width="100" height="100"/>
         <image name="icons8-healthy-food-90" width="90" height="90"/>
@@ -853,10 +854,12 @@
         <image name="icons8-sandwich-with-fried-egg-100" width="100" height="100"/>
         <image name="icons8-sparkling-water-100" width="100" height="100"/>
         <image name="icons8-wrap-100" width="100" height="100"/>
+        <image name="searchTab" width="30" height="30"/>
+        <image name="tabBarHome" width="30" height="30"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="zwA-mI-s4f"/>
-        <segue reference="2tH-84-HhH"/>
+        <segue reference="dyL-tc-BhR"/>
+        <segue reference="oTY-Gs-4Bs"/>
     </inferredMetricsTieBreakers>
     <color key="tintColor" red="0.21176470589999999" green="0.23921568630000001" blue="0.27058823529999998" alpha="1" colorSpace="calibratedRGB"/>
 </document>
