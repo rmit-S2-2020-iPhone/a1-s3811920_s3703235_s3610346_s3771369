@@ -10,7 +10,7 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Add Water-->
+        <!--Item-->
         <scene sceneID="drw-us-RXO">
             <objects>
                 <viewController id="BQT-78-dut" customClass="TrackWaterViewController" customModule="CalorieCounterApp" customModuleProvider="target" sceneMemberID="viewController">
@@ -403,7 +403,7 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="xWn-QV-ifN"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Add Water" image="addWaterTab" id="XxL-v7-7Xx"/>
+                    <tabBarItem key="tabBarItem" title="Item" id="zFB-lq-8ny"/>
                     <navigationItem key="navigationItem" id="tWz-hn-Jho"/>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
                     <connections>
@@ -420,7 +420,6 @@
         </scene>
     </scenes>
     <resources>
-        <image name="addWaterTab" width="30" height="30"/>
         <image name="icons8-sparkling-water-150" width="150" height="150"/>
     </resources>
     <color key="tintColor" red="0.21176470589999999" green="0.23921568630000001" blue="0.27058823529999998" alpha="1" colorSpace="calibratedRGB"/>

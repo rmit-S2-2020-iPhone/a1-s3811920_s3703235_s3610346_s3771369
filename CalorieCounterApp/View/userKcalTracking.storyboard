@@ -859,8 +859,8 @@
         <image name="tabBarHome" width="30" height="30"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="dyL-tc-BhR"/>
-        <segue reference="oTY-Gs-4Bs"/>
+        <segue reference="zwA-mI-s4f"/>
+        <segue reference="57j-Rb-uK7"/>
     </inferredMetricsTieBreakers>
     <color key="tintColor" red="0.21176470589999999" green="0.23921568630000001" blue="0.27058823529999998" alpha="1" colorSpace="calibratedRGB"/>
 </document>
