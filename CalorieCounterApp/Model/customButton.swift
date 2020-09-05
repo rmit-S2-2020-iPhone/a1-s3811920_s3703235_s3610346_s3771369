@@ -8,9 +8,6 @@
 import Foundation
 import UIKit
 
-
-import UIKit
-
 class orangeButton: UIButton {
     
     override init(frame: CGRect) {
