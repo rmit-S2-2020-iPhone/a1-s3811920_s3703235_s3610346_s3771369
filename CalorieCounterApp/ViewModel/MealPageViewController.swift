@@ -36,6 +36,7 @@ class MealPageViewController: UIViewController {
           self.dismiss(animated: true)
          }
         }
+        
         alert(message: "Calories Added")
     }
     

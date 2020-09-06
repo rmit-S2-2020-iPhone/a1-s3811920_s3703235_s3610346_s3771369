@@ -3,7 +3,7 @@
 //  CalorieCounterApp
 //
 //  Created by Timal Pathirana on 27/8/20.
-//
+//E29E4D
 
 import UIKit
 import Foundation
@@ -12,6 +12,7 @@ import Foundation
 enum Colors {
    static let orangeColour = UIColor(red: 238/255, green: 154/255, blue: 57/255, alpha: 1.0)
     static let blueColour = UIColor(red: 78/255, green: 85/255, blue: 116/255, alpha: 1.0)
+    static let redColour = UIColor(red: 255/255, green: 44/255, blue: 85/255, alpha: 1.0)
     
 }
 

@@ -56,5 +56,33 @@ class BlueButton: UIButton {
         //  layer.borderWidth    = 1.0
         layer.borderColor    = UIColor.black.cgColor
     }
+    
 }
 
+class Redbutton: UIButton {
+    
+    override init(frame: CGRect) {
+        super.init(frame: frame)
+        setupButton()
+    }
+    
+    
+    required init?(coder aDecoder: NSCoder) {
+        super.init(coder: aDecoder)
+        setupButton()
+    }
+    
+    
+    func setupButton() {
+        // setShadow()
+        setTitleColor(.white, for: .normal)
+        
+        backgroundColor      = Colors.redColour
+        titleLabel?.font     = UIFont(name: "Helvetica", size: 18)
+        layer.cornerRadius   = 10
+        //  layer.borderWidth    = 1.0
+        layer.borderColor    = UIColor.black.cgColor
+    }
+    
+    
+}
