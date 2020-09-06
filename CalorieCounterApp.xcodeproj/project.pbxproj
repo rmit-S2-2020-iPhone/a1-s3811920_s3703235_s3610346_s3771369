@@ -16,6 +16,7 @@
 		038D375024F41948008C516B /* userKcalTracking.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 038D374F24F41948008C516B /* userKcalTracking.storyboard */; };
 		03D7044A24F687A300FEC0CD /* userWaterTracking.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 03D7044924F687A300FEC0CD /* userWaterTracking.storyboard */; };
 		861857772503D824007B6250 /* customLabels.swift in Sources */ = {isa = PBXBuildFile; fileRef = 861857762503D824007B6250 /* customLabels.swift */; };
+		866BFFF725050CD2008C0DD7 /* ContributionForm_Assignment1.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 866BFFF625050CD2008C0DD7 /* ContributionForm_Assignment1.pdf */; };
 		86961AAD250262C00038F964 /* customButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86961AAC250262C00038F964 /* customButton.swift */; };
 		86D1AE8E24F6ADB700D82990 /* personalData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86D1AE8D24F6ADB700D82990 /* personalData.swift */; };
 		86D1AE9424F6B07A00D82990 /* personalInfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86D1AE9324F6B07A00D82990 /* personalInfoViewController.swift */; };
@@ -60,6 +61,8 @@
 		038D374F24F41948008C516B /* userKcalTracking.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = userKcalTracking.storyboard; sourceTree = "<group>"; };
 		03D7044924F687A300FEC0CD /* userWaterTracking.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = userWaterTracking.storyboard; sourceTree = "<group>"; };
 		861857762503D824007B6250 /* customLabels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = customLabels.swift; sourceTree = "<group>"; };
+		866BFFF325050C6E008C0DD7 /* Assignment 1 - Project Report_final.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = "Assignment 1 - Project Report_final.pdf"; sourceTree = "<group>"; };
+		866BFFF625050CD2008C0DD7 /* ContributionForm_Assignment1.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; name = ContributionForm_Assignment1.pdf; path = ../../../../../Desktop/ContributionForm_Assignment1.pdf; sourceTree = "<group>"; };
 		86961AAC250262C00038F964 /* customButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = customButton.swift; sourceTree = "<group>"; };
 		86D1AE8D24F6ADB700D82990 /* personalData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = personalData.swift; sourceTree = "<group>"; };
 		86D1AE9324F6B07A00D82990 /* personalInfoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = personalInfoViewController.swift; sourceTree = "<group>"; };
@@ -121,6 +124,15 @@
 			name = "Recovered References";
 			sourceTree = "<group>";
 		};
+		866BFFF025050BCF008C0DD7 /* Documents */ = {
+			isa = PBXGroup;
+			children = (
+				866BFFF625050CD2008C0DD7 /* ContributionForm_Assignment1.pdf */,
+				866BFFF325050C6E008C0DD7 /* Assignment 1 - Project Report_final.pdf */,
+			);
+			path = Documents;
+			sourceTree = "<group>";
+		};
 		B372BEE224D2A46300F9957A = {
 			isa = PBXGroup;
 			children = (
@@ -145,6 +157,7 @@
 		B372BEED24D2A46300F9957A /* CalorieCounterApp */ = {
 			isa = PBXGroup;
 			children = (
+				866BFFF025050BCF008C0DD7 /* Documents */,
 				B389681B24FCEE7400A3F2BD /* Data */,
 				B3DCE0F324F379EC00ECEA14 /* Model */,
 				B3DCE0F524F37A2600ECEA14 /* ViewModel */,
@@ -331,6 +344,7 @@
 				03128D9324F40DCD000D7E9A /* Main.storyboard in Resources */,
 				032ACD6D24F3E1EF009607F1 /* userInfo.storyboard in Resources */,
 				B372BEF924D2A46B00F9957A /* Assets.xcassets in Resources */,
+				866BFFF725050CD2008C0DD7 /* ContributionForm_Assignment1.pdf in Resources */,
 				038D374E24F4110F008C516B /* LaunchScreen.storyboard in Resources */,
 				03D7044A24F687A300FEC0CD /* userWaterTracking.storyboard in Resources */,
 				038D375024F41948008C516B /* userKcalTracking.storyboard in Resources */,
