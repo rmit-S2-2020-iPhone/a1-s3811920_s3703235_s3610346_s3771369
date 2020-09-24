@@ -16,12 +16,9 @@
 		038D375024F41948008C516B /* userKcalTracking.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 038D374F24F41948008C516B /* userKcalTracking.storyboard */; };
 		03D7044A24F687A300FEC0CD /* userWaterTracking.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 03D7044924F687A300FEC0CD /* userWaterTracking.storyboard */; };
 		861857772503D824007B6250 /* customLabels.swift in Sources */ = {isa = PBXBuildFile; fileRef = 861857762503D824007B6250 /* customLabels.swift */; };
-		866BFFF725050CD2008C0DD7 /* ContributionForm_Assignment1.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 866BFFF625050CD2008C0DD7 /* ContributionForm_Assignment1.pdf */; };
 		86961AAD250262C00038F964 /* customButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86961AAC250262C00038F964 /* customButton.swift */; };
+		869A6F34251C566D00764D13 /* validation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 869A6F33251C566D00764D13 /* validation.swift */; };
 		86D1AE8E24F6ADB700D82990 /* personalData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86D1AE8D24F6ADB700D82990 /* personalData.swift */; };
-		86D1AE9424F6B07A00D82990 /* personalInfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86D1AE9324F6B07A00D82990 /* personalInfoViewController.swift */; };
-		86D1AE9624F6B08A00D82990 /* userGoalsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86D1AE9524F6B08A00D82990 /* userGoalsViewController.swift */; };
-		86D1AE9824F6B09B00D82990 /* activityLevelViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86D1AE9724F6B09B00D82990 /* activityLevelViewController.swift */; };
 		B32A091224FA3BEA006E83DE /* SearchResultViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B32A091124FA3BEA006E83DE /* SearchResultViewController.swift */; };
 		B32A091424FA3C05006E83DE /* SearchResultViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B32A091324FA3C05006E83DE /* SearchResultViewModel.swift */; };
 		B32A091624FA4FF6006E83DE /* MockData.swift in Sources */ = {isa = PBXBuildFile; fileRef = B32A091524FA4FF6006E83DE /* MockData.swift */; };
@@ -34,7 +31,6 @@
 		B3FD853C24FC790500073FC4 /* MealPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3FD853B24FC790500073FC4 /* MealPageViewController.swift */; };
 		BA81E0C524FBE2C900214665 /* Helpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA81E0C424FBE2C900214665 /* Helpers.swift */; };
 		BA81E0C724FBE67800214665 /* SplashController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA81E0C624FBE67800214665 /* SplashController.swift */; };
-		BA81E0C924FBE9F200214665 /* UserKcalTrackingController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA81E0C824FBE9F200214665 /* UserKcalTrackingController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -62,12 +58,9 @@
 		03D7044924F687A300FEC0CD /* userWaterTracking.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = userWaterTracking.storyboard; sourceTree = "<group>"; };
 		861857762503D824007B6250 /* customLabels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = customLabels.swift; sourceTree = "<group>"; };
 		866BFFF325050C6E008C0DD7 /* Assignment 1 - Project Report_final.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = "Assignment 1 - Project Report_final.pdf"; sourceTree = "<group>"; };
-		866BFFF625050CD2008C0DD7 /* ContributionForm_Assignment1.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; name = ContributionForm_Assignment1.pdf; path = ../../../../../Desktop/ContributionForm_Assignment1.pdf; sourceTree = "<group>"; };
 		86961AAC250262C00038F964 /* customButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = customButton.swift; sourceTree = "<group>"; };
+		869A6F33251C566D00764D13 /* validation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = validation.swift; sourceTree = "<group>"; };
 		86D1AE8D24F6ADB700D82990 /* personalData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = personalData.swift; sourceTree = "<group>"; };
-		86D1AE9324F6B07A00D82990 /* personalInfoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = personalInfoViewController.swift; sourceTree = "<group>"; };
-		86D1AE9524F6B08A00D82990 /* userGoalsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = userGoalsViewController.swift; sourceTree = "<group>"; };
-		86D1AE9724F6B09B00D82990 /* activityLevelViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = activityLevelViewController.swift; sourceTree = "<group>"; };
 		B32A091124FA3BEA006E83DE /* SearchResultViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchResultViewController.swift; sourceTree = "<group>"; };
 		B32A091324FA3C05006E83DE /* SearchResultViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchResultViewModel.swift; sourceTree = "<group>"; };
 		B32A091524FA4FF6006E83DE /* MockData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockData.swift; sourceTree = "<group>"; };
@@ -89,7 +82,6 @@
 		B3FD853B24FC790500073FC4 /* MealPageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MealPageViewController.swift; sourceTree = "<group>"; };
 		BA81E0C424FBE2C900214665 /* Helpers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Helpers.swift; sourceTree = "<group>"; };
 		BA81E0C624FBE67800214665 /* SplashController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashController.swift; sourceTree = "<group>"; };
-		BA81E0C824FBE9F200214665 /* UserKcalTrackingController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserKcalTrackingController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -127,7 +119,6 @@
 		866BFFF025050BCF008C0DD7 /* Documents */ = {
 			isa = PBXGroup;
 			children = (
-				866BFFF625050CD2008C0DD7 /* ContributionForm_Assignment1.pdf */,
 				866BFFF325050C6E008C0DD7 /* Assignment 1 - Project Report_final.pdf */,
 			);
 			path = Documents;
@@ -205,6 +196,7 @@
 				86961AAC250262C00038F964 /* customButton.swift */,
 				861857762503D824007B6250 /* customLabels.swift */,
 				B32A091724FA51AB006E83DE /* Meal.swift */,
+				869A6F33251C566D00764D13 /* validation.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -213,11 +205,7 @@
 			isa = PBXGroup;
 			children = (
 				B372BEF024D2A46300F9957A /* ViewController.swift */,
-				86D1AE9324F6B07A00D82990 /* personalInfoViewController.swift */,
-				86D1AE9524F6B08A00D82990 /* userGoalsViewController.swift */,
-				86D1AE9724F6B09B00D82990 /* activityLevelViewController.swift */,
 				BA81E0C624FBE67800214665 /* SplashController.swift */,
-				BA81E0C824FBE9F200214665 /* UserKcalTrackingController.swift */,
 				B32A091124FA3BEA006E83DE /* SearchResultViewController.swift */,
 				B32A091324FA3C05006E83DE /* SearchResultViewModel.swift */,
 				B3FD853B24FC790500073FC4 /* MealPageViewController.swift */,
@@ -344,7 +332,6 @@
 				03128D9324F40DCD000D7E9A /* Main.storyboard in Resources */,
 				032ACD6D24F3E1EF009607F1 /* userInfo.storyboard in Resources */,
 				B372BEF924D2A46B00F9957A /* Assets.xcassets in Resources */,
-				866BFFF725050CD2008C0DD7 /* ContributionForm_Assignment1.pdf in Resources */,
 				038D374E24F4110F008C516B /* LaunchScreen.storyboard in Resources */,
 				03D7044A24F687A300FEC0CD /* userWaterTracking.storyboard in Resources */,
 				038D375024F41948008C516B /* userKcalTracking.storyboard in Resources */,
@@ -372,22 +359,19 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BA81E0C924FBE9F200214665 /* UserKcalTrackingController.swift in Sources */,
 				032ACD6E24F4052F009607F1 /* ViewController.swift in Sources */,
 				032ACD6F24F4052F009607F1 /* AppDelegate.swift in Sources */,
 				B3FD853C24FC790500073FC4 /* MealPageViewController.swift in Sources */,
 				032ACD7024F4052F009607F1 /* CalorieCounterApp.xcdatamodeld in Sources */,
 				BA81E0C524FBE2C900214665 /* Helpers.swift in Sources */,
 				86D1AE8E24F6ADB700D82990 /* personalData.swift in Sources */,
+				869A6F34251C566D00764D13 /* validation.swift in Sources */,
 				B32A091824FA51AB006E83DE /* Meal.swift in Sources */,
-				86D1AE9624F6B08A00D82990 /* userGoalsViewController.swift in Sources */,
 				B3CD87CF24FCD70300CA151A /* TrackWaterViewController.swift in Sources */,
 				B3CD87D124FCE19900CA151A /* HomePageViewController.swift in Sources */,
-				86D1AE9424F6B07A00D82990 /* personalInfoViewController.swift in Sources */,
 				86961AAD250262C00038F964 /* customButton.swift in Sources */,
 				B32A091224FA3BEA006E83DE /* SearchResultViewController.swift in Sources */,
 				B32A091424FA3C05006E83DE /* SearchResultViewModel.swift in Sources */,
-				86D1AE9824F6B09B00D82990 /* activityLevelViewController.swift in Sources */,
 				861857772503D824007B6250 /* customLabels.swift in Sources */,
 				BA81E0C724FBE67800214665 /* SplashController.swift in Sources */,
 				B32A091624FA4FF6006E83DE /* MockData.swift in Sources */,

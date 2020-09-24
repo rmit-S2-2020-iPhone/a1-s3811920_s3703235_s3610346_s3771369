@@ -414,11 +414,11 @@
                             <textInputTraits key="textInputTraits"/>
                         </searchBar>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="Cell" id="1eJ-fn-I1u">
-                                <rect key="frame" x="0.0" y="72" width="375" height="44"/>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="Cell" rowHeight="75" id="1eJ-fn-I1u">
+                                <rect key="frame" x="0.0" y="72" width="375" height="75"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="1eJ-fn-I1u" id="c1I-o0-3mz">
-                                    <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="74.5"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                 </tableViewCellContentView>
                             </tableViewCell>
@@ -437,7 +437,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="FNm-wG-yzz" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="7136" y="828"/>
+            <point key="canvasLocation" x="7135.1999999999998" y="827.13643178410803"/>
         </scene>
         <!--Item-->
         <scene sceneID="Wlv-ea-ndy">
@@ -500,20 +500,20 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="viR-p3-X3X">
-                                <rect key="frame" x="0.0" y="64" width="406" height="605"/>
+                                <rect key="frame" x="0.0" y="64" width="375" height="603"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="gGd-an-hNJ">
-                                        <rect key="frame" x="0.0" y="0.0" width="406" height="605"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="375" height="603"/>
                                         <subviews>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="kYy-Fl-ESg">
-                                                <rect key="frame" x="0.0" y="0.0" width="406" height="150"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="375" height="150"/>
                                                 <subviews>
                                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="icons8-healthy-food-90" translatesAutoresizingMaskIntoConstraints="NO" id="j5P-gV-DcH" userLabel="logo">
                                                         <rect key="frame" x="60" y="30" width="90" height="90"/>
                                                         <color key="tintColor" red="0.98431372549999996" green="0.69411764710000001" blue="0.23529411759999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                     </imageView>
                                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="wFn-cB-1jB">
-                                                        <rect key="frame" x="213" y="40" width="40" height="100"/>
+                                                        <rect key="frame" x="182" y="40" width="40" height="100"/>
                                                         <subviews>
                                                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="icons8-meal-150" translatesAutoresizingMaskIntoConstraints="NO" id="T4Z-Da-hbJ" userLabel="dine">
                                                                 <rect key="frame" x="0.0" y="0.0" width="40" height="40"/>
@@ -530,7 +530,7 @@
                                                         </subviews>
                                                     </stackView>
                                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="8Di-dn-FH3">
-                                                        <rect key="frame" x="282" y="40" width="110" height="100"/>
+                                                        <rect key="frame" x="251" y="40" width="110" height="100"/>
                                                         <subviews>
                                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YeW-4J-Vfr">
                                                                 <rect key="frame" x="0.0" y="0.0" width="110" height="40"/>
@@ -559,25 +559,25 @@
                                                 </constraints>
                                             </view>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="JDF-ZY-6cP">
-                                                <rect key="frame" x="8" y="150" width="390" height="150"/>
+                                                <rect key="frame" x="8" y="150" width="359" height="150"/>
                                                 <subviews>
                                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" alignment="top" spacing="2" translatesAutoresizingMaskIntoConstraints="NO" id="4jS-ZU-8C3">
-                                                        <rect key="frame" x="0.0" y="0.0" width="390" height="150"/>
+                                                        <rect key="frame" x="0.0" y="0.0" width="359" height="150"/>
                                                         <subviews>
                                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Chicken Quesadilla" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Qyf-6L-hxs" customClass="TitleLable" customModule="CalorieCounterApp" customModuleProvider="target">
-                                                                <rect key="frame" x="0.0" y="0.0" width="390" height="74"/>
+                                                                <rect key="frame" x="0.0" y="0.0" width="359" height="74"/>
                                                                 <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="24"/>
                                                                 <color key="textColor" red="0.21176470589999999" green="0.23921568630000001" blue="0.27058823529999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                                 <nil key="highlightedColor"/>
                                                             </label>
                                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Cxn-4h-f3Q">
-                                                                <rect key="frame" x="0.0" y="76" width="390" height="74"/>
+                                                                <rect key="frame" x="0.0" y="76" width="359" height="74"/>
                                                                 <subviews>
                                                                     <stackView opaque="NO" contentMode="scaleToFill" alignment="center" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="BRO-sg-csI">
-                                                                        <rect key="frame" x="0.0" y="0.0" width="390" height="74"/>
+                                                                        <rect key="frame" x="0.0" y="0.0" width="359" height="74"/>
                                                                         <subviews>
                                                                             <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="fFq-tx-q2g">
-                                                                                <rect key="frame" x="0.0" y="12" width="390" height="50"/>
+                                                                                <rect key="frame" x="0.0" y="12" width="359" height="50"/>
                                                                             </stackView>
                                                                         </subviews>
                                                                     </stackView>
@@ -612,16 +612,16 @@
                                                 </constraints>
                                             </view>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="A1w-h1-DHj">
-                                                <rect key="frame" x="0.0" y="300" width="406" height="305"/>
+                                                <rect key="frame" x="0.0" y="300" width="375" height="303"/>
                                                 <subviews>
                                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="PSx-3O-FgD">
-                                                        <rect key="frame" x="8" y="-50" width="398" height="375"/>
+                                                        <rect key="frame" x="8" y="-50" width="367" height="373"/>
                                                         <subviews>
                                                             <stackView opaque="NO" contentMode="scaleToFill" spacing="38" translatesAutoresizingMaskIntoConstraints="NO" id="mAI-4R-UNL">
-                                                                <rect key="frame" x="0.0" y="0.0" width="398" height="62.5"/>
+                                                                <rect key="frame" x="0.0" y="0.0" width="367" height="62"/>
                                                                 <subviews>
                                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Carbohydrate" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6Rx-7B-qbI" customClass="TitleLable" customModule="CalorieCounterApp" customModuleProvider="target">
-                                                                        <rect key="frame" x="0.0" y="0.0" width="268" height="62.5"/>
+                                                                        <rect key="frame" x="0.0" y="0.0" width="237" height="62"/>
                                                                         <constraints>
                                                                             <constraint firstAttribute="height" constant="20" id="0EV-BQ-ett"/>
                                                                             <constraint firstAttribute="width" constant="268" id="Cyy-qv-BmT"/>
@@ -631,7 +631,7 @@
                                                                         <nil key="highlightedColor"/>
                                                                     </label>
                                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="s1e-Sh-9K4" customClass="TextLable" customModule="CalorieCounterApp" customModuleProvider="target">
-                                                                        <rect key="frame" x="306" y="0.0" width="92" height="62.5"/>
+                                                                        <rect key="frame" x="275" y="0.0" width="92" height="62"/>
                                                                         <constraints>
                                                                             <constraint firstAttribute="height" constant="35" id="P41-Zz-lUX"/>
                                                                             <constraint firstAttribute="width" constant="92" id="qB8-p0-GYY"/>
@@ -643,10 +643,10 @@
                                                                 </subviews>
                                                             </stackView>
                                                             <stackView opaque="NO" contentMode="scaleToFill" spacing="38" translatesAutoresizingMaskIntoConstraints="NO" id="CcW-i3-WMF">
-                                                                <rect key="frame" x="0.0" y="62.5" width="398" height="62.5"/>
+                                                                <rect key="frame" x="0.0" y="62" width="367" height="62.5"/>
                                                                 <subviews>
                                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Protein" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gIb-Hm-o2v" customClass="TitleLable" customModule="CalorieCounterApp" customModuleProvider="target">
-                                                                        <rect key="frame" x="0.0" y="0.0" width="268" height="62.5"/>
+                                                                        <rect key="frame" x="0.0" y="0.0" width="237" height="62.5"/>
                                                                         <constraints>
                                                                             <constraint firstAttribute="width" constant="268" id="B7X-qw-0dx"/>
                                                                             <constraint firstAttribute="height" constant="35" id="M7H-BT-zgz"/>
@@ -656,7 +656,7 @@
                                                                         <nil key="highlightedColor"/>
                                                                     </label>
                                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mjU-3z-2Fq" customClass="TextLable" customModule="CalorieCounterApp" customModuleProvider="target">
-                                                                        <rect key="frame" x="306" y="0.0" width="92" height="62.5"/>
+                                                                        <rect key="frame" x="275" y="0.0" width="92" height="62.5"/>
                                                                         <constraints>
                                                                             <constraint firstAttribute="height" constant="35" id="RNF-6v-wPz"/>
                                                                             <constraint firstAttribute="width" constant="92" id="ibb-qh-dXE"/>
@@ -668,10 +668,10 @@
                                                                 </subviews>
                                                             </stackView>
                                                             <stackView opaque="NO" contentMode="scaleToFill" spacing="38" translatesAutoresizingMaskIntoConstraints="NO" id="y6N-37-CKf">
-                                                                <rect key="frame" x="0.0" y="125" width="398" height="62.5"/>
+                                                                <rect key="frame" x="0.0" y="124.5" width="367" height="62"/>
                                                                 <subviews>
                                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Fat" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4Z3-Dg-CQu" customClass="TitleLable" customModule="CalorieCounterApp" customModuleProvider="target">
-                                                                        <rect key="frame" x="0.0" y="0.0" width="268" height="62.5"/>
+                                                                        <rect key="frame" x="0.0" y="0.0" width="237" height="62"/>
                                                                         <constraints>
                                                                             <constraint firstAttribute="width" constant="268" id="BG5-Dz-ntc"/>
                                                                             <constraint firstAttribute="height" constant="35" id="tsM-qK-J4a"/>
@@ -681,7 +681,7 @@
                                                                         <nil key="highlightedColor"/>
                                                                     </label>
                                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DFJ-Z4-jMw" customClass="TextLable" customModule="CalorieCounterApp" customModuleProvider="target">
-                                                                        <rect key="frame" x="306" y="0.0" width="92" height="62.5"/>
+                                                                        <rect key="frame" x="275" y="0.0" width="92" height="62"/>
                                                                         <constraints>
                                                                             <constraint firstAttribute="height" constant="35" id="CuW-4q-rJh"/>
                                                                             <constraint firstAttribute="width" constant="92" id="mmx-y8-EXL"/>
@@ -693,10 +693,10 @@
                                                                 </subviews>
                                                             </stackView>
                                                             <stackView opaque="NO" contentMode="scaleToFill" spacing="38" translatesAutoresizingMaskIntoConstraints="NO" id="DWa-1j-q76">
-                                                                <rect key="frame" x="0.0" y="187.5" width="398" height="62.5"/>
+                                                                <rect key="frame" x="0.0" y="186.5" width="367" height="62"/>
                                                                 <subviews>
                                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Vitamin A" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EAe-yh-icn" customClass="TitleLable" customModule="CalorieCounterApp" customModuleProvider="target">
-                                                                        <rect key="frame" x="0.0" y="0.0" width="268" height="62.5"/>
+                                                                        <rect key="frame" x="0.0" y="0.0" width="237" height="62"/>
                                                                         <constraints>
                                                                             <constraint firstAttribute="width" constant="268" id="HbS-Ia-s68"/>
                                                                             <constraint firstAttribute="height" constant="35" id="Qcq-it-82w"/>
@@ -706,7 +706,7 @@
                                                                         <nil key="highlightedColor"/>
                                                                     </label>
                                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PAG-RP-9wM" customClass="TextLable" customModule="CalorieCounterApp" customModuleProvider="target">
-                                                                        <rect key="frame" x="306" y="0.0" width="92" height="62.5"/>
+                                                                        <rect key="frame" x="275" y="0.0" width="92" height="62"/>
                                                                         <constraints>
                                                                             <constraint firstAttribute="width" constant="92" id="cb0-DY-EfF"/>
                                                                             <constraint firstAttribute="height" constant="35" id="gqt-7q-L4J"/>
@@ -718,10 +718,10 @@
                                                                 </subviews>
                                                             </stackView>
                                                             <stackView opaque="NO" contentMode="scaleToFill" spacing="38" translatesAutoresizingMaskIntoConstraints="NO" id="GOa-se-4lK">
-                                                                <rect key="frame" x="0.0" y="250" width="398" height="62.5"/>
+                                                                <rect key="frame" x="0.0" y="248.5" width="367" height="62.5"/>
                                                                 <subviews>
                                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Vitamin C" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="10G-xp-DZf" customClass="TitleLable" customModule="CalorieCounterApp" customModuleProvider="target">
-                                                                        <rect key="frame" x="0.0" y="0.0" width="268" height="62.5"/>
+                                                                        <rect key="frame" x="0.0" y="0.0" width="237" height="62.5"/>
                                                                         <constraints>
                                                                             <constraint firstAttribute="width" constant="268" id="6C6-Th-H6W"/>
                                                                             <constraint firstAttribute="height" constant="35" id="C88-NZ-AJ2"/>
@@ -731,7 +731,7 @@
                                                                         <nil key="highlightedColor"/>
                                                                     </label>
                                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cER-uo-jQs" customClass="TextLable" customModule="CalorieCounterApp" customModuleProvider="target">
-                                                                        <rect key="frame" x="306" y="0.0" width="92" height="62.5"/>
+                                                                        <rect key="frame" x="275" y="0.0" width="92" height="62.5"/>
                                                                         <constraints>
                                                                             <constraint firstAttribute="height" constant="35" id="RyM-sc-d9Y"/>
                                                                             <constraint firstAttribute="width" constant="92" id="rbA-Sm-vNq"/>
@@ -743,10 +743,10 @@
                                                                 </subviews>
                                                             </stackView>
                                                             <stackView opaque="NO" contentMode="scaleToFill" spacing="38" translatesAutoresizingMaskIntoConstraints="NO" id="eoe-jQ-cTL">
-                                                                <rect key="frame" x="0.0" y="312.5" width="398" height="62.5"/>
+                                                                <rect key="frame" x="0.0" y="311" width="367" height="62"/>
                                                                 <subviews>
                                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Irons" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Q4K-Np-2Cn" customClass="TitleLable" customModule="CalorieCounterApp" customModuleProvider="target">
-                                                                        <rect key="frame" x="0.0" y="0.0" width="268" height="62.5"/>
+                                                                        <rect key="frame" x="0.0" y="0.0" width="237" height="62"/>
                                                                         <constraints>
                                                                             <constraint firstAttribute="width" constant="268" id="OAW-L5-ySf"/>
                                                                             <constraint firstAttribute="height" constant="35" id="rGI-3Y-0cu"/>
@@ -756,7 +756,7 @@
                                                                         <nil key="highlightedColor"/>
                                                                     </label>
                                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Hys-it-ItA" customClass="TextLable" customModule="CalorieCounterApp" customModuleProvider="target">
-                                                                        <rect key="frame" x="306" y="0.0" width="92" height="62.5"/>
+                                                                        <rect key="frame" x="275" y="0.0" width="92" height="62"/>
                                                                         <constraints>
                                                                             <constraint firstAttribute="height" constant="35" id="V6V-Cm-jRo"/>
                                                                             <constraint firstAttribute="width" constant="92" id="gEB-l2-Fa1"/>

@@ -9,9 +9,10 @@ class ViewController: UIViewController {
     
     //inputfields
     @IBOutlet var name_txt: UITextField!
-    @IBOutlet var dob_txt: UITextField!
+//    @IBOutlet var dob_txt: UITextField!
     @IBOutlet var current_weight: UITextField!
     @IBOutlet var current_height: UITextField!
+    @IBOutlet weak var datePicker: UIDatePicker!
     
     //info screen buttons
     @IBOutlet var male_btn: UIButton!
@@ -35,6 +36,15 @@ class ViewController: UIViewController {
         
     }
     
+    // Configure the date Picker
+    // Min age is set to 16
+    let min_age: Date = Calendar.current.date(byAdding: .year, value: -16, to: Date())!;
+    
+    // Max age is set to 100
+    let max_age: Date = Calendar.current.date(byAdding: .year, value: -100, to: Date())!;
+    
+    
+    
     @IBAction func male_btn_listner(_ sender: UIButton) {
         let gender = Helpers.readPreference(key: "gender", defualt: "")
         if(gender == "" || gender == "female"){
@@ -55,18 +65,44 @@ class ViewController: UIViewController {
     }
     
     
+//
+    
+//
+//    func validate() {
+//        let isValidateName = self.validation.validateName(name: name_txt.text ?? "Name")
+//        if (isValidateName == false){
+//            print("Incorrect Name")
+//            return
+//        }
+//    }
+    
+    //Setting up the validation process
+    
+    
+    var validation = Validation()
+    
+    
+    func Inputvalidation() {
+        let isValidateName = self.validation.validateName(name: name_txt.text ?? "")
+        if (isValidateName == false) {
+            Helpers.showAlertView(vc: self, msg: "Name must contain letters")
+            return
+        }
+    }
+    
+//
+    
     func setUserInfo(){
         
-        //Validation Check
         if(name_txt.text == ""){
             Helpers.showAlertView(vc: self, msg: "Please enter your name.")
             return
         }
         
-        if(dob_txt.text == "" ){
-            Helpers.showAlertView(vc: self, msg: "Please enter your date of birth.")
-            return
-        }
+//        if(dob_txt.text == "" ){
+//            Helpers.showAlertView(vc: self, msg: "Please enter your date of birth.")
+//            return
+//        }
         if(current_weight.text == ""){
             Helpers.showAlertView(vc: self, msg: "Please enter your current weight.")
             return
@@ -87,13 +123,9 @@ class ViewController: UIViewController {
 //            Helpers.showAlertView(vc: self, msg: "Please choose your goal.")
 //        }
         
-        
-        
-        
-        
         //Sets userDefualts
         Helpers.writePreference(key: "name", data: name_txt.text!)
-        Helpers.writePreference(key: "dob", data: dob_txt.text!)
+        //Helpers.writePreference(key: "dob", data: dob_txt.text!)
         Helpers.writePreference(key: "weight", data: current_weight.text!)
         Helpers.writePreference(key: "height", data: current_height.text!)
         
@@ -175,7 +207,10 @@ class ViewController: UIViewController {
     
     //button listener
     @IBAction func next_btn_listener(_ sender: UIButton) {
+        Inputvalidation()
         setUserInfo()
+        
+        
     }
     
     @IBAction func goal_next_btn_listener(_ sender: UIButton) {
