@@ -26,12 +26,11 @@ class SplashController: UIViewController {
     @IBAction func get_started_listener(_ sender: UIButton) {
         //reading userDefaults
         let name = Helpers.readPreference(key: "name", defualt: "")
-        let dob = Helpers.readPreference(key: "dob", defualt: "")
         let weight = Helpers.readPreference(key: "weight", defualt: "")
         let height = Helpers.readPreference(key: "height", defualt: "")
         
         //conditional sugue
-        if(name != "" && dob != "" && weight != "" && height != ""){
+        if(name != "" && weight != "" && height != ""){
             performSegue(withIdentifier: "home", sender: self)
         }else{
             performSegue(withIdentifier: "started", sender: self)
@@ -42,7 +41,6 @@ class SplashController: UIViewController {
        // Helpers.writePreference(key: "activity", data: "")
       // Helpers.writePreference(key: "goal", data: "")
         Helpers.writePreference(key: "name", data: "")
-        Helpers.writePreference(key: "dob", data: "")
         Helpers.writePreference(key: "weight", data: "")
         Helpers.writePreference(key: "height", data: "")
         

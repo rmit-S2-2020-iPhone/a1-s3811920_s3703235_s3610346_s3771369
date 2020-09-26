@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="75J-Zb-MSJ">
-    <device id="retina6_1" orientation="portrait">
+    <device id="retina6_5" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
@@ -35,58 +35,64 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="808"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="equalSpacing" alignment="center" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="rNJ-Tx-bxF">
-                                <rect key="frame" x="0.0" y="75" width="414" height="479"/>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="equalSpacing" alignment="center" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="rNJ-Tx-bxF">
+                                <rect key="frame" x="0.0" y="75" width="414" height="549"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Name" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MP7-KC-jXi" customClass="TitleLable" customModule="CalorieCounterApp" customModuleProvider="target">
-                                        <rect key="frame" x="10" y="0.0" width="394" height="32.5"/>
+                                        <rect key="frame" x="10" y="0.0" width="394" height="32.666666666666664"/>
                                         <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
                                         <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="25"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="John Smith" textAlignment="center" adjustsFontForContentSizeCategory="YES" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="P7d-NL-NVg" userLabel="nameField">
-                                        <rect key="frame" x="10" y="55" width="394" height="30"/>
+                                        <rect key="frame" x="10" y="65.333333333333343" width="394" height="30"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="16"/>
                                         <textInputTraits key="textInputTraits" keyboardType="numbersAndPunctuation" returnKeyType="next" textContentType="name"/>
                                     </textField>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Date Of Birth" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="122.3" translatesAutoresizingMaskIntoConstraints="NO" id="6Zh-6B-BdZ" customClass="TitleLable" customModule="CalorieCounterApp" customModuleProvider="target">
-                                        <rect key="frame" x="10" y="108" width="394" height="32.5"/>
+                                        <rect key="frame" x="10" y="128" width="394" height="32.666666666666657"/>
                                         <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
                                         <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="25"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <datePicker contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="date" minuteInterval="1" translatesAutoresizingMaskIntoConstraints="NO" id="0Cf-eI-Br1">
-                                        <rect key="frame" x="47" y="163" width="320" height="100"/>
+                                    <datePicker contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="date" minuteInterval="1" useCurrentDate="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0Cf-eI-Br1">
+                                        <rect key="frame" x="47" y="193.33333333333331" width="320" height="100"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="100" id="Rdx-f5-9XL"/>
                                         </constraints>
-                                        <date key="date" timeIntervalSinceReferenceDate="622615151.45391405">
-                                            <!--2020-09-24 04:39:11 +0000-->
+                                        <date key="date" timeIntervalSinceReferenceDate="-31609248.546085954">
+                                            <!--2000-01-01 03:39:11 +0000-->
+                                        </date>
+                                        <date key="minimumDate" timeIntervalSinceReferenceDate="-978267600">
+                                            <!--1970-01-01 11:00:00 +0000-->
+                                        </date>
+                                        <date key="maximumDate" timeIntervalSinceReferenceDate="-31582800">
+                                            <!--2000-01-01 11:00:00 +0000-->
                                         </date>
                                     </datePicker>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Current Weight" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jfU-do-uhq" userLabel="Weight" customClass="TitleLable" customModule="CalorieCounterApp" customModuleProvider="target">
-                                        <rect key="frame" x="10" y="286" width="394" height="32.5"/>
+                                        <rect key="frame" x="10" y="325.66666666666669" width="394" height="32.666666666666686"/>
                                         <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
                                         <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="25"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="80 kg" textAlignment="center" adjustsFontForContentSizeCategory="YES" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="nJV-ED-xHk" userLabel="weightField">
-                                        <rect key="frame" x="10" y="341" width="394" height="30"/>
+                                        <rect key="frame" x="10" y="391" width="394" height="30"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="16"/>
                                         <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
                                     </textField>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Current Height" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Pr2-XA-swT" userLabel="Height" customClass="TitleLable" customModule="CalorieCounterApp" customModuleProvider="target">
-                                        <rect key="frame" x="10" y="394" width="394" height="32.5"/>
+                                        <rect key="frame" x="10" y="453.66666666666663" width="394" height="32.666666666666686"/>
                                         <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
                                         <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="25"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="158 cm" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="P49-Qd-Oy2" userLabel="heightField">
-                                        <rect key="frame" x="10" y="449" width="394" height="30"/>
+                                        <rect key="frame" x="10" y="519" width="394" height="30"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="16"/>
                                         <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
                                     </textField>
@@ -109,10 +115,10 @@
                                 </constraints>
                             </stackView>
                             <stackView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="258" distribution="fillEqually" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="2Oo-CB-dT3">
-                                <rect key="frame" x="20" y="604" width="374" height="60"/>
+                                <rect key="frame" x="10" y="674" width="394" height="40"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="f3k-zZ-rRG" customClass="orangeButton" customModule="CalorieCounterApp" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="0.0" width="177" height="60"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="187" height="40"/>
                                         <color key="backgroundColor" red="0.93333333333333335" green="0.60392156862745094" blue="0.22352941176470587" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <accessibility key="accessibilityConfiguration">
                                             <accessibilityTraits key="traits" button="YES" selected="YES"/>
@@ -126,7 +132,7 @@
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pAD-aF-cDL" customClass="orangeButton" customModule="CalorieCounterApp" customModuleProvider="target">
-                                        <rect key="frame" x="197" y="0.0" width="177" height="60"/>
+                                        <rect key="frame" x="207" y="0.0" width="187" height="40"/>
                                         <color key="backgroundColor" red="0.93289974620000005" green="0.60551593029999995" blue="0.22184178190000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <accessibility key="accessibilityConfiguration">
                                             <accessibilityTraits key="traits" button="YES" selected="YES"/>
@@ -144,7 +150,7 @@
                                     </button>
                                 </subviews>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="60" id="Sqe-ZG-q9g"/>
+                                    <constraint firstAttribute="height" constant="40" id="Sqe-ZG-q9g"/>
                                 </constraints>
                             </stackView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="First, we need some information" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="M4o-Cl-hFt" customClass="TitleLable" customModule="CalorieCounterApp" customModuleProvider="target">
@@ -154,11 +160,11 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZAt-Sb-af6" customClass="BlueButton" customModule="CalorieCounterApp" customModuleProvider="target">
-                                <rect key="frame" x="10" y="694" width="394" height="60"/>
+                                <rect key="frame" x="10" y="724" width="394" height="40"/>
                                 <color key="backgroundColor" red="0.30588235294117649" green="0.33333333333333331" blue="0.45490196078431372" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="60" id="2sd-tr-RZP"/>
-                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="60" id="jsE-Yw-hvZ"/>
+                                    <constraint firstAttribute="height" constant="40" id="2sd-tr-RZP"/>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="40" id="jsE-Yw-hvZ"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                 <state key="normal" title="Next">
@@ -173,17 +179,17 @@
                         <constraints>
                             <constraint firstItem="GUU-9B-JFS" firstAttribute="trailing" secondItem="M4o-Cl-hFt" secondAttribute="trailing" constant="10" id="C3t-6B-YiX"/>
                             <constraint firstItem="M4o-Cl-hFt" firstAttribute="top" secondItem="GUU-9B-JFS" secondAttribute="top" constant="30" id="NvA-DW-R0c"/>
-                            <constraint firstItem="ZAt-Sb-af6" firstAttribute="top" secondItem="2Oo-CB-dT3" secondAttribute="bottom" constant="30" id="Tan-eY-dfg"/>
+                            <constraint firstItem="ZAt-Sb-af6" firstAttribute="top" secondItem="2Oo-CB-dT3" secondAttribute="bottom" constant="10" id="Tan-eY-dfg"/>
                             <constraint firstItem="M4o-Cl-hFt" firstAttribute="leading" secondItem="GUU-9B-JFS" secondAttribute="leading" constant="10" id="Xy3-k0-EvT"/>
                             <constraint firstItem="ZAt-Sb-af6" firstAttribute="leading" secondItem="GUU-9B-JFS" secondAttribute="leading" constant="10" id="bo9-a0-0Qg"/>
                             <constraint firstItem="GUU-9B-JFS" firstAttribute="trailing" secondItem="rNJ-Tx-bxF" secondAttribute="trailing" id="dza-M0-rjH"/>
                             <constraint firstItem="2Oo-CB-dT3" firstAttribute="top" secondItem="rNJ-Tx-bxF" secondAttribute="bottom" constant="50" id="iPr-Xg-oqg"/>
-                            <constraint firstItem="GUU-9B-JFS" firstAttribute="trailing" secondItem="2Oo-CB-dT3" secondAttribute="trailing" constant="20" id="nuF-KF-pbU"/>
-                            <constraint firstItem="2Oo-CB-dT3" firstAttribute="leading" secondItem="GUU-9B-JFS" secondAttribute="leading" constant="20" id="ocl-uM-QUx"/>
+                            <constraint firstItem="GUU-9B-JFS" firstAttribute="trailing" secondItem="2Oo-CB-dT3" secondAttribute="trailing" constant="10" id="nuF-KF-pbU"/>
+                            <constraint firstItem="2Oo-CB-dT3" firstAttribute="leading" secondItem="GUU-9B-JFS" secondAttribute="leading" constant="10" id="ocl-uM-QUx"/>
                             <constraint firstItem="GUU-9B-JFS" firstAttribute="trailing" secondItem="ZAt-Sb-af6" secondAttribute="trailing" constant="10" id="pgP-xJ-sqi"/>
                             <constraint firstItem="rNJ-Tx-bxF" firstAttribute="leading" secondItem="ZfS-cB-cxP" secondAttribute="leading" id="pqW-gA-lz6"/>
                             <constraint firstItem="rNJ-Tx-bxF" firstAttribute="top" secondItem="M4o-Cl-hFt" secondAttribute="bottom" constant="24" id="uU8-la-1rD"/>
-                            <constraint firstItem="GUU-9B-JFS" firstAttribute="bottom" secondItem="ZAt-Sb-af6" secondAttribute="bottom" constant="20" id="vAT-vz-2HB"/>
+                            <constraint firstItem="GUU-9B-JFS" firstAttribute="bottom" secondItem="ZAt-Sb-af6" secondAttribute="bottom" constant="10" id="vAT-vz-2HB"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="GUU-9B-JFS"/>
                     </view>
@@ -328,13 +334,13 @@
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="How active are you?" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="itf-So-7wb" customClass="TitleLable" customModule="CalorieCounterApp" customModuleProvider="target">
-                                <rect key="frame" x="10" y="20" width="394" height="29"/>
+                                <rect key="frame" x="10" y="20" width="394" height="28.666666666666671"/>
                                 <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="22"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="OlO-GK-ypG">
-                                <rect key="frame" x="20" y="149" width="374" height="288"/>
+                                <rect key="frame" x="20" y="148.66666666666663" width="374" height="288"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="q93-Kt-8x2" customClass="orangeButton" customModule="CalorieCounterApp" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="0.0" width="374" height="57"/>
@@ -351,7 +357,7 @@
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kci-eD-Cvp" customClass="orangeButton" customModule="CalorieCounterApp" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="77" width="374" height="57"/>
+                                        <rect key="frame" x="0.0" y="77.000000000000028" width="374" height="57"/>
                                         <color key="backgroundColor" red="0.93289974620000005" green="0.60551593029999995" blue="0.22184178190000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                         <state key="normal" title="Lightly Active">
@@ -362,7 +368,7 @@
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="U4U-1f-2h7" customClass="orangeButton" customModule="CalorieCounterApp" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="154" width="374" height="57"/>
+                                        <rect key="frame" x="0.0" y="154.00000000000003" width="374" height="57"/>
                                         <color key="backgroundColor" red="0.93289974620000005" green="0.60551593029999995" blue="0.22184178190000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                         <state key="normal" title="Active">

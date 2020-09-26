@@ -36,15 +36,6 @@ class ViewController: UIViewController {
         
     }
     
-    // Configure the date Picker
-    // Min age is set to 16
-    let min_age: Date = Calendar.current.date(byAdding: .year, value: -16, to: Date())!;
-    
-    // Max age is set to 100
-    let max_age: Date = Calendar.current.date(byAdding: .year, value: -100, to: Date())!;
-    
-    
-    
     @IBAction func male_btn_listner(_ sender: UIButton) {
         let gender = Helpers.readPreference(key: "gender", defualt: "")
         if(gender == "" || gender == "female"){
@@ -63,77 +54,7 @@ class ViewController: UIViewController {
             male_btn.backgroundColor = Helpers.UIColorFromHex(rgbValue: UInt32(Helpers.appcolor))
         }
     }
-    
-    
-//
-    
-//
-//    func validate() {
-//        let isValidateName = self.validation.validateName(name: name_txt.text ?? "Name")
-//        if (isValidateName == false){
-//            print("Incorrect Name")
-//            return
-//        }
-//    }
-    
-    //Setting up the validation process
-    
-    
-    var validation = Validation()
-    
-    
-    func Inputvalidation() {
-        let isValidateName = self.validation.validateName(name: name_txt.text ?? "")
-        if (isValidateName == false) {
-            Helpers.showAlertView(vc: self, msg: "Name must contain letters")
-            return
-        }
-    }
-    
-//
-    
-    func setUserInfo(){
-        
-        if(name_txt.text == ""){
-            Helpers.showAlertView(vc: self, msg: "Please enter your name.")
-            return
-        }
-        
-//        if(dob_txt.text == "" ){
-//            Helpers.showAlertView(vc: self, msg: "Please enter your date of birth.")
-//            return
-//        }
-        if(current_weight.text == ""){
-            Helpers.showAlertView(vc: self, msg: "Please enter your current weight.")
-            return
-        }
-        if(current_height.text == ""){
-            Helpers.showAlertView(vc: self, msg: "Please enter your current height.")
-            return
-        }
-        let gender = Helpers.readPreference(key: "gender", defualt: "")
-        
-        if(gender == ""){
-            Helpers.showAlertView(vc: self, msg: "Please select your gender.")
-            return
-        }
-        
-//        let goal = Helpers.readPreference(key: "goal", defualt: "")
-//        if (goal == "") {
-//            Helpers.showAlertView(vc: self, msg: "Please choose your goal.")
-//        }
-        
-        //Sets userDefualts
-        Helpers.writePreference(key: "name", data: name_txt.text!)
-        //Helpers.writePreference(key: "dob", data: dob_txt.text!)
-        Helpers.writePreference(key: "weight", data: current_weight.text!)
-        Helpers.writePreference(key: "height", data: current_height.text!)
-        
-        //for move to next screen
-        self.performSegue(withIdentifier: "goal", sender: self)
-    }
-    
-    
+
     @IBAction func lose_weight_listener(_ sender: UIButton) {
         let goal = Helpers.readPreference(key: "goal", defualt: "")
         if(goal == "" || goal == "lose" || goal == "maintain" || goal == "gain"){
@@ -205,22 +126,16 @@ class ViewController: UIViewController {
         }
     }
     
-    //button listener
+    // User registering First page button listener
     @IBAction func next_btn_listener(_ sender: UIButton) {
+        
         Inputvalidation()
         setUserInfo()
-        
-        
     }
     
+    // User registering Second page button listener
     @IBAction func goal_next_btn_listener(_ sender: UIButton) {
-       // let goal = Helpers.readPreference(key: "goal", defualt: "")
-        //        if (goal == "") {
-        //            Helpers.showAlertView(vc: self, msg: "Please choose your goal.")
-        //        }
-        
-        
-        
+    
         let goal = Helpers.readPreference(key: "goal", defualt: "")
         if(goal == ""){
             Helpers.showAlertView(vc: self, msg: "Please select your goal.")
@@ -228,6 +143,8 @@ class ViewController: UIViewController {
         }
         self.performSegue(withIdentifier: "activity", sender: self)
     }
+    
+    // User registering Third page button listener
     @IBAction func finish_listener(_ sender: UIButton) {
         let activity = Helpers.readPreference(key: "activity", defualt: "")
         if(activity == ""){
@@ -238,4 +155,51 @@ class ViewController: UIViewController {
         
     }
     
+    
+    
+    //Setting up the validation process
+    var validation = Validation()
+    
+    // Getting info from Model to ViewModel.
+    func Inputvalidation() {
+        let isValidateName = self.validation.validateName(name: name_txt.text ?? "")
+        let isValidateWeight = self.validation.validateWeight(weight:current_weight.text ?? "" )
+        let isValidateHeight = self.validation.validateWeight(weight:current_height.text ?? "" )
+        let isValidDate = self.validation.validateAge(birthDate: datePicker.date)
+        
+        // validating name
+        if (isValidateName == false) {
+            Helpers.showAlertView(vc: self, msg: "Name field must be filled and only accepts letters")
+            return
+        }
+        
+        // Validating Weight
+        if( isValidateWeight == false) {
+            Helpers.showAlertView(vc: self, msg: "Age field must be filled and cannot contains any letters or special characters")
+            return
+        }
+        
+        // Validating Height
+        if( isValidateHeight == false) {
+            Helpers.showAlertView(vc: self, msg: "Height field must be filled and cannot contains any letters or special characters")
+            return
+        }
+        
+        // Validating Date picker and the date should be validate as such the age between 18-100
+        if (isValidDate == false) {
+            Helpers.showAlertView(vc: self, msg: "Birthday Must be between 18 and 100 years old")
+        }
+        
+    }
+    
+    func setUserInfo(){
+        
+        //Sets userDefualts
+        Helpers.writePreference(key: "name", data: name_txt.text!)
+        Helpers.writePreference(key: "weight", data: current_weight.text!)
+        Helpers.writePreference(key: "height", data: current_height.text!)
+        
+        //for move to next screen
+        self.performSegue(withIdentifier: "goal", sender: self)
+    }
 }
