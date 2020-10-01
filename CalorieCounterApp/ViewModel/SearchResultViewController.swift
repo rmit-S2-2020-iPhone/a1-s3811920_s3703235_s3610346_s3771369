@@ -70,9 +70,15 @@ class SearchResultViewController: UITableViewController, UISearchBarDelegate {
     // search bar filter
     func searchBar(_ searchBar: UISearchBar, textDidChange searchText: String) {
         filterMealsListViewModel.filterViewModel = []
-        for meal in mealsListViewModel.mealViewModel {
-            if meal.mealName.lowercased().contains(searchText.lowercased()){
+        if searchText == ""{
+            for meal in mealsListViewModel.mealViewModel {
                 filterMealsListViewModel.addFilteredMeals(meal)
+            }
+        } else {
+            for meal in mealsListViewModel.mealViewModel {
+                if meal.mealName.lowercased().contains(searchText.lowercased()){
+                    filterMealsListViewModel.addFilteredMeals(meal)
+                }
             }
         }
         self.tableView.reloadData()

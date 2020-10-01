@@ -16,11 +16,19 @@ class MealsListViewModel{
     init(mealData: MockData){
         self.mealData = mealData
         populateMeals()
+        populateFilteredMeals()
     }
     
     private func populateMeals() {
         let meals = self.mealData.getAllMeals()
         self.mealViewModel = meals.map { meal in
+            return MealViewModel(meal)
+        }
+    }
+    
+    private func populateFilteredMeals() {
+        let meals = self.mealData.getAllMeals()
+        self.filterViewModel = meals.map { meal in
             return MealViewModel(meal)
         }
     }
