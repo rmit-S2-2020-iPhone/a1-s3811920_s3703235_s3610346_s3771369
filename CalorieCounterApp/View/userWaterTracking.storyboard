@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BQT-78-dut">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Track Water-->
+        <scene sceneID="drw-us-RXO">
+            <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="wt9-T3-hgO" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <viewController id="BQT-78-dut" customClass="TrackWaterViewController" customModule="CalorieCounterApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="uIG-0H-hra">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="equalSpacing" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="nUT-eQ-9eq">
+                                <rect key="frame" x="57" y="308" width="261" height="260"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="l8p-VK-Gza" customClass="orangeButton" customModule="CalorieCounterApp" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="0.0" width="261" height="40"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="40" id="lqO-H0-eZH"/>
+                                        </constraints>
+                                        <state key="normal" title="1 Glass (5 oz)"/>
+                                        <connections>
+                                            <action selector="oneGBtn:" destination="BQT-78-dut" eventType="touchUpInside" id="5YK-si-uPe"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MEL-Ha-OQp" customClass="orangeButton" customModule="CalorieCounterApp" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="65" width="261" height="30"/>
+                                        <state key="normal" title="5 Glass (25 oz)"/>
+                                        <connections>
+                                            <action selector="fiveGBtn:" destination="BQT-78-dut" eventType="touchUpInside" id="HLX-sa-ofp"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vHb-Xx-i5H" customClass="orangeButton" customModule="CalorieCounterApp" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="120" width="261" height="30"/>
+                                        <state key="normal" title="8 Glass (40 oz)"/>
+                                        <connections>
+                                            <action selector="eightGBtn:" destination="BQT-78-dut" eventType="touchUpInside" id="SB0-da-2sb"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zrH-yb-ig1" customClass="orangeButton" customModule="CalorieCounterApp" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="175" width="261" height="30"/>
+                                        <state key="normal" title="12 Glass (60 oz)"/>
+                                        <connections>
+                                            <action selector="twlGBtn:" destination="BQT-78-dut" eventType="touchUpInside" id="oPi-t3-pNv"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vag-YH-UDH" customClass="BlueButton" customModule="CalorieCounterApp" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="230" width="261" height="30"/>
+                                        <state key="normal" title="Remove 1 Glass (5oz)"/>
+                                        <connections>
+                                            <action selector="removeBtn:" destination="BQT-78-dut" eventType="touchUpInside" id="OlJ-vF-vzv"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="260" id="HlG-iO-7lm"/>
+                                    <constraint firstAttribute="width" constant="300" id="uYN-cx-csv"/>
+                                </constraints>
+                            </stackView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="icons8-sparkling-water-150" translatesAutoresizingMaskIntoConstraints="NO" id="3yb-DI-lfw">
+                                <rect key="frame" x="87" y="100" width="201" height="150"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="150" id="l6u-Qw-NOj"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4VY-HP-q5O" customClass="TextLable" customModule="CalorieCounterApp" customModuleProvider="target">
+                                <rect key="frame" x="20" y="270" width="335" height="0.0"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Track Water" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eIf-RA-eI0" customClass="TitleLable" customModule="CalorieCounterApp" customModuleProvider="target">
+                                <rect key="frame" x="20" y="40" width="335" height="20"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="20" id="8Ae-b3-kIR"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="xWn-QV-ifN" firstAttribute="trailing" secondItem="4VY-HP-q5O" secondAttribute="trailing" constant="20" id="3Pa-2q-d8g"/>
+                            <constraint firstItem="4VY-HP-q5O" firstAttribute="leading" secondItem="xWn-QV-ifN" secondAttribute="leading" constant="20" id="4sX-Z5-FVs"/>
+                            <constraint firstItem="eIf-RA-eI0" firstAttribute="leading" secondItem="xWn-QV-ifN" secondAttribute="leading" constant="20" id="5UB-8x-G9E"/>
+                            <constraint firstItem="4VY-HP-q5O" firstAttribute="top" secondItem="3yb-DI-lfw" secondAttribute="bottom" constant="20" id="9c6-fW-Zup"/>
+                            <constraint firstItem="xWn-QV-ifN" firstAttribute="trailing" secondItem="nUT-eQ-9eq" secondAttribute="trailing" constant="57" id="Brf-q3-KeY"/>
+                            <constraint firstItem="3yb-DI-lfw" firstAttribute="top" secondItem="xWn-QV-ifN" secondAttribute="top" constant="80" id="Dcq-sK-W0w"/>
+                            <constraint firstItem="xWn-QV-ifN" firstAttribute="trailing" secondItem="eIf-RA-eI0" secondAttribute="trailing" constant="20" id="Fod-Xw-pqC"/>
+                            <constraint firstItem="nUT-eQ-9eq" firstAttribute="leading" secondItem="xWn-QV-ifN" secondAttribute="leading" constant="57" id="GLA-B3-2YR"/>
+                            <constraint firstItem="xWn-QV-ifN" firstAttribute="bottom" secondItem="nUT-eQ-9eq" secondAttribute="bottom" constant="50" id="OFU-xj-3tU"/>
+                            <constraint firstItem="eIf-RA-eI0" firstAttribute="top" secondItem="xWn-QV-ifN" secondAttribute="top" constant="20" id="U6B-JE-10C"/>
+                            <constraint firstItem="3yb-DI-lfw" firstAttribute="leading" secondItem="xWn-QV-ifN" secondAttribute="leading" constant="87" id="WpP-ce-XPC"/>
+                            <constraint firstItem="xWn-QV-ifN" firstAttribute="trailing" secondItem="3yb-DI-lfw" secondAttribute="trailing" constant="87" id="YUN-0r-4Pn"/>
+                            <constraint firstItem="nUT-eQ-9eq" firstAttribute="centerX" secondItem="uIG-0H-hra" secondAttribute="centerX" id="bhL-ab-pZk"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="xWn-QV-ifN"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Track Water" image="addWaterTab" id="zFB-lq-8ny"/>
+                    <navigationItem key="navigationItem" id="tWz-hn-Jho"/>
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
+                    <connections>
+                        <outlet property="titleLabel" destination="eIf-RA-eI0" id="q5B-nj-daO"/>
+                        <outlet property="waterDisplayLable" destination="4VY-HP-q5O" id="mIK-6Q-ga5"/>
+                    </connections>
+                </viewController>
+            </objects>
+            <point key="canvasLocation" x="4657.971014492754" y="2055.8035714285716"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="addWaterTab" width="30" height="30"/>
+        <image name="icons8-sparkling-water-150" width="150" height="150"/>
+    </resources>
+    <color key="tintColor" red="0.21176470589999999" green="0.23921568630000001" blue="0.27058823529999998" alpha="1" colorSpace="calibratedRGB"/>
+</document>
