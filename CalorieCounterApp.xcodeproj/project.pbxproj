@@ -19,6 +19,8 @@
 		861857772503D824007B6250 /* customLabels.swift in Sources */ = {isa = PBXBuildFile; fileRef = 861857762503D824007B6250 /* customLabels.swift */; };
 		86961AAD250262C00038F964 /* customButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86961AAC250262C00038F964 /* customButton.swift */; };
 		869A6F34251C566D00764D13 /* validation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 869A6F33251C566D00764D13 /* validation.swift */; };
+		86C64471252B25D8003C3564 /* CalorieHitsOnSearch.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86C64470252B25D8003C3564 /* CalorieHitsOnSearch.swift */; };
+		86C64473252B261A003C3564 /* CalorieService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86C64472252B261A003C3564 /* CalorieService.swift */; };
 		86D1AE8E24F6ADB700D82990 /* personalData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86D1AE8D24F6ADB700D82990 /* personalData.swift */; };
 		B32A091224FA3BEA006E83DE /* SearchResultViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B32A091124FA3BEA006E83DE /* SearchResultViewController.swift */; };
 		B32A091424FA3C05006E83DE /* SearchResultViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B32A091324FA3C05006E83DE /* SearchResultViewModel.swift */; };
@@ -74,6 +76,8 @@
 		866BFFF325050C6E008C0DD7 /* Assignment 1 - Project Report_final.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = "Assignment 1 - Project Report_final.pdf"; sourceTree = "<group>"; };
 		86961AAC250262C00038F964 /* customButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = customButton.swift; sourceTree = "<group>"; };
 		869A6F33251C566D00764D13 /* validation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = validation.swift; sourceTree = "<group>"; };
+		86C64470252B25D8003C3564 /* CalorieHitsOnSearch.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalorieHitsOnSearch.swift; sourceTree = "<group>"; };
+		86C64472252B261A003C3564 /* CalorieService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalorieService.swift; sourceTree = "<group>"; };
 		86D1AE8D24F6ADB700D82990 /* personalData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = personalData.swift; sourceTree = "<group>"; };
 		8B1006DBFBED61A43131EA73 /* Pods_CalorieCounterAppTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CalorieCounterAppTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		8C5ECA6D8DEB9CC4042E0191 /* Pods-CalorieCounterApp-CalorieCounterAppUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CalorieCounterApp-CalorieCounterAppUITests.debug.xcconfig"; path = "Target Support Files/Pods-CalorieCounterApp-CalorieCounterAppUITests/Pods-CalorieCounterApp-CalorieCounterAppUITests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -258,6 +262,8 @@
 				B32A091724FA51AB006E83DE /* Meal.swift */,
 				869A6F33251C566D00764D13 /* validation.swift */,
 				B35147122526CCF500114118 /* Mealx.swift */,
+				86C64470252B25D8003C3564 /* CalorieHitsOnSearch.swift */,
+				86C64472252B261A003C3564 /* CalorieService.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -561,8 +567,10 @@
 				B32A091424FA3C05006E83DE /* SearchResultViewModel.swift in Sources */,
 				861857772503D824007B6250 /* customLabels.swift in Sources */,
 				BA81E0C724FBE67800214665 /* SplashController.swift in Sources */,
+				86C64471252B25D8003C3564 /* CalorieHitsOnSearch.swift in Sources */,
 				B35147132526CCF500114118 /* Mealx.swift in Sources */,
 				B32A091624FA4FF6006E83DE /* MockData.swift in Sources */,
+				86C64473252B261A003C3564 /* CalorieService.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
