@@ -8,6 +8,7 @@
 import Foundation
 import UIKit
 
+
 class SearchResultViewController: UITableViewController, UISearchBarDelegate {
     
     
@@ -21,9 +22,13 @@ class SearchResultViewController: UITableViewController, UISearchBarDelegate {
     private var filterMealsListViewModel: MealsListViewModel!
     private var filterMealData: MockData!
     
+    //private lazy var nutritionixAPI = NutritionixAPI()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        getMeal(mealName: "Hamburger")
+
         searchBar.delegate = self
         self.mealData = MockData()
         self.mealsListViewModel = MealsListViewModel(mealData: self.mealData)
@@ -84,4 +89,20 @@ class SearchResultViewController: UITableViewController, UISearchBarDelegate {
         self.tableView.reloadData()
     }
     
+    
+    func getMeal(mealName: String?) {
+//        nutritionixAPI.nutritionInfo(foodName: mealName!) { [weak self] (meals, error) in
+//            if let error = error {
+//                print("Error forwarding meals (\(error)")
+//            }
+//        }
+        
+        let newMeal = NewMealViewViewModel()
+        newMeal.getMeal(meal: "Salad")
+        
+        var nutritionix = NutritionixAPI()
+        nutritionix.makeRequest(searchString: "Salad")
+        
+    }
+
 }

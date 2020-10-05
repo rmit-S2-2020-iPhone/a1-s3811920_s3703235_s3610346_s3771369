@@ -30,10 +30,8 @@ class ViewController: UIViewController {
     @IBOutlet var very_active_btn: UIButton!
     
     
-    
     override func viewDidLoad() {
         super.viewDidLoad()
-        
     }
     
     @IBAction func male_btn_listner(_ sender: UIButton) {
