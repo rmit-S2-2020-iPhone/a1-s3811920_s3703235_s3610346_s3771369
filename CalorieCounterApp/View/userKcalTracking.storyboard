@@ -246,160 +246,6 @@
             </objects>
             <point key="canvasLocation" x="5916" y="1195"/>
         </scene>
-        <!--Add Meal-->
-        <scene sceneID="ya2-BG-aAb">
-            <objects>
-                <viewController id="IkV-1C-j73" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="que-4j-owD">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="S8S-0c-Lne">
-                                <rect key="frame" x="0.0" y="64" width="375" height="554"/>
-                                <subviews>
-                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="2" translatesAutoresizingMaskIntoConstraints="NO" id="tOJ-UD-PEc">
-                                        <rect key="frame" x="0.0" y="0.0" width="375" height="554"/>
-                                        <subviews>
-                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ihC-dE-xIY">
-                                                <rect key="frame" x="0.0" y="0.0" width="375" height="97.5"/>
-                                                <subviews>
-                                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="12" translatesAutoresizingMaskIntoConstraints="NO" id="bfP-ML-tPz">
-                                                        <rect key="frame" x="8" y="60" width="359" height="31.5"/>
-                                                        <subviews>
-                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Meal Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Uh5-bH-kN5" customClass="TitleLable" customModule="CalorieCounterApp" customModuleProvider="target">
-                                                                <rect key="frame" x="0.0" y="0.0" width="131.5" height="31.5"/>
-                                                                <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="24"/>
-                                                                <color key="textColor" red="0.21176470589999999" green="0.23921568630000001" blue="0.27058823529999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                                <nil key="highlightedColor"/>
-                                                            </label>
-                                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="fZS-h9-TKg">
-                                                                <rect key="frame" x="143.5" y="0.0" width="215.5" height="31.5"/>
-                                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                                                <textInputTraits key="textInputTraits"/>
-                                                            </textField>
-                                                        </subviews>
-                                                        <constraints>
-                                                            <constraint firstItem="fZS-h9-TKg" firstAttribute="leading" secondItem="Uh5-bH-kN5" secondAttribute="trailing" constant="12" id="Lc4-GF-zm3"/>
-                                                        </constraints>
-                                                    </stackView>
-                                                </subviews>
-                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                <constraints>
-                                                    <constraint firstItem="bfP-ML-tPz" firstAttribute="top" secondItem="ihC-dE-xIY" secondAttribute="top" constant="60" id="AAh-9A-Usn"/>
-                                                    <constraint firstAttribute="trailingMargin" secondItem="bfP-ML-tPz" secondAttribute="trailing" id="Dah-bS-d2B"/>
-                                                    <constraint firstAttribute="bottom" secondItem="bfP-ML-tPz" secondAttribute="bottom" constant="6" id="ZXY-kd-B3J"/>
-                                                    <constraint firstItem="bfP-ML-tPz" firstAttribute="leading" secondItem="ihC-dE-xIY" secondAttribute="leadingMargin" id="bAI-dP-ABE"/>
-                                                </constraints>
-                                            </view>
-                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="FpJ-op-KJ3">
-                                                <rect key="frame" x="0.0" y="99.5" width="375" height="63.5"/>
-                                                <subviews>
-                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Meal Items" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cmc-Wr-5Ph" customClass="TitleLable" customModule="CalorieCounterApp" customModuleProvider="target">
-                                                        <rect key="frame" x="8" y="24" width="120" height="31.5"/>
-                                                        <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="24"/>
-                                                        <color key="textColor" red="0.21176470589999999" green="0.23921568630000001" blue="0.27058823529999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                        <nil key="highlightedColor"/>
-                                                    </label>
-                                                </subviews>
-                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                <constraints>
-                                                    <constraint firstAttribute="trailing" secondItem="cmc-Wr-5Ph" secondAttribute="trailing" constant="247" id="66C-xy-hsl"/>
-                                                    <constraint firstItem="cmc-Wr-5Ph" firstAttribute="top" secondItem="FpJ-op-KJ3" secondAttribute="top" constant="24" id="AQx-ge-isY"/>
-                                                    <constraint firstAttribute="bottom" secondItem="cmc-Wr-5Ph" secondAttribute="bottom" constant="8" id="KSh-56-LPg"/>
-                                                    <constraint firstItem="cmc-Wr-5Ph" firstAttribute="leading" secondItem="FpJ-op-KJ3" secondAttribute="leading" constant="8" id="lfe-5t-ONj"/>
-                                                </constraints>
-                                            </view>
-                                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="lM9-Bq-HWC">
-                                                <rect key="frame" x="0.0" y="165" width="375" height="389"/>
-                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                <prototypes>
-                                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="99" id="b9h-KO-HvP">
-                                                        <rect key="frame" x="0.0" y="28" width="375" height="99"/>
-                                                        <autoresizingMask key="autoresizingMask"/>
-                                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="b9h-KO-HvP" id="LuY-V8-vj6">
-                                                            <rect key="frame" x="0.0" y="0.0" width="375" height="98.5"/>
-                                                            <autoresizingMask key="autoresizingMask"/>
-                                                            <subviews>
-                                                                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="ZYq-Ji-UaG">
-                                                                    <rect key="frame" x="8" y="8" width="359" height="82.5"/>
-                                                                    <subviews>
-                                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Fried Rice" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hpT-a4-xV7" customClass="TextLable" customModule="CalorieCounterApp" customModuleProvider="target">
-                                                                            <rect key="frame" x="0.0" y="0.0" width="359" height="31.5"/>
-                                                                            <constraints>
-                                                                                <constraint firstAttribute="height" constant="31.333333333333332" id="2le-VN-00F"/>
-                                                                            </constraints>
-                                                                            <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="24"/>
-                                                                            <color key="textColor" red="0.21176470589999999" green="0.23921568630000001" blue="0.27058823529999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                                            <nil key="highlightedColor"/>
-                                                                        </label>
-                                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="200 ml, 161 calories" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="u46-dm-Umz" customClass="TextLable" customModule="CalorieCounterApp" customModuleProvider="target">
-                                                                            <rect key="frame" x="0.0" y="31.5" width="359" height="51"/>
-                                                                            <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="20"/>
-                                                                            <color key="textColor" red="0.21176470589999999" green="0.23921568630000001" blue="0.27058823529999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                                            <nil key="highlightedColor"/>
-                                                                        </label>
-                                                                    </subviews>
-                                                                    <constraints>
-                                                                        <constraint firstItem="hpT-a4-xV7" firstAttribute="top" secondItem="ZYq-Ji-UaG" secondAttribute="top" id="0kh-BI-NDH"/>
-                                                                        <constraint firstAttribute="trailing" secondItem="u46-dm-Umz" secondAttribute="trailing" id="5Qa-g5-QbZ"/>
-                                                                        <constraint firstItem="u46-dm-Umz" firstAttribute="top" secondItem="hpT-a4-xV7" secondAttribute="bottom" id="FwZ-xs-mDr"/>
-                                                                        <constraint firstItem="u46-dm-Umz" firstAttribute="top" secondItem="hpT-a4-xV7" secondAttribute="bottom" id="Thy-aO-jfN"/>
-                                                                        <constraint firstItem="hpT-a4-xV7" firstAttribute="leading" secondItem="ZYq-Ji-UaG" secondAttribute="leading" id="W5w-ZT-y8E"/>
-                                                                        <constraint firstItem="u46-dm-Umz" firstAttribute="leading" secondItem="ZYq-Ji-UaG" secondAttribute="leading" id="nYu-KN-6bS"/>
-                                                                        <constraint firstAttribute="trailing" secondItem="hpT-a4-xV7" secondAttribute="trailing" id="sX9-pt-Ge0"/>
-                                                                        <constraint firstAttribute="bottom" secondItem="u46-dm-Umz" secondAttribute="bottom" id="wTq-Vf-ZeW"/>
-                                                                    </constraints>
-                                                                </stackView>
-                                                            </subviews>
-                                                            <constraints>
-                                                                <constraint firstItem="ZYq-Ji-UaG" firstAttribute="leading" secondItem="LuY-V8-vj6" secondAttribute="leadingMargin" id="25g-T1-foq"/>
-                                                                <constraint firstAttribute="trailingMargin" secondItem="ZYq-Ji-UaG" secondAttribute="trailing" id="Ksm-zn-Ta1"/>
-                                                                <constraint firstAttribute="bottomMargin" secondItem="ZYq-Ji-UaG" secondAttribute="bottom" id="WCa-vG-gmG"/>
-                                                                <constraint firstItem="ZYq-Ji-UaG" firstAttribute="top" secondItem="LuY-V8-vj6" secondAttribute="topMargin" id="lu0-Y7-P7r"/>
-                                                            </constraints>
-                                                        </tableViewCellContentView>
-                                                    </tableViewCell>
-                                                </prototypes>
-                                            </tableView>
-                                        </subviews>
-                                        <constraints>
-                                            <constraint firstItem="FpJ-op-KJ3" firstAttribute="leading" secondItem="tOJ-UD-PEc" secondAttribute="leading" id="9h4-VO-VIQ"/>
-                                            <constraint firstItem="lM9-Bq-HWC" firstAttribute="leading" secondItem="tOJ-UD-PEc" secondAttribute="leading" id="Cet-MY-rDy"/>
-                                            <constraint firstAttribute="trailing" secondItem="lM9-Bq-HWC" secondAttribute="trailing" id="TkA-J9-nOH"/>
-                                            <constraint firstItem="ihC-dE-xIY" firstAttribute="leading" secondItem="tOJ-UD-PEc" secondAttribute="leading" id="ima-Aj-xFf"/>
-                                            <constraint firstAttribute="trailing" secondItem="FpJ-op-KJ3" secondAttribute="trailing" id="mR8-ML-TPM"/>
-                                            <constraint firstItem="ihC-dE-xIY" firstAttribute="top" secondItem="tOJ-UD-PEc" secondAttribute="top" id="q2z-Nd-zeX"/>
-                                            <constraint firstAttribute="bottom" secondItem="lM9-Bq-HWC" secondAttribute="bottom" id="rTk-2e-Aeq"/>
-                                            <constraint firstAttribute="trailing" secondItem="ihC-dE-xIY" secondAttribute="trailing" id="xK9-LD-gAr"/>
-                                        </constraints>
-                                    </stackView>
-                                </subviews>
-                                <color key="backgroundColor" red="0.98431372549999996" green="0.69411764710000001" blue="0.23529411759999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <constraints>
-                                    <constraint firstItem="tOJ-UD-PEc" firstAttribute="top" secondItem="S8S-0c-Lne" secondAttribute="top" id="2pk-wE-jr1"/>
-                                    <constraint firstAttribute="trailing" secondItem="tOJ-UD-PEc" secondAttribute="trailing" id="3rf-Y5-OhG"/>
-                                    <constraint firstAttribute="bottom" secondItem="tOJ-UD-PEc" secondAttribute="bottom" id="mOJ-2h-epP"/>
-                                    <constraint firstItem="tOJ-UD-PEc" firstAttribute="leading" secondItem="S8S-0c-Lne" secondAttribute="leading" id="x1d-co-WPV"/>
-                                </constraints>
-                            </view>
-                        </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                        <constraints>
-                            <constraint firstItem="S8S-0c-Lne" firstAttribute="leading" secondItem="EjO-QW-4Iv" secondAttribute="leading" id="BvL-7o-d6S"/>
-                            <constraint firstItem="EjO-QW-4Iv" firstAttribute="trailing" secondItem="S8S-0c-Lne" secondAttribute="trailing" id="PV4-Mu-uG2"/>
-                            <constraint firstItem="S8S-0c-Lne" firstAttribute="top" secondItem="EjO-QW-4Iv" secondAttribute="top" id="PYj-XN-NsB"/>
-                            <constraint firstItem="EjO-QW-4Iv" firstAttribute="bottom" secondItem="S8S-0c-Lne" secondAttribute="bottom" id="iRC-T9-hoQ"/>
-                        </constraints>
-                        <viewLayoutGuide key="safeArea" id="EjO-QW-4Iv"/>
-                    </view>
-                    <tabBarItem key="tabBarItem" title="Add Meal" image="addFoodTab" id="GSA-TF-Emq"/>
-                    <navigationItem key="navigationItem" id="x25-r4-mPr"/>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="4bM-Vv-IVc" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="3429" y="1765"/>
-        </scene>
         <!--Search-->
         <scene sceneID="ABU-aw-Ck5">
             <objects>
@@ -472,7 +318,7 @@
                     <connections>
                         <segue destination="BYZ-38-t0r" kind="relationship" relationship="viewControllers" id="fQi-Kh-abE"/>
                         <segue destination="ITh-RX-CMk" kind="relationship" relationship="viewControllers" id="oTY-Gs-4Bs"/>
-                        <segue destination="IkV-1C-j73" kind="relationship" relationship="viewControllers" id="lCJ-Y3-vfs"/>
+                        <segue destination="GgR-BJ-cow" kind="relationship" relationship="viewControllers" id="lCJ-Y3-vfs"/>
                         <segue destination="g3F-Kn-xBd" kind="relationship" relationship="viewControllers" id="dyL-tc-BhR"/>
                     </connections>
                 </tabBarController>
@@ -833,9 +679,18 @@
             </objects>
             <point key="canvasLocation" x="8063.7681159420299" y="827.67857142857144"/>
         </scene>
+        <!--addAMeal-->
+        <scene sceneID="KQd-2s-Z5l">
+            <objects>
+                <viewControllerPlaceholder storyboardName="addAMeal" id="GgR-BJ-cow" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Item" id="c5v-MY-cOf"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="VLB-bx-YOL" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3429" y="1765"/>
+        </scene>
     </scenes>
     <resources>
-        <image name="addFoodTab" width="30" height="30"/>
         <image name="addWaterTab" width="30" height="30"/>
         <image name="icons8-dinner-100" width="100" height="100"/>
         <image name="icons8-healthy-eating-100" width="100" height="100"/>

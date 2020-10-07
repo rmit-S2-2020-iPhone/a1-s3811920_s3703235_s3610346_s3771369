@@ -12,6 +12,7 @@
 		032ACD6E24F4052F009607F1 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B372BEF024D2A46300F9957A /* ViewController.swift */; };
 		032ACD6F24F4052F009607F1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B372BEEE24D2A46300F9957A /* AppDelegate.swift */; };
 		032ACD7024F4052F009607F1 /* CalorieCounterApp.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = B372BEF524D2A46300F9957A /* CalorieCounterApp.xcdatamodeld */; };
+		033C52FE252DD7A2007C93FD /* addAMeal.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 033C52FD252DD7A2007C93FD /* addAMeal.storyboard */; };
 		038D374E24F4110F008C516B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 038D374D24F4110F008C516B /* LaunchScreen.storyboard */; };
 		038D375024F41948008C516B /* userKcalTracking.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 038D374F24F41948008C516B /* userKcalTracking.storyboard */; };
 		03D7044A24F687A300FEC0CD /* userWaterTracking.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 03D7044924F687A300FEC0CD /* userWaterTracking.storyboard */; };
@@ -53,6 +54,7 @@
 /* Begin PBXFileReference section */
 		03128D9224F40DCD000D7E9A /* Main.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 		032ACD6C24F3E1EF009607F1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = CalorieCounterApp/View/Base.lproj/userInfo.storyboard; sourceTree = "<group>"; };
+		033C52FD252DD7A2007C93FD /* addAMeal.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = addAMeal.storyboard; sourceTree = "<group>"; };
 		038D374D24F4110F008C516B /* LaunchScreen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
 		038D374F24F41948008C516B /* userKcalTracking.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = userKcalTracking.storyboard; sourceTree = "<group>"; };
 		03D7044924F687A300FEC0CD /* userWaterTracking.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = userWaterTracking.storyboard; sourceTree = "<group>"; };
@@ -221,6 +223,7 @@
 				032ACD6B24F3E1EF009607F1 /* userInfo.storyboard */,
 				03128D9224F40DCD000D7E9A /* Main.storyboard */,
 				038D374F24F41948008C516B /* userKcalTracking.storyboard */,
+				033C52FD252DD7A2007C93FD /* addAMeal.storyboard */,
 				03D7044924F687A300FEC0CD /* userWaterTracking.storyboard */,
 			);
 			path = View;
@@ -330,6 +333,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				03128D9324F40DCD000D7E9A /* Main.storyboard in Resources */,
+				033C52FE252DD7A2007C93FD /* addAMeal.storyboard in Resources */,
 				032ACD6D24F3E1EF009607F1 /* userInfo.storyboard in Resources */,
 				B372BEF924D2A46B00F9957A /* Assets.xcassets in Resources */,
 				038D374E24F4110F008C516B /* LaunchScreen.storyboard in Resources */,
