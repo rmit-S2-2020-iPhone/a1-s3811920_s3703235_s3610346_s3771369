@@ -29,15 +29,25 @@ class ViewController: UIViewController {
     @IBOutlet var active_btn: UIButton!
     @IBOutlet var very_active_btn: UIButton!
     
+    var signupVM = SignupVM()
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        if(datePicker != nil){
+            datePicker.addTarget(self, action: #selector(datePickerChanged), for: UIControl.Event.valueChanged)
+        }
     }
-    
+    @objc func datePickerChanged(datePicker:UIDatePicker){
+       let formatter = DateFormatter()
+       formatter.dateFormat = "dd/MM/yyyy"
+        let date = formatter.string(from: datePicker.date)
+       Helpers.writePreference(key: "dob", data: date)
+    }
+
     @IBAction func male_btn_listner(_ sender: UIButton) {
         let gender = Helpers.readPreference(key: "gender", defualt: "")
         if(gender == "" || gender == "female"){
-            Helpers.writePreference(key: "gender", data: "male")
+            Helpers.writePreference(key: "gender", data: "Male")
             sender.backgroundColor = Helpers.UIColorFromHex(rgbValue: UInt32(Helpers.touchedColour))
             female_btn.backgroundColor = Helpers.UIColorFromHex(rgbValue: UInt32(Helpers.appcolor))
         }
@@ -47,7 +57,7 @@ class ViewController: UIViewController {
     @IBAction func female_btn_listener(_ sender: UIButton) {
         let gender = Helpers.readPreference(key: "gender", defualt: "")
         if(gender == "" || gender == "male"){
-            Helpers.writePreference(key: "gender", data: "female")
+            Helpers.writePreference(key: "gender", data: "Female")
             sender.backgroundColor = Helpers.UIColorFromHex(rgbValue: UInt32(Helpers.touchedColour))
             male_btn.backgroundColor = Helpers.UIColorFromHex(rgbValue: UInt32(Helpers.appcolor))
         }
@@ -55,16 +65,16 @@ class ViewController: UIViewController {
 
     @IBAction func lose_weight_listener(_ sender: UIButton) {
         let goal = Helpers.readPreference(key: "goal", defualt: "")
-        if(goal == "" || goal == "lose" || goal == "maintain" || goal == "gain"){
-            Helpers.writePreference(key: "goal", data: "lose")
+        if(goal == "" || goal == "Lose" || goal == "Maintain" || goal == "Gain"){
+            Helpers.writePreference(key: "goal", data: "Lose")
             sender.backgroundColor = Helpers.UIColorFromHex(rgbValue: UInt32(Helpers.touchedColour));         matain_weight_btn.backgroundColor = Helpers.UIColorFromHex(rgbValue: UInt32(Helpers.appcolor))
             gain_weight_btn.backgroundColor = Helpers.UIColorFromHex(rgbValue: UInt32(Helpers.appcolor))
         }
     }
     @IBAction func main_weight_listener(_ sender: UIButton) {
         let goal = Helpers.readPreference(key: "goal", defualt: "")
-        if(goal == "" || goal == "lose" || goal == "maintain" || goal == "gain"){
-            Helpers.writePreference(key: "goal", data: "maintain")
+        if(goal == "" || goal == "Lose" || goal == "Maintain" || goal == "Gain"){
+            Helpers.writePreference(key: "goal", data: "Maintain")
             sender.backgroundColor = Helpers.UIColorFromHex(rgbValue: UInt32(Helpers.touchedColour));         lose_weight_btn.backgroundColor = Helpers.UIColorFromHex(rgbValue: UInt32(Helpers.appcolor))
             gain_weight_btn.backgroundColor = Helpers.UIColorFromHex(rgbValue: UInt32(Helpers.appcolor))
         }
@@ -72,8 +82,8 @@ class ViewController: UIViewController {
     
     @IBAction func gain_weight_listener(_ sender: UIButton) {
         let goal = Helpers.readPreference(key: "goal", defualt: "")
-        if(goal == "" || goal == "lose" || goal == "maintain" || goal == "gain"){
-            Helpers.writePreference(key: "goal", data: "gain")
+        if(goal == "" || goal == "Lose" || goal == "Maintain" || goal == "Gain"){
+            Helpers.writePreference(key: "goal", data: "Gain")
             sender.backgroundColor = Helpers.UIColorFromHex(rgbValue: UInt32(Helpers.touchedColour))
             lose_weight_btn.backgroundColor = Helpers.UIColorFromHex(rgbValue: UInt32(Helpers.appcolor))
             matain_weight_btn.backgroundColor = Helpers.UIColorFromHex(rgbValue: UInt32(Helpers.appcolor))
@@ -82,8 +92,8 @@ class ViewController: UIViewController {
     
     @IBAction func secondary_btn_listener(_ sender: UIButton) {
         let activity = Helpers.readPreference(key: "activity", defualt: "")
-        if(activity == "" || activity == "secondary" || activity == "lightlyactive" || activity == "active" || activity == "veryactive"){
-            Helpers.writePreference(key: "activity", data: "secondary")
+        if(activity == "" || activity == "Sedentary" || activity == "Lightly Active" || activity == "Active" || activity == "Very Active"){
+            Helpers.writePreference(key: "activity", data: "Sedentary")
             sender.backgroundColor = Helpers.UIColorFromHex(rgbValue: UInt32(Helpers.touchedColour))
             active_btn.backgroundColor = Helpers.UIColorFromHex(rgbValue: UInt32(Helpers.appcolor))
             lightly_active.backgroundColor = Helpers.UIColorFromHex(rgbValue: UInt32(Helpers.appcolor))
@@ -93,8 +103,8 @@ class ViewController: UIViewController {
     
     @IBAction func lightactive_btn_listener(_ sender: UIButton) {
         let activity = Helpers.readPreference(key: "activity", defualt: "")
-        if(activity == "" || activity == "secondary" || activity == "lightlyactive" || activity == "active" || activity == "veryactive"){
-            Helpers.writePreference(key: "activity", data: "lightlyactive")
+        if(activity == "" || activity == "Sedentary" || activity == "Lightly Active" || activity == "Active" || activity == "Very Active"){
+            Helpers.writePreference(key: "activity", data: "Lightly Active")
             sender.backgroundColor = Helpers.UIColorFromHex(rgbValue: UInt32(Helpers.touchedColour))
             secondary_btn.backgroundColor = Helpers.UIColorFromHex(rgbValue: UInt32(Helpers.appcolor))
             active_btn.backgroundColor = Helpers.UIColorFromHex(rgbValue: UInt32(Helpers.appcolor))
@@ -104,8 +114,8 @@ class ViewController: UIViewController {
     
     @IBAction func active_btn_listener(_ sender: UIButton) {
         let activity = Helpers.readPreference(key: "activity", defualt: "")
-        if(activity == "" || activity == "secondary" || activity == "lightlyactive" || activity == "active" || activity == "veryactive"){
-            Helpers.writePreference(key: "activity", data: "active")
+        if(activity == "" || activity == "Sedentary" || activity == "Lightly Active" || activity == "Active" || activity == "Very Active"){
+            Helpers.writePreference(key: "activity", data: "Active")
             sender.backgroundColor = Helpers.UIColorFromHex(rgbValue: UInt32(Helpers.touchedColour))
             secondary_btn.backgroundColor = Helpers.UIColorFromHex(rgbValue: UInt32(Helpers.appcolor))
             lightly_active.backgroundColor = Helpers.UIColorFromHex(rgbValue: UInt32(Helpers.appcolor))
@@ -115,8 +125,8 @@ class ViewController: UIViewController {
     
     @IBAction func very_active_btn(_ sender: UIButton) {
         let activity = Helpers.readPreference(key: "activity", defualt: "")
-        if(activity == "" || activity == "secondary" || activity == "lightlyactive" || activity == "active" || activity == "veryactive"){
-            Helpers.writePreference(key: "activity", data: "veryactive")
+        if(activity == "" || activity == "Sedentary" || activity == "Lightly Active" || activity == "Active" || activity == "Very Active"){
+            Helpers.writePreference(key: "activity", data: "Very Active")
             sender.backgroundColor = Helpers.UIColorFromHex(rgbValue: UInt32(Helpers.touchedColour))
             secondary_btn.backgroundColor = Helpers.UIColorFromHex(rgbValue: UInt32(Helpers.appcolor))
             lightly_active.backgroundColor = Helpers.UIColorFromHex(rgbValue: UInt32(Helpers.appcolor))
@@ -144,12 +154,32 @@ class ViewController: UIViewController {
     
     // User registering Third page button listener
     @IBAction func finish_listener(_ sender: UIButton) {
+        
         let activity = Helpers.readPreference(key: "activity", defualt: "")
         if(activity == ""){
             Helpers.showAlertView(vc: self, msg: "Please select your activity.")
             return
         }
-        self.performSegue(withIdentifier: "finish", sender: self)
+        
+        signupVM.requestCompletionHandler { [weak self] (status,message) in
+             guard let self = self else {return}
+             
+             if(status){
+                let storyboard = UIStoryboard(name: "userKcalTracking", bundle: nil)
+                let tabbar = storyboard.instantiateViewController(withIdentifier: "tabbar") as? UINavigationController
+                tabbar?.modalPresentationStyle = .fullScreen
+                self.present(tabbar!, animated: true, completion: nil)
+                Helpers.showAlertView(vc: self, msg: message)
+               
+             }else{
+                 Helpers.showAlertView(vc: self, msg: message)
+             }
+        }
+
+        signupVM.deleteAllUsers()
+        signupVM.addUser(name: Helpers.readPreference(key: "name", defualt: ""), dob:  Helpers.readPreference(key: "dob", defualt: ""), height: Int64.init( Helpers.readPreference(key: "height", defualt: ""))!, weight: Int64.init( Helpers.readPreference(key: "weight", defualt: ""))!, gender:  Helpers.readPreference(key: "gender", defualt: ""), goal:  Helpers.readPreference(key: "goal", defualt: ""), active:  Helpers.readPreference(key: "activity", defualt: ""))
+        
+ 
         
     }
     
@@ -186,8 +216,9 @@ class ViewController: UIViewController {
         // Validating Date picker and the date should be validate as such the age between 18-100
         if (isValidDate == false) {
             Helpers.showAlertView(vc: self, msg: "Birthday Must be between 18 and 100 years old")
+            return
         }
-        
+        //self.performSegue(withIdentifier: "goal", sender: self)
     }
     
     func setUserInfo(){

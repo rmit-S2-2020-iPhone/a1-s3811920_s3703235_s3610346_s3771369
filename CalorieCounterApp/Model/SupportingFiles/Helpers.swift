@@ -7,6 +7,7 @@
 
 import Foundation
 import UIKit
+import MBProgressHUD
 
 
 class Helpers{
@@ -42,7 +43,17 @@ class Helpers{
 
         vc.present(alert, animated: true, completion: nil)
     }
-  
+    static func showHUD(view:UIView,progressLabel:String){
+      DispatchQueue.main.async{
+          let progressHUD = MBProgressHUD.showAdded(to: view, animated: true)
+          progressHUD.label.text = progressLabel
+      }
+    }
+    static func dismissHUD(view:UIView,isAnimated:Bool) {
+        DispatchQueue.main.async{
+            MBProgressHUD.hide(for: view, animated: isAnimated)
+        }
+    }
 
    
 }

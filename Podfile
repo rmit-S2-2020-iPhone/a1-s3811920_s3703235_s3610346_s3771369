@@ -6,8 +6,10 @@ target 'CalorieCounterApp' do
   use_frameworks!
 
   # Pods for CalorieCounterApp
-
-pod 'Alamofire'
+   pod 'Alamofire'
+   pod 'AlamofireObjectMapper', '~> 5.2'
+   pod 'MBProgressHUD', '~> 1.1.0'
+   pod 'IQKeyboardManagerSwift'
 
   target 'CalorieCounterAppTests' do
     inherit! :search_paths

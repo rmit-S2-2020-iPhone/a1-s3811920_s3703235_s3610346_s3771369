@@ -14,11 +14,11 @@ import UIKit
 class HomePageViewController: UIViewController {
     
     @IBOutlet weak var calorieLbl: UILabel!
-    
-    
-    
     @IBOutlet var options: [UIButton]!
-    
+    var mealtype = ""
+    var typeid = 0
+    var homeVM = HomePageVM()
+    var calSum = 0
     func configureButtons(){
         for button in options {
             button.layer.cornerRadius = 16.8
@@ -27,11 +27,59 @@ class HomePageViewController: UIViewController {
     
     
     
+    func getSumCalories(){
+        homeVM.sumCalCompletionHandler { [weak self] (sum) in
+           guard let self = self else {return}
+            self.calSum = Int(sum)
+        }
+        homeVM.getSumCalories()
+    }
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        getSumCalories()
+        var new = getCalories() - calSum
+        if(new < 0){
+            new = 0
+        }
+        calorieLbl.text = String(new)+" KJ"
+    }
+   
     override func viewDidLoad() {
         super.viewDidLoad()
         configureButtons()
-        calorieLbl.text = String(getCalories())+" KJ"
+    
+        print(self.calSum)
         
+        
+    }
+    
+    @IBAction func breakfast_event(_ sender: UIButton) {
+        self.mealtype = "Breakfast"
+        self.typeid = 0
+        self.performSegue(withIdentifier: "meal", sender: self)
+    }
+    @IBAction func lunch_event(_ sender: UIButton) {
+        self.mealtype = "Lunch"
+        self.typeid = 1
+        self.performSegue(withIdentifier: "meal", sender: self)
+    }
+    @IBAction func dinner_event(_ sender: UIButton) {
+        self.mealtype = "Dinner"
+        self.typeid = 2
+        self.performSegue(withIdentifier: "meal", sender: self)
+    }
+    @IBAction func snak_event(_ sender: UIButton) {
+        self.mealtype = "Snak"
+        self.typeid = 3
+        self.performSegue(withIdentifier: "meal", sender: self)
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "meal" {
+            let mealPageVC = segue.destination as! SearchController
+            mealPageVC.type = mealtype
+            mealPageVC.typeid = self.typeid 
+        }
     }
     
     func calculateBMI() -> Int {

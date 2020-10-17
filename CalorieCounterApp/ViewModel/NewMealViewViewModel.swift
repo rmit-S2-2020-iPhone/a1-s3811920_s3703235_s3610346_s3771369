@@ -86,10 +86,10 @@ class NewMealViewViewModel {
     }
     
     func getMeal(meal: String){
-            nutritionixAPI.nutritionInfo(foodName: meal) { (meals, error) in
-                if let error = error {
-                    print("Error forwarding meals (\(error)")
-                }
-            }
+//            nutritionixAPI.nutritionInfo(foodName: meal) { (meals, error) in
+//                if let error = error {
+//                    print("Error forwarding meals (\(error)")
+//                }
+//            }
         }
 }
