@@ -29,11 +29,21 @@ class ViewController: UIViewController {
     @IBOutlet var active_btn: UIButton!
     @IBOutlet var very_active_btn: UIButton!
     
+    var signupVM = SignupVM()
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        if(datePicker != nil){
+            datePicker.addTarget(self, action: #selector(datePickerChanged), for: UIControl.Event.valueChanged)
+        }
     }
-    
+    @objc func datePickerChanged(datePicker:UIDatePicker){
+       let formatter = DateFormatter()
+       formatter.dateFormat = "dd/MM/yyyy"
+        let date = formatter.string(from: datePicker.date)
+       Helpers.writePreference(key: "dob", data: date)
+    }
+
     @IBAction func male_btn_listner(_ sender: UIButton) {
         let gender = Helpers.readPreference(key: "gender", defualt: "")
         if(gender == "" || gender == "female"){
@@ -144,12 +154,32 @@ class ViewController: UIViewController {
     
     // User registering Third page button listener
     @IBAction func finish_listener(_ sender: UIButton) {
+        
         let activity = Helpers.readPreference(key: "activity", defualt: "")
         if(activity == ""){
             Helpers.showAlertView(vc: self, msg: "Please select your activity.")
             return
         }
-        self.performSegue(withIdentifier: "finish", sender: self)
+        
+        signupVM.requestCompletionHandler { [weak self] (status,message) in
+             guard let self = self else {return}
+             
+             if(status){
+                let storyboard = UIStoryboard(name: "userKcalTracking", bundle: nil)
+                let tabbar = storyboard.instantiateViewController(withIdentifier: "tabbar") as? UINavigationController
+                tabbar?.modalPresentationStyle = .fullScreen
+                self.present(tabbar!, animated: true, completion: nil)
+                Helpers.showAlertView(vc: self, msg: message)
+               
+             }else{
+                 Helpers.showAlertView(vc: self, msg: message)
+             }
+        }
+
+        signupVM.deleteAllUsers()
+        signupVM.addUser(name: Helpers.readPreference(key: "name", defualt: ""), dob:  Helpers.readPreference(key: "dob", defualt: ""), height: Int64.init( Helpers.readPreference(key: "height", defualt: ""))!, weight: Int64.init( Helpers.readPreference(key: "weight", defualt: ""))!, gender:  Helpers.readPreference(key: "gender", defualt: ""), goal:  Helpers.readPreference(key: "goal", defualt: ""), active:  Helpers.readPreference(key: "activity", defualt: ""))
+        
+ 
         
     }
     
@@ -186,8 +216,9 @@ class ViewController: UIViewController {
         // Validating Date picker and the date should be validate as such the age between 18-100
         if (isValidDate == false) {
             Helpers.showAlertView(vc: self, msg: "Birthday Must be between 18 and 100 years old")
+            return
         }
-        
+        //self.performSegue(withIdentifier: "goal", sender: self)
     }
     
     func setUserInfo(){

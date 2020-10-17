@@ -1,11 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="xfL-S4-5TN">
-    <device id="retina5_9" orientation="portrait">
-        <adaptation id="fullscreen"/>
-    </device>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097.2" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="xfL-S4-5TN">
+    <device id="retina5_9" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -15,11 +13,11 @@
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="SplashController" customModule="CalorieCounterApp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="758"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button autoresizesSubviews="NO" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" reversesTitleShadowWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="atl-dG-pSQ" customClass="orangeButton" customModule="CalorieCounterApp" customModuleProvider="target">
-                                <rect key="frame" x="100" y="652" width="175" height="60"/>
+                                <rect key="frame" x="100" y="598" width="175" height="60"/>
                                 <color key="backgroundColor" red="0.88627450980392153" green="0.61960784313725492" blue="0.30196078431372547" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="60" id="3CN-Bb-bV6"/>
@@ -33,7 +31,7 @@
                                 </connections>
                             </button>
                             <button autoresizesSubviews="NO" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" reversesTitleShadowWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="n2P-cN-ZCl" customClass="BlueButton" customModule="CalorieCounterApp" customModuleProvider="target" colorLabel="IBBuiltInLabel-Red">
-                                <rect key="frame" x="100" y="732" width="175" height="60"/>
+                                <rect key="frame" x="100" y="678" width="175" height="60"/>
                                 <color key="backgroundColor" red="0.30588235294117649" green="0.33333333333333331" blue="0.45490196078431372" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <rect key="contentStretch" x="1" y="0.0" width="1" height="1"/>
                                 <constraints>
@@ -48,7 +46,7 @@
                                 </connections>
                             </button>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ImageWithLogoo" translatesAutoresizingMaskIntoConstraints="NO" id="caA-mw-Yyu">
-                                <rect key="frame" x="10" y="44" width="355" height="580"/>
+                                <rect key="frame" x="10" y="0.0" width="355" height="570"/>
                             </imageView>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -100,7 +98,7 @@
         <!--Navigation Controller-->
         <scene sceneID="jmL-5u-48E">
             <objects>
-                <navigationController id="xfL-S4-5TN" sceneMemberID="viewController">
+                <navigationController storyboardIdentifier="splash" id="xfL-S4-5TN" sceneMemberID="viewController">
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="9cW-kn-Coj">
                         <rect key="frame" x="0.0" y="44" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -115,10 +113,10 @@
             <point key="canvasLocation" x="-690" y="148"/>
         </scene>
     </scenes>
-    <resources>
-        <image name="ImageWithLogoo" width="1065" height="1740"/>
-    </resources>
     <inferredMetricsTieBreakers>
         <segue reference="sqd-jc-MqE"/>
     </inferredMetricsTieBreakers>
+    <resources>
+        <image name="ImageWithLogoo" width="1065" height="1740"/>
+    </resources>
 </document>

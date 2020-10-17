@@ -7,59 +7,63 @@
 
 import Foundation
 
-class MealsListViewModel{
-    var mealViewModel: [MealViewModel] = [MealViewModel]()
-    var filterViewModel: [MealViewModel] = [MealViewModel]()
+class SearchResultViewModel: NSObject{
+   
+    var meals:MealsModel!
     
-    private var mealData: MockData
-    
-    init(mealData: MockData){
-        self.mealData = mealData
-        populateMeals()
-        populateFilteredMeals()
+    var mealtype:String {
+        return meals.mealtype!
+    }
+    var mealname:String {
+        return meals.mealname!
     }
     
-    private func populateMeals() {
-        let meals = self.mealData.getAllMeals()
-        self.mealViewModel = meals.map { meal in
-            return MealViewModel(meal)
+    typealias addMealCallBack = (_ status:Bool,_ messaage:String) ->Void
+    typealias getMealsByTypeCallBack = (_ meals:[MealsModel]) -> Void
+    
+    var mealCallBack:addMealCallBack?
+    var mealsTypeCallBack:getMealsByTypeCallBack?
+    
+    //Add new meal
+    func addMeal(mealtype:String,mealname:String){
+        if(mealtype != ""){
+            if(mealname != ""){
+                let mealid = MealsCoreService.incrementID()
+                if(MealsCoreService.createMeal(id: mealid, mealtype: mealtype, mealname: mealname)){
+                    self.mealCallBack?(true,"Meal Successfully Added")
+                }else{
+                    self.mealCallBack?(false,"Something went wrong")
+                }
+            }else{
+                self.mealCallBack?(false,"Please enter meal name")
+            }
+        }else{
+            self.mealCallBack?(false,"Meal type must be select first.")
         }
     }
     
-    private func populateFilteredMeals() {
-        let meals = self.mealData.getAllMeals()
-        self.filterViewModel = meals.map { meal in
-            return MealViewModel(meal)
-        }
+    func searchMeal(query:String){
+        let meals = MealsCoreService.searchMeal(text: query)
+        self.mealsTypeCallBack?(meals)
     }
     
-    public func addFilteredMeals(_ meal: MealViewModel){
-        filterViewModel.append(meal)
+    func getMealsByType(type:String){
+        let meals = MealsCoreService.retrieveMealsByType(type: type)
+        self.mealsTypeCallBack?(meals)
     }
+    
+    
+    //Meals Completion Handler
+    func mealCompletionHandler(callback:@escaping addMealCallBack){
+        self.mealCallBack = callback
+    }
+    
+    //AllMeals Completion Handler
+    func mealsTypeCompletionHandler(callback:@escaping getMealsByTypeCallBack){
+        self.mealsTypeCallBack = callback
+    }
+  
 }
 
 
-class MealViewModel {
-    var mealName: String!
-    var serving: String!
-    var calories: String!
-    var carbohydrate: String!
-    var protein: String!
-    var fat: String!
-    var vitaminA: String!
-    var vitamicC: String!
-    var iron: String!
-    
-    
-    init(_ meal: Meal){
-        self.mealName = meal.name
-        self.serving = meal.serving
-        self.calories = meal.calories
-        self.carbohydrate = meal.carbohydrate
-        self.protein = meal.protein
-        self.fat = meal.fat
-        self.vitaminA = meal.vitaminA
-        self.vitamicC = meal.vitamicC
-        self.iron = meal.iron
-    }
-}
+

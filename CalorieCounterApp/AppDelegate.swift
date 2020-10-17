@@ -15,10 +15,10 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
-        // Override point for customization after application launch.
-        let calorieService = CalorieService(foodItemToSearch: "ChickenPizza")
-        calorieService.getSpecificFoodCalories(appKey: "ba4444d5ebe219f0a185ad113e80c954", appID: "da6ded5d")
-                
+//        // Override point for customization after application launch.
+//        let calorieService = CalorieService(foodItemToSearch: "ChickenPizza")
+//        calorieService.getSpecificFoodCalories(appKey: "ba4444d5ebe219f0a185ad113e80c954", appID: "da6ded5d")
+//
         return true
     }
 

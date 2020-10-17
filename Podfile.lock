@@ -1,16 +1,29 @@
 PODS:
   - Alamofire (4.9.1)
+  - AlamofireObjectMapper (5.2.1):
+    - Alamofire (~> 4.7)
+    - ObjectMapper (~> 3.4)
+  - MBProgressHUD (1.1.0)
+  - ObjectMapper (3.5.3)
 
 DEPENDENCIES:
   - Alamofire
+  - AlamofireObjectMapper (~> 5.2)
+  - MBProgressHUD (~> 1.1.0)
 
 SPEC REPOS:
   trunk:
     - Alamofire
+    - AlamofireObjectMapper
+    - MBProgressHUD
+    - ObjectMapper
 
 SPEC CHECKSUMS:
   Alamofire: 85e8a02c69d6020a0d734f6054870d7ecb75cf18
+  AlamofireObjectMapper: 1989f690e982b71921b9253f53a4f33a9bc00d88
+  MBProgressHUD: e7baa36a220447d8aeb12769bf0585582f3866d9
+  ObjectMapper: 97111c97e054a6ee25917662106689f0b4127b37
 
-PODFILE CHECKSUM: cf870fffdb6b9e4188c67255869ce5d510e7f3ef
+PODFILE CHECKSUM: de9f37d4d72571ac185d88295c6b563a7bf73de7
 
-COCOAPODS: 1.9.3
+COCOAPODS: 1.9.1
