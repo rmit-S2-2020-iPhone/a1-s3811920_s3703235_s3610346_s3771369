@@ -2,7 +2,7 @@
 //  MealDetailController.swift
 //  CalorieCounterApp
 //
-//  Created by Hamza Arif on 13/10/2020.
+//  Created by Joshua Baruwa on 11/10/2020.
 //
 
 import UIKit
