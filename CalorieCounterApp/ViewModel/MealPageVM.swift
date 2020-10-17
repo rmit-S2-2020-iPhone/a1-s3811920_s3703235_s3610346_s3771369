@@ -2,7 +2,7 @@
 //  MealPageVM.swift
 //  CalorieCounterApp
 //
-//  Created by Hamza Arif on 09/10/2020.
+// Created by Timal Pathirana on 27/8/20.
 //
 
 import Foundation

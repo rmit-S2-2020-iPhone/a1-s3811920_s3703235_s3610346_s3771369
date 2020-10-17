@@ -26,23 +26,31 @@ class CalorieCounterAppUITests: XCTestCase {
     }
     func testValidSignUpSuccess(){
         
+        
         let app = XCUIApplication()
-        app/*@START_MENU_TOKEN@*/.staticTexts["Go To Dashboard"]/*[[".buttons[\"Go To Dashboard\"].staticTexts[\"Go To Dashboard\"]",".staticTexts[\"Go To Dashboard\"]"],[[[-1,1],[-1,0]]],[0]]@END_MENU_TOKEN@*/.tap()
+        app.buttons["Go To Dashboard"].tap()
         XCTAssertTrue(app.textFields["John Smith"].exists)
         app.textFields["John Smith"].tap()
         app.textFields["John Smith"].typeText("Timal")
+
         
-        let doneButton = app.toolbars["Toolbar"].buttons["Done"]
+        let toolbar = app.toolbars["Toolbar"]
+        let doneButton = toolbar.buttons["Done"]
         doneButton.tap()
-        app.datePickers/*@START_MENU_TOKEN@*/.pickerWheels["2020"]/*[[".pickers.pickerWheels[\"2020\"]",".pickerWheels[\"2020\"]"],[[[-1,1],[-1,0]]],[0]]@END_MENU_TOKEN@*/.swipeDown()
-        XCTAssertTrue(app.textFields["80 kg"].exists)
-        app.textFields["80 kg"].tap()
-        app.textFields["80 kg"].typeText("80")
+        app.datePickers.pickerWheels["2020"].swipeDown()
         
+        let textField = app.textFields["80 kg"]
+        XCTAssertTrue(textField.exists)
+        textField.tap()
+        textField.typeText("80")
         doneButton.tap()
         XCTAssertTrue(app.textFields["158 cm"].exists)
         app.textFields["158 cm"].tap()
         app.textFields["158 cm"].typeText("158")
+        doneButton.tap()
+        textField.tap()
+       
+        toolbar.buttons["Next"].tap()
         doneButton.tap()
         app.buttons["Male"].tap()
         
@@ -50,45 +58,63 @@ class CalorieCounterAppUITests: XCTestCase {
         nextButton.tap()
         app.buttons["Maintain Weight"].tap()
         nextButton.tap()
-        app.buttons["Sedentary"].tap()
+        app.buttons["Lightly Active"].tap()
         app.buttons["Finish"].tap()
         
     }
     
     func testValidSearchSuccess(){
         
+        
         let app = XCUIApplication()
         app.buttons["Go To Dashboard"].tap()
         app.buttons["Add Breakfast"].tap()
         
         let tablesQuery = app.tables
-        tablesQuery.children(matching: .other).element(boundBy: 1).children(matching: .searchField).element.tap()
-        tablesQuery.children(matching: .other).element(boundBy: 1).children(matching: .searchField).element.typeText("Rice")
+        tablesQuery.children(matching: .searchField).element.tap()
+        tablesQuery.children(matching: .searchField).element.typeText("Rice")
+        expectation(for: NSPredicate(format: "exists == 1"), evaluatedWith: tablesQuery/*@START_MENU_TOKEN@*/.staticTexts["Breakfast-Rice, white, long-grain, regular, unenriched, cooked without salt - 1 cup"]/*[[".cells.staticTexts[\"Breakfast-Rice, white, long-grain, regular, unenriched, cooked without salt - 1 cup\"]",".staticTexts[\"Breakfast-Rice, white, long-grain, regular, unenriched, cooked without salt - 1 cup\"]"],[[[-1,1],[-1,0]]],[0]]@END_MENU_TOKEN@*/, handler: nil)
+        waitForExpectations(timeout: 10, handler: nil)
         tablesQuery/*@START_MENU_TOKEN@*/.staticTexts["Breakfast-Rice, white, long-grain, regular, unenriched, cooked without salt - 1 cup"]/*[[".cells.staticTexts[\"Breakfast-Rice, white, long-grain, regular, unenriched, cooked without salt - 1 cup\"]",".staticTexts[\"Breakfast-Rice, white, long-grain, regular, unenriched, cooked without salt - 1 cup\"]"],[[[-1,1],[-1,0]]],[0]]@END_MENU_TOKEN@*/.tap()
         app.navigationBars["CalorieCounterApp.MealDetail"].buttons["Back"].tap()
+        
         
     }
     func testValidAddToMealSuccess(){
         
-        let app = XCUIApplication()
-        app/*@START_MENU_TOKEN@*/.staticTexts["Go To Dashboard"]/*[[".buttons[\"Go To Dashboard\"].staticTexts[\"Go To Dashboard\"]",".staticTexts[\"Go To Dashboard\"]"],[[[-1,1],[-1,0]]],[0]]@END_MENU_TOKEN@*/.tap()
-        app.buttons["Add Breakfast"].tap()
         
-        let tablesQuery = app.tables
-        tablesQuery.children(matching: .other).element(boundBy: 1).children(matching: .searchField).element.tap()
-        tablesQuery.children(matching: .other).element(boundBy: 1).children(matching: .searchField).element.typeText("Rice")
-        tablesQuery/*@START_MENU_TOKEN@*/.staticTexts["Breakfast-Rice, white, long-grain, regular, unenriched, cooked without salt - 1 cup"]/*[[".cells.staticTexts[\"Breakfast-Rice, white, long-grain, regular, unenriched, cooked without salt - 1 cup\"]",".staticTexts[\"Breakfast-Rice, white, long-grain, regular, unenriched, cooked without salt - 1 cup\"]"],[[[-1,1],[-1,0]]],[0]]@END_MENU_TOKEN@*/.tap()
+        let app = XCUIApplication()
+        app.buttons["Go To Dashboard"].tap()
+        app.buttons["Add Breakfast"].tap()
+        expectation(for: NSPredicate(format: "exists == 1"), evaluatedWith: app.tables/*@START_MENU_TOKEN@*/.staticTexts["Breakfast-Cinnamon & Brown Sugar Biscuits"]/*[[".cells.staticTexts[\"Breakfast-Cinnamon & Brown Sugar Biscuits\"]",".staticTexts[\"Breakfast-Cinnamon & Brown Sugar Biscuits\"]"],[[[-1,1],[-1,0]]],[0]]@END_MENU_TOKEN@*/, handler: nil)
+        waitForExpectations(timeout: 10, handler: nil)
+        app.tables/*@START_MENU_TOKEN@*/.staticTexts["Breakfast-Cinnamon & Brown Sugar Biscuits"]/*[[".cells.staticTexts[\"Breakfast-Cinnamon & Brown Sugar Biscuits\"]",".staticTexts[\"Breakfast-Cinnamon & Brown Sugar Biscuits\"]"],[[[-1,1],[-1,0]]],[0]]@END_MENU_TOKEN@*/.tap()
         app.buttons["Add to meal"].tap()
-        app.alerts["Alert"].scrollViews.otherElements.buttons["OK"].tap()
+        app.alerts["Alert"].buttons["OK"].tap()
         app.navigationBars["CalorieCounterApp.MealDetail"].buttons["Back"].tap()
         app.navigationBars["CalorieCounterApp.Search"].buttons["Back"].tap()
         
+        
     }
     
-    func testUploadImageSuccess(){
+    func testWaterIntakeSuccess(){
         
+        let app = XCUIApplication()
+        app.buttons["Go To Dashboard"].tap()
         
+        let tabBarsQuery = app.tabBars
+        tabBarsQuery.buttons["Track Water"].tap()
+        XCTAssert(tabBarsQuery.buttons["Track Water"].exists)
+        app.buttons["1 Glass (5 oz)"].tap()
+        app.buttons["5 Glass (25 oz)"].tap()
         
+        let remove1Glass5ozButton = app.buttons["Remove 1 Glass (5oz)"]
+        XCTAssert(remove1Glass5ozButton.exists)
+        remove1Glass5ozButton.tap()
+        remove1Glass5ozButton.tap()
+        tabBarsQuery.buttons["Home"].tap()
+        
+    
     }
     
     func testExample() {

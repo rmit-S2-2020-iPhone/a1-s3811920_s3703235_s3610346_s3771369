@@ -2,7 +2,7 @@
 //  TabBarController.swift
 //  CalorieCounterApp
 //
-//  Created by Hamza Arif on 14/10/2020.
+//  Created by Joshua Baruwa on 11/10/2020.
 //
 
 import UIKit
