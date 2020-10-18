@@ -1,4 +1,10 @@
 
+//  CalorieCounterApp
+//
+//  Created by Timal Pathirana on 2/10/20.
+//
+
+
 import Foundation
 import ObjectMapper
 

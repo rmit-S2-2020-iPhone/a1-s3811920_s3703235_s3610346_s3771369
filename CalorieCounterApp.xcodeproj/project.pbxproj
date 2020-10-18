@@ -24,7 +24,6 @@
 		86D1AE8E24F6ADB700D82990 /* personalData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86D1AE8D24F6ADB700D82990 /* personalData.swift */; };
 		B32A091224FA3BEA006E83DE /* SearchResultViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B32A091124FA3BEA006E83DE /* SearchResultViewController.swift */; };
 		B32A091424FA3C05006E83DE /* SearchResultViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B32A091324FA3C05006E83DE /* SearchResultViewModel.swift */; };
-		B32A091624FA4FF6006E83DE /* MockData.swift in Sources */ = {isa = PBXBuildFile; fileRef = B32A091524FA4FF6006E83DE /* MockData.swift */; };
 		B32A091824FA51AB006E83DE /* Meal.swift in Sources */ = {isa = PBXBuildFile; fileRef = B32A091724FA51AB006E83DE /* Meal.swift */; };
 		B35147112526403400114118 /* Configuration.swift in Sources */ = {isa = PBXBuildFile; fileRef = B35147102526403400114118 /* Configuration.swift */; };
 		B35147132526CCF500114118 /* Mealx.swift in Sources */ = {isa = PBXBuildFile; fileRef = B35147122526CCF500114118 /* Mealx.swift */; };
@@ -105,7 +104,6 @@
 		8C5ECA6D8DEB9CC4042E0191 /* Pods-CalorieCounterApp-CalorieCounterAppUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CalorieCounterApp-CalorieCounterAppUITests.debug.xcconfig"; path = "Target Support Files/Pods-CalorieCounterApp-CalorieCounterAppUITests/Pods-CalorieCounterApp-CalorieCounterAppUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		B32A091124FA3BEA006E83DE /* SearchResultViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchResultViewController.swift; sourceTree = "<group>"; };
 		B32A091324FA3C05006E83DE /* SearchResultViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchResultViewModel.swift; sourceTree = "<group>"; };
-		B32A091524FA4FF6006E83DE /* MockData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockData.swift; sourceTree = "<group>"; };
 		B32A091724FA51AB006E83DE /* Meal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Meal.swift; sourceTree = "<group>"; };
 		B35147102526403400114118 /* Configuration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Configuration.swift; sourceTree = "<group>"; };
 		B35147122526CCF500114118 /* Mealx.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Mealx.swift; sourceTree = "<group>"; };
@@ -257,7 +255,6 @@
 				B35147142526CD2900114118 /* Extensions */,
 				B351470F2526401900114118 /* Configurations */,
 				866BFFF025050BCF008C0DD7 /* Documents */,
-				B389681B24FCEE7400A3F2BD /* Data */,
 				B3DCE0F324F379EC00ECEA14 /* Model */,
 				B3DCE0F524F37A2600ECEA14 /* ViewModel */,
 				B3DCE0F724F37A4600ECEA14 /* View */,
@@ -286,14 +283,6 @@
 				B372BF1324D2A46B00F9957A /* Info.plist */,
 			);
 			path = CalorieCounterAppUITests;
-			sourceTree = "<group>";
-		};
-		B389681B24FCEE7400A3F2BD /* Data */ = {
-			isa = PBXGroup;
-			children = (
-				B32A091524FA4FF6006E83DE /* MockData.swift */,
-			);
-			path = Data;
 			sourceTree = "<group>";
 		};
 		B3DCE0F324F379EC00ECEA14 /* Model */ = {
@@ -663,7 +652,6 @@
 				86C64471252B25D8003C3564 /* CalorieHitsOnSearch.swift in Sources */,
 				BA0A882A252FA8FE0095F2D0 /* MealDetailHits.swift in Sources */,
 				B35147132526CCF500114118 /* Mealx.swift in Sources */,
-				B32A091624FA4FF6006E83DE /* MockData.swift in Sources */,
 				86C64473252B261A003C3564 /* CalorieService.swift in Sources */,
 				BAA5B5A3252F73A100C1209A /* UsersModel.swift in Sources */,
 				BAB2A02A2530FFFF00DB8509 /* AddedMealVM.swift in Sources */,

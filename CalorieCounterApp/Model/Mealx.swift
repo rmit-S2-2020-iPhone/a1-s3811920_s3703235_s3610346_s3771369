@@ -1,5 +1,5 @@
 //
-//  MealSample.swift
+//  Mealx.swift
 //  CalorieCounterApp
 //
 //  Created by Abida Mohammadi on 2/10/20.

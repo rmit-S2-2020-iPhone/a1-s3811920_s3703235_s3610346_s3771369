@@ -1,8 +1,7 @@
-//
-//  Connectivity.swift
+
 //  CalorieCounterApp
 //
-//  Created by Hamza Arif on 09/10/2020.
+//  Created by Timal Pathirana on 2/10/20.
 //
 
 import Foundation

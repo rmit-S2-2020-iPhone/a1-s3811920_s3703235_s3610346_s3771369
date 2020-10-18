@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097.2" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="fFx-16-kBV">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17156" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="fFx-16-kBV">
     <device id="retina4_7" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17125"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -22,7 +22,7 @@
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="465-r9-tnU" userLabel="logoView">
                                         <rect key="frame" x="0.0" y="0.0" width="375" height="270"/>
                                         <subviews>
-                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="icons8-healthy-eating-100" translatesAutoresizingMaskIntoConstraints="NO" id="ZcC-7D-DeK" userLabel="logo">
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="homepage_item" translatesAutoresizingMaskIntoConstraints="NO" id="ZcC-7D-DeK" userLabel="logo">
                                                 <rect key="frame" x="68.5" y="14" width="238" height="242"/>
                                                 <color key="tintColor" red="0.98431372549999996" green="0.69411764710000001" blue="0.23529411759999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <constraints>
@@ -55,7 +55,7 @@
                                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Gs1-67-6UY">
                                                         <rect key="frame" x="0.0" y="0.0" width="359" height="59.5"/>
                                                         <subviews>
-                                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="C5e-vd-4zF" userLabel="breakfast" customClass="orangeButton" customModule="CalorieCounterApp" customModuleProvider="target">
+                                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="C5e-vd-4zF" userLabel="breakfast" customClass="orangeButton" customModule="CalorieCounterApp" customModuleProvider="target">
                                                                 <rect key="frame" x="0.0" y="0.0" width="359" height="59.5"/>
                                                                 <color key="backgroundColor" red="0.98431372549999996" green="0.69411764710000001" blue="0.23529411759999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                                 <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="20"/>
@@ -85,7 +85,7 @@
                                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Q3c-qs-rgu">
                                                         <rect key="frame" x="0.0" y="66.5" width="359" height="59"/>
                                                         <subviews>
-                                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JEp-yA-E2d" userLabel="lunch" customClass="orangeButton" customModule="CalorieCounterApp" customModuleProvider="target">
+                                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JEp-yA-E2d" userLabel="lunch" customClass="orangeButton" customModule="CalorieCounterApp" customModuleProvider="target">
                                                                 <rect key="frame" x="0.0" y="0.0" width="359" height="59"/>
                                                                 <color key="backgroundColor" red="0.98431372549999996" green="0.69411764710000001" blue="0.23529411759999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                                 <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="20"/>
@@ -115,7 +115,7 @@
                                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="nGS-LU-oaE">
                                                         <rect key="frame" x="0.0" y="132.5" width="359" height="59.5"/>
                                                         <subviews>
-                                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="b4l-HL-G0e" userLabel="dinner" customClass="orangeButton" customModule="CalorieCounterApp" customModuleProvider="target">
+                                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="b4l-HL-G0e" userLabel="dinner" customClass="orangeButton" customModule="CalorieCounterApp" customModuleProvider="target">
                                                                 <rect key="frame" x="0.0" y="0.0" width="359" height="59.5"/>
                                                                 <color key="backgroundColor" red="0.98431372549999996" green="0.69411764710000001" blue="0.23529411759999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                                 <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="20"/>
@@ -145,7 +145,7 @@
                                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="GVf-D2-2yh">
                                                         <rect key="frame" x="0.0" y="199" width="359" height="59.5"/>
                                                         <subviews>
-                                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="k30-ge-FXh" userLabel="snack" customClass="orangeButton" customModule="CalorieCounterApp" customModuleProvider="target">
+                                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="k30-ge-FXh" userLabel="snack" customClass="orangeButton" customModule="CalorieCounterApp" customModuleProvider="target">
                                                                 <rect key="frame" x="0.0" y="0.0" width="359" height="59.5"/>
                                                                 <color key="backgroundColor" red="0.98431372549999996" green="0.69411764710000001" blue="0.23529411759999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                                 <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="20"/>
@@ -221,6 +221,7 @@
                                 </constraints>
                             </stackView>
                         </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="sc4-sO-RVz" secondAttribute="bottomMargin" id="05z-Zb-ASV"/>
@@ -228,7 +229,6 @@
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="sc4-sO-RVz" secondAttribute="trailing" id="Yas-we-WMr"/>
                             <constraint firstItem="sc4-sO-RVz" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="jBE-aL-mSW"/>
                         </constraints>
-                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="Home" image="tabBarHome" landscapeImage="tabBarHome" id="b6s-qC-o5J"/>
                     <navigationItem key="navigationItem" id="s3I-WG-ARR"/>
@@ -245,7 +245,7 @@
             </objects>
             <point key="canvasLocation" x="5870" y="827"/>
         </scene>
-        <!--Add Meal-->
+        <!--Meals-->
         <scene sceneID="ya2-BG-aAb">
             <objects>
                 <viewController id="IkV-1C-j73" customClass="AddedMealVC" customModule="CalorieCounterApp" customModuleProvider="target" sceneMemberID="viewController">
@@ -271,10 +271,10 @@
                                                             <autoresizingMask key="autoresizingMask"/>
                                                             <subviews>
                                                                 <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="ZYq-Ji-UaG">
-                                                                    <rect key="frame" x="15" y="11" width="345" height="77"/>
+                                                                    <rect key="frame" x="16" y="11" width="343" height="77"/>
                                                                     <subviews>
                                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Fried Rice" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hpT-a4-xV7" customClass="TextLable" customModule="CalorieCounterApp" customModuleProvider="target">
-                                                                            <rect key="frame" x="0.0" y="0.0" width="345" height="31.5"/>
+                                                                            <rect key="frame" x="0.0" y="0.0" width="343" height="31.5"/>
                                                                             <constraints>
                                                                                 <constraint firstAttribute="height" constant="31.333333333333332" id="2le-VN-00F"/>
                                                                             </constraints>
@@ -283,7 +283,7 @@
                                                                             <nil key="highlightedColor"/>
                                                                         </label>
                                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="200 ml, 161 calories" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="u46-dm-Umz" customClass="TextLable" customModule="CalorieCounterApp" customModuleProvider="target">
-                                                                            <rect key="frame" x="0.0" y="31.5" width="345" height="45.5"/>
+                                                                            <rect key="frame" x="0.0" y="31.5" width="343" height="45.5"/>
                                                                             <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="20"/>
                                                                             <color key="textColor" red="0.21176470589999999" green="0.23921568630000001" blue="0.27058823529999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                                             <nil key="highlightedColor"/>
@@ -333,6 +333,7 @@
                                 </constraints>
                             </view>
                         </subviews>
+                        <viewLayoutGuide key="safeArea" id="EjO-QW-4Iv"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="S8S-0c-Lne" firstAttribute="leading" secondItem="EjO-QW-4Iv" secondAttribute="leading" id="BvL-7o-d6S"/>
@@ -340,9 +341,8 @@
                             <constraint firstItem="S8S-0c-Lne" firstAttribute="top" secondItem="EjO-QW-4Iv" secondAttribute="top" id="PYj-XN-NsB"/>
                             <constraint firstItem="EjO-QW-4Iv" firstAttribute="bottom" secondItem="S8S-0c-Lne" secondAttribute="bottom" id="iRC-T9-hoQ"/>
                         </constraints>
-                        <viewLayoutGuide key="safeArea" id="EjO-QW-4Iv"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Add Meal" image="addFoodTab" id="GSA-TF-Emq"/>
+                    <tabBarItem key="tabBarItem" title="Meals" image="addFoodTab" id="GSA-TF-Emq"/>
                     <navigationItem key="navigationItem" id="x25-r4-mPr"/>
                     <connections>
                         <outlet property="meal_tableview" destination="lM9-Bq-HWC" id="4MJ-AS-sAb"/>
@@ -384,20 +384,20 @@
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="zh3-Z4-KUv">
                                         <rect key="frame" x="0.0" y="0.0" width="375" height="26.5"/>
                                         <subviews>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Name:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="El1-b0-DOi">
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Name:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="El1-b0-DOi" customClass="TitleLable" customModule="CalorieCounterApp" customModuleProvider="target">
                                                 <rect key="frame" x="40" y="2" width="53" height="22.5"/>
                                                 <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="17"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="test" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BJ0-Va-euv">
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="test" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BJ0-Va-euv" customClass="TextLable" customModule="CalorieCounterApp" customModuleProvider="target">
                                                 <rect key="frame" x="309" y="2" width="26" height="22.5"/>
                                                 <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="17"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                         </subviews>
-                                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <constraints>
                                             <constraint firstItem="El1-b0-DOi" firstAttribute="leading" secondItem="zh3-Z4-KUv" secondAttribute="leading" constant="40" id="6f5-kh-DNN"/>
                                             <constraint firstAttribute="trailing" secondItem="BJ0-Va-euv" secondAttribute="trailing" constant="40" id="7QP-Lz-H15"/>
@@ -408,20 +408,20 @@
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="km6-N5-cXp">
                                         <rect key="frame" x="0.0" y="26.5" width="375" height="27"/>
                                         <subviews>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Gender:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Yas-bT-lkO">
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Gender:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Yas-bT-lkO" customClass="TitleLable" customModule="CalorieCounterApp" customModuleProvider="target">
                                                 <rect key="frame" x="40" y="2.5" width="65" height="22.5"/>
                                                 <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="17"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="test" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4gB-AO-oNf">
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="test" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4gB-AO-oNf" customClass="TextLable" customModule="CalorieCounterApp" customModuleProvider="target">
                                                 <rect key="frame" x="309" y="2.5" width="26" height="22.5"/>
                                                 <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="17"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                         </subviews>
-                                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <constraints>
                                             <constraint firstItem="Yas-bT-lkO" firstAttribute="leading" secondItem="km6-N5-cXp" secondAttribute="leading" constant="40" id="I0w-F7-O7l"/>
                                             <constraint firstItem="4gB-AO-oNf" firstAttribute="centerY" secondItem="km6-N5-cXp" secondAttribute="centerY" id="gm3-sF-KJ9"/>
@@ -432,20 +432,20 @@
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="KjF-Vl-adP">
                                         <rect key="frame" x="0.0" y="53.5" width="375" height="26.5"/>
                                         <subviews>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="DOB:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6cD-AW-qp3">
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="DOB:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6cD-AW-qp3" customClass="TitleLable" customModule="CalorieCounterApp" customModuleProvider="target">
                                                 <rect key="frame" x="40" y="2" width="43" height="22.5"/>
                                                 <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="17"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="test" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jHz-8T-VUj">
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="test" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jHz-8T-VUj" customClass="TextLable" customModule="CalorieCounterApp" customModuleProvider="target">
                                                 <rect key="frame" x="309" y="2" width="26" height="22.5"/>
                                                 <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="17"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                         </subviews>
-                                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <constraints>
                                             <constraint firstItem="6cD-AW-qp3" firstAttribute="leading" secondItem="KjF-Vl-adP" secondAttribute="leading" constant="40" id="ATe-kw-gym"/>
                                             <constraint firstItem="jHz-8T-VUj" firstAttribute="centerY" secondItem="KjF-Vl-adP" secondAttribute="centerY" id="USP-wD-h25"/>
@@ -464,20 +464,20 @@
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="NTf-7F-fFR">
                                         <rect key="frame" x="0.0" y="0.0" width="375" height="40"/>
                                         <subviews>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Height:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ffT-6w-YDk">
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Height:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ffT-6w-YDk" customClass="TitleLable" customModule="CalorieCounterApp" customModuleProvider="target">
                                                 <rect key="frame" x="40" y="9" width="56.5" height="22.5"/>
                                                 <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="17"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="test" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rni-2W-ili">
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="test" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rni-2W-ili" customClass="TextLable" customModule="CalorieCounterApp" customModuleProvider="target">
                                                 <rect key="frame" x="309" y="9" width="26" height="22.5"/>
                                                 <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="17"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                         </subviews>
-                                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <constraints>
                                             <constraint firstItem="ffT-6w-YDk" firstAttribute="centerY" secondItem="NTf-7F-fFR" secondAttribute="centerY" id="NB4-Vf-DbR"/>
                                             <constraint firstAttribute="trailing" secondItem="rni-2W-ili" secondAttribute="trailing" constant="40" id="Wo0-tL-teK"/>
@@ -488,20 +488,20 @@
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="KJl-Wh-JQ3">
                                         <rect key="frame" x="0.0" y="40" width="375" height="40"/>
                                         <subviews>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Weight:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WuS-Bj-Q6i">
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Weight:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WuS-Bj-Q6i" customClass="TitleLable" customModule="CalorieCounterApp" customModuleProvider="target">
                                                 <rect key="frame" x="40" y="9" width="61" height="22.5"/>
                                                 <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="17"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="test" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Brl-iI-u3f">
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="test" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Brl-iI-u3f" customClass="TextLable" customModule="CalorieCounterApp" customModuleProvider="target">
                                                 <rect key="frame" x="309" y="9" width="26" height="22.5"/>
                                                 <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="17"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                         </subviews>
-                                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <constraints>
                                             <constraint firstItem="WuS-Bj-Q6i" firstAttribute="leading" secondItem="KJl-Wh-JQ3" secondAttribute="leading" constant="40" id="FsN-Aj-aYs"/>
                                             <constraint firstItem="WuS-Bj-Q6i" firstAttribute="centerY" secondItem="KJl-Wh-JQ3" secondAttribute="centerY" id="bqT-Yr-3Ru"/>
@@ -520,20 +520,20 @@
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="tOA-yr-nNE">
                                         <rect key="frame" x="0.0" y="0.0" width="375" height="40"/>
                                         <subviews>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Goal:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Zv3-dO-4Sy">
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Goal:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Zv3-dO-4Sy" customClass="TitleLable" customModule="CalorieCounterApp" customModuleProvider="target">
                                                 <rect key="frame" x="40" y="9" width="44.5" height="22.5"/>
                                                 <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="17"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="test" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="29t-3g-fs8">
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="test" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="29t-3g-fs8" customClass="TextLable" customModule="CalorieCounterApp" customModuleProvider="target">
                                                 <rect key="frame" x="309" y="9" width="26" height="22.5"/>
                                                 <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="17"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                         </subviews>
-                                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <constraints>
                                             <constraint firstItem="29t-3g-fs8" firstAttribute="centerY" secondItem="tOA-yr-nNE" secondAttribute="centerY" id="0d8-D1-U06"/>
                                             <constraint firstAttribute="trailing" secondItem="29t-3g-fs8" secondAttribute="trailing" constant="40" id="6Vp-wj-oFT"/>
@@ -544,20 +544,20 @@
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="WaI-6F-Hfv">
                                         <rect key="frame" x="0.0" y="40" width="375" height="40"/>
                                         <subviews>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Activity:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6Aa-A0-1T6">
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Activity:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6Aa-A0-1T6" customClass="TitleLable" customModule="CalorieCounterApp" customModuleProvider="target">
                                                 <rect key="frame" x="40" y="9" width="61.5" height="22.5"/>
                                                 <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="17"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="test" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="o98-lj-oLS">
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="test" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="o98-lj-oLS" customClass="TextLable" customModule="CalorieCounterApp" customModuleProvider="target">
                                                 <rect key="frame" x="309" y="9" width="26" height="22.5"/>
                                                 <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="17"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                         </subviews>
-                                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <constraints>
                                             <constraint firstAttribute="trailing" secondItem="o98-lj-oLS" secondAttribute="trailing" constant="40" id="XDh-uA-xsX"/>
                                             <constraint firstItem="6Aa-A0-1T6" firstAttribute="centerY" secondItem="WaI-6F-Hfv" secondAttribute="centerY" id="mse-zX-ftR"/>
@@ -570,7 +570,7 @@
                                     <constraint firstAttribute="height" constant="80" id="Gxg-uF-SIk"/>
                                 </constraints>
                             </stackView>
-                            <button autoresizesSubviews="NO" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" reversesTitleShadowWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gyf-a5-Z16" customClass="BlueButton" customModule="CalorieCounterApp" customModuleProvider="target" colorLabel="IBBuiltInLabel-Red">
+                            <button autoresizesSubviews="NO" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" reversesTitleShadowWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gyf-a5-Z16" customClass="BlueButton" customModule="CalorieCounterApp" customModuleProvider="target" colorLabel="IBBuiltInLabel-Red">
                                 <rect key="frame" x="100" y="534" width="175" height="36"/>
                                 <color key="backgroundColor" red="0.30588235289999999" green="0.33333333329999998" blue="0.4549019608" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <rect key="contentStretch" x="1" y="0.0" width="1" height="1"/>
@@ -587,7 +587,8 @@
                                 </connections>
                             </button>
                         </subviews>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <viewLayoutGuide key="safeArea" id="9gK-Bg-dj5"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="5Hs-aU-xIG" firstAttribute="top" secondItem="9gK-Bg-dj5" secondAttribute="top" constant="130" id="0wX-Zy-hnS"/>
                             <constraint firstItem="Bkn-mv-KOz" firstAttribute="top" secondItem="9gK-Bg-dj5" secondAttribute="top" constant="10" id="6Ec-JM-Xf7"/>
@@ -605,9 +606,8 @@
                             <constraint firstItem="LJd-23-hBp" firstAttribute="leading" secondItem="9gK-Bg-dj5" secondAttribute="leading" id="xfl-w8-3ey"/>
                             <constraint firstItem="5Hs-aU-xIG" firstAttribute="centerX" secondItem="0zq-8o-lfY" secondAttribute="centerX" constant="65" id="yOn-ED-txP"/>
                         </constraints>
-                        <viewLayoutGuide key="safeArea" id="9gK-Bg-dj5"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Profile" image="person.circle.fill" catalog="system" id="pZY-oE-1rP"/>
+                    <tabBarItem key="tabBarItem" title="Profile" image="profile" id="pZY-oE-1rP"/>
                     <connections>
                         <outlet property="activity_lbl" destination="o98-lj-oLS" id="Wik-mp-8ve"/>
                         <outlet property="dob_txt" destination="jHz-8T-VUj" id="Wp6-Nb-80G"/>
@@ -735,10 +735,10 @@
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="ASp-1w-SIg">
-                                                    <rect key="frame" x="15" y="11" width="345" height="77"/>
+                                                    <rect key="frame" x="16" y="11" width="343" height="77"/>
                                                     <subviews>
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Fried Rice" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5Pk-FG-YqF" customClass="TextLable" customModule="CalorieCounterApp" customModuleProvider="target">
-                                                            <rect key="frame" x="0.0" y="0.0" width="345" height="31.5"/>
+                                                            <rect key="frame" x="0.0" y="0.0" width="343" height="31.5"/>
                                                             <constraints>
                                                                 <constraint firstAttribute="height" constant="31.333333333333332" id="iOU-t3-Zbg"/>
                                                             </constraints>
@@ -747,7 +747,7 @@
                                                             <nil key="highlightedColor"/>
                                                         </label>
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="200 ml, 161 calories" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="10" adjustsFontForContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="0yx-dk-NcF" customClass="TextLable" customModule="CalorieCounterApp" customModuleProvider="target">
-                                                            <rect key="frame" x="0.0" y="39.5" width="345" height="37.5"/>
+                                                            <rect key="frame" x="0.0" y="39.5" width="343" height="37.5"/>
                                                             <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="20"/>
                                                             <color key="textColor" red="0.21176470589999999" green="0.23921568630000001" blue="0.27058823529999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                             <nil key="highlightedColor"/>
@@ -778,14 +778,14 @@
                                 </prototypes>
                             </tableView>
                         </subviews>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <viewLayoutGuide key="safeArea" id="as3-l2-zUE"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="as3-l2-zUE" firstAttribute="bottom" secondItem="lmB-P3-efY" secondAttribute="bottom" id="C45-BP-QdJ"/>
                             <constraint firstItem="lmB-P3-efY" firstAttribute="top" secondItem="swl-fr-Hso" secondAttribute="top" id="L3k-AL-8jx"/>
                             <constraint firstItem="lmB-P3-efY" firstAttribute="leading" secondItem="swl-fr-Hso" secondAttribute="leading" id="Vi5-U0-M1X"/>
                             <constraint firstItem="as3-l2-zUE" firstAttribute="trailing" secondItem="lmB-P3-efY" secondAttribute="trailing" id="Y3z-1k-mQv"/>
                         </constraints>
-                        <viewLayoutGuide key="safeArea" id="as3-l2-zUE"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="Search" image="searchTab" id="2eM-eB-jTG"/>
                     <navigationItem key="navigationItem" id="vEq-2W-Teh"/>
@@ -844,14 +844,14 @@
                                                             <constraint firstAttribute="width" constant="40" id="an8-Rf-vo3"/>
                                                         </constraints>
                                                     </imageView>
-                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ayN-G8-Vbv">
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ayN-G8-Vbv" customClass="TitleLable" customModule="CalorieCounterApp" customModuleProvider="target">
                                                         <rect key="frame" x="70" y="0.0" width="117.5" height="60"/>
                                                         <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="17"/>
                                                         <nil key="textColor"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
                                                 </subviews>
-                                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <constraints>
                                                     <constraint firstItem="ayN-G8-Vbv" firstAttribute="leading" secondItem="U24-Sr-Xb9" secondAttribute="trailing" id="OmU-k7-YuQ"/>
                                                     <constraint firstAttribute="trailing" secondItem="ayN-G8-Vbv" secondAttribute="trailing" id="WIs-lm-RLr"/>
@@ -872,14 +872,14 @@
                                                             <constraint firstAttribute="width" constant="40" id="xN2-go-4dv"/>
                                                         </constraints>
                                                     </imageView>
-                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ca7-fj-cD4">
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ca7-fj-cD4" customClass="TitleLable" customModule="CalorieCounterApp" customModuleProvider="target">
                                                         <rect key="frame" x="70" y="0.0" width="117.5" height="60"/>
                                                         <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="17"/>
                                                         <nil key="textColor"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
                                                 </subviews>
-                                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <constraints>
                                                     <constraint firstItem="T4Z-Da-hbJ" firstAttribute="centerY" secondItem="1jN-wr-J6x" secondAttribute="centerY" id="CmC-2B-WMQ"/>
                                                     <constraint firstItem="ca7-fj-cD4" firstAttribute="top" secondItem="1jN-wr-J6x" secondAttribute="top" id="O8P-LI-afD"/>
@@ -904,14 +904,14 @@
                                                     <constraint firstAttribute="height" constant="40" id="tPQ-wG-xwZ"/>
                                                 </constraints>
                                             </imageView>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eZ7-Uy-1Ip">
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eZ7-Uy-1Ip" customClass="TitleLable" customModule="CalorieCounterApp" customModuleProvider="target">
                                                 <rect key="frame" x="70" y="0.0" width="130" height="60"/>
                                                 <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="17"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                         </subviews>
-                                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <constraints>
                                             <constraint firstItem="5nU-Oc-fsh" firstAttribute="centerY" secondItem="SJh-uR-OoL" secondAttribute="centerY" id="EOm-Hi-4jW"/>
                                             <constraint firstItem="5nU-Oc-fsh" firstAttribute="leading" secondItem="SJh-uR-OoL" secondAttribute="leading" constant="30" id="GIS-wu-eDu"/>
@@ -923,7 +923,7 @@
                                             <constraint firstItem="eZ7-Uy-1Ip" firstAttribute="top" secondItem="SJh-uR-OoL" secondAttribute="top" id="yTe-yC-pno"/>
                                         </constraints>
                                     </view>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="R4h-8d-eix">
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="R4h-8d-eix" customClass="orangeButton" customModule="CalorieCounterApp" customModuleProvider="target">
                                         <rect key="frame" x="87.5" y="260" width="200" height="50"/>
                                         <color key="backgroundColor" red="0.98868423699999997" green="0.70770686859999998" blue="0.34490716459999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <constraints>
@@ -952,6 +952,7 @@
                                 </constraints>
                             </view>
                         </subviews>
+                        <viewLayoutGuide key="safeArea" id="Rg4-kb-0yY"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="viR-p3-X3X" firstAttribute="top" secondItem="Rg4-kb-0yY" secondAttribute="top" id="1fF-qE-FR5"/>
@@ -959,7 +960,6 @@
                             <constraint firstItem="Rg4-kb-0yY" firstAttribute="bottom" secondItem="viR-p3-X3X" secondAttribute="bottom" id="ZmG-rr-rPI"/>
                             <constraint firstItem="viR-p3-X3X" firstAttribute="leading" secondItem="Rg4-kb-0yY" secondAttribute="leading" id="yPO-DW-ENk"/>
                         </constraints>
-                        <viewLayoutGuide key="safeArea" id="Rg4-kb-0yY"/>
                     </view>
                     <navigationItem key="navigationItem" id="fDA-vF-25y"/>
                     <connections>
@@ -1014,7 +1014,7 @@
                                                         </constraints>
                                                     </imageView>
                                                 </subviews>
-                                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <constraints>
                                                     <constraint firstAttribute="bottom" secondItem="j02-51-Pq0" secondAttribute="bottom" id="DsZ-53-zrw"/>
                                                     <constraint firstAttribute="trailing" secondItem="j02-51-Pq0" secondAttribute="trailing" id="E8l-Qc-EVq"/>
@@ -1037,14 +1037,14 @@
                                                                     <constraint firstAttribute="width" constant="40" id="uB7-18-xgA"/>
                                                                 </constraints>
                                                             </imageView>
-                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cfs-ws-sHl">
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cfs-ws-sHl" customClass="TitleLable" customModule="CalorieCounterApp" customModuleProvider="target">
                                                                 <rect key="frame" x="58" y="10" width="119" height="40"/>
                                                                 <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="17"/>
                                                                 <nil key="textColor"/>
                                                                 <nil key="highlightedColor"/>
                                                             </label>
                                                         </subviews>
-                                                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         <constraints>
                                                             <constraint firstAttribute="bottom" secondItem="cfs-ws-sHl" secondAttribute="bottom" constant="10" id="CMk-Jm-G6B"/>
                                                             <constraint firstItem="fub-ah-Wc1" firstAttribute="centerY" secondItem="jS7-Xr-yOw" secondAttribute="centerY" id="EMw-xC-uY2"/>
@@ -1071,14 +1071,14 @@
                                                                     <constraint firstAttribute="height" constant="40" id="Tx3-kI-PDy"/>
                                                                 </constraints>
                                                             </imageView>
-                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EHS-q8-MBM">
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EHS-q8-MBM" customClass="TitleLable" customModule="CalorieCounterApp" customModuleProvider="target">
                                                                 <rect key="frame" x="58" y="10" width="119" height="40"/>
                                                                 <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="17"/>
                                                                 <nil key="textColor"/>
                                                                 <nil key="highlightedColor"/>
                                                             </label>
                                                         </subviews>
-                                                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         <constraints>
                                                             <constraint firstAttribute="trailing" secondItem="EHS-q8-MBM" secondAttribute="trailing" constant="10" id="2z5-Mw-XSt"/>
                                                             <constraint firstAttribute="bottom" secondItem="EHS-q8-MBM" secondAttribute="bottom" constant="10" id="DvP-cs-1g6"/>
@@ -1089,7 +1089,7 @@
                                                         </constraints>
                                                     </view>
                                                 </subviews>
-                                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <constraints>
                                                     <constraint firstItem="jS7-Xr-yOw" firstAttribute="height" secondItem="WgU-RH-6mY" secondAttribute="height" multiplier="0.5" id="573-ii-pZC"/>
                                                     <constraint firstItem="jS7-Xr-yOw" firstAttribute="top" secondItem="WgU-RH-6mY" secondAttribute="top" id="RSE-z1-m3u"/>
@@ -1109,23 +1109,23 @@
                                             <constraint firstAttribute="height" constant="120" id="udd-D5-WyC"/>
                                         </constraints>
                                     </stackView>
-                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="n3O-eu-LIZ">
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="n3O-eu-LIZ" customClass="TitleLable" customModule="CalorieCounterApp" customModuleProvider="target">
                                         <rect key="frame" x="30" y="220" width="315" height="40"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Carbohydrates:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Nb9-Wt-RNm">
-                                                <rect key="frame" x="0.0" y="10" width="118" height="20.5"/>
+                                                <rect key="frame" x="0.0" y="10" width="117.5" height="20.5"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="17.8" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Nkq-fk-kBY">
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="17.8" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Nkq-fk-kBY" customClass="TextLable" customModule="CalorieCounterApp" customModuleProvider="target">
                                                 <rect key="frame" x="285.5" y="10" width="29.5" height="20.5"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                         </subviews>
-                                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <constraints>
                                             <constraint firstItem="Nkq-fk-kBY" firstAttribute="centerY" secondItem="n3O-eu-LIZ" secondAttribute="centerY" id="BuF-VM-hd9"/>
                                             <constraint firstItem="Nb9-Wt-RNm" firstAttribute="centerY" secondItem="n3O-eu-LIZ" secondAttribute="centerY" id="HPb-cd-0Yp"/>
@@ -1137,20 +1137,20 @@
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="lUf-0m-cbO">
                                         <rect key="frame" x="30" y="270" width="315" height="40"/>
                                         <subviews>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Protien:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fvZ-iu-1wy">
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Protien:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fvZ-iu-1wy" customClass="TitleLable" customModule="CalorieCounterApp" customModuleProvider="target">
                                                 <rect key="frame" x="0.0" y="10" width="59" height="20.5"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="17.8" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Lzv-bF-9bv">
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="17.8" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Lzv-bF-9bv" customClass="TextLable" customModule="CalorieCounterApp" customModuleProvider="target">
                                                 <rect key="frame" x="285.5" y="10" width="29.5" height="20.5"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                         </subviews>
-                                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <constraints>
                                             <constraint firstItem="fvZ-iu-1wy" firstAttribute="centerY" secondItem="lUf-0m-cbO" secondAttribute="centerY" id="2Sg-ta-2by"/>
                                             <constraint firstItem="fvZ-iu-1wy" firstAttribute="leading" secondItem="lUf-0m-cbO" secondAttribute="leading" id="cva-Hk-ozT"/>
@@ -1159,7 +1159,7 @@
                                             <constraint firstItem="Lzv-bF-9bv" firstAttribute="centerY" secondItem="lUf-0m-cbO" secondAttribute="centerY" id="zIr-Vh-k7y"/>
                                         </constraints>
                                     </view>
-                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="VFb-SD-vKO">
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="VFb-SD-vKO" customClass="TitleLable" customModule="CalorieCounterApp" customModuleProvider="target">
                                         <rect key="frame" x="30" y="320" width="315" height="40"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Fat:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="t3g-WN-qDR">
@@ -1168,14 +1168,14 @@
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="17.8" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EfR-JT-yO2">
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="17.8" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EfR-JT-yO2" customClass="TextLable" customModule="CalorieCounterApp" customModuleProvider="target">
                                                 <rect key="frame" x="285.5" y="10" width="29.5" height="20.5"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                         </subviews>
-                                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <constraints>
                                             <constraint firstAttribute="trailing" secondItem="EfR-JT-yO2" secondAttribute="trailing" id="3gk-ZU-CaP"/>
                                             <constraint firstAttribute="height" constant="40" id="CJL-m6-YyI"/>
@@ -1184,7 +1184,7 @@
                                             <constraint firstItem="t3g-WN-qDR" firstAttribute="centerY" secondItem="VFb-SD-vKO" secondAttribute="centerY" id="XGt-Rx-PR9"/>
                                         </constraints>
                                     </view>
-                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="fMs-aC-uNy">
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="fMs-aC-uNy" customClass="TitleLable" customModule="CalorieCounterApp" customModuleProvider="target">
                                         <rect key="frame" x="30" y="370" width="315" height="40"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Vitamin A:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OIM-a9-dDI">
@@ -1193,14 +1193,14 @@
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="17.8" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oh5-Dn-9ul">
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="17.8" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oh5-Dn-9ul" customClass="TextLable" customModule="CalorieCounterApp" customModuleProvider="target">
                                                 <rect key="frame" x="285.5" y="10" width="29.5" height="20.5"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                         </subviews>
-                                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <constraints>
                                             <constraint firstItem="OIM-a9-dDI" firstAttribute="leading" secondItem="fMs-aC-uNy" secondAttribute="leading" id="8ON-C3-El8"/>
                                             <constraint firstAttribute="trailing" secondItem="oh5-Dn-9ul" secondAttribute="trailing" id="HAg-Kg-1LP"/>
@@ -1212,20 +1212,20 @@
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="x85-64-3dM">
                                         <rect key="frame" x="30" y="420" width="315" height="40"/>
                                         <subviews>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Vitamin C:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lXC-UT-5ae">
-                                                <rect key="frame" x="0.0" y="10" width="78.5" height="20.5"/>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Vitamin C:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lXC-UT-5ae" customClass="TitleLable" customModule="CalorieCounterApp" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="10" width="78" height="20.5"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="17.8" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Leg-8J-hLF">
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="17.8" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Leg-8J-hLF" customClass="TextLable" customModule="CalorieCounterApp" customModuleProvider="target">
                                                 <rect key="frame" x="285.5" y="10" width="29.5" height="20.5"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                         </subviews>
-                                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <constraints>
                                             <constraint firstItem="Leg-8J-hLF" firstAttribute="centerY" secondItem="x85-64-3dM" secondAttribute="centerY" id="4nf-tU-LvO"/>
                                             <constraint firstItem="lXC-UT-5ae" firstAttribute="centerY" secondItem="x85-64-3dM" secondAttribute="centerY" id="5nA-Av-0Ry"/>
@@ -1237,20 +1237,20 @@
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="zek-97-14r">
                                         <rect key="frame" x="30" y="470" width="315" height="40"/>
                                         <subviews>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Irons" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DLM-hi-9cG">
-                                                <rect key="frame" x="0.0" y="10" width="38" height="20.5"/>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Irons" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DLM-hi-9cG" customClass="TitleLable" customModule="CalorieCounterApp" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="10" width="37.5" height="20.5"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="17.8" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rZa-G4-g3F">
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="17.8" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rZa-G4-g3F" customClass="TextLable" customModule="CalorieCounterApp" customModuleProvider="target">
                                                 <rect key="frame" x="285.5" y="10" width="29.5" height="20.5"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                         </subviews>
-                                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="40" id="FfK-t6-Su0"/>
                                             <constraint firstItem="DLM-hi-9cG" firstAttribute="leading" secondItem="zek-97-14r" secondAttribute="leading" id="SUf-g3-Q15"/>
@@ -1259,7 +1259,7 @@
                                             <constraint firstItem="rZa-G4-g3F" firstAttribute="centerY" secondItem="zek-97-14r" secondAttribute="centerY" id="rPV-Fe-5YG"/>
                                         </constraints>
                                     </view>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5Sy-zp-v0Z">
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5Sy-zp-v0Z" customClass="orangeButton" customModule="CalorieCounterApp" customModuleProvider="target">
                                         <rect key="frame" x="87.5" y="530" width="200" height="50"/>
                                         <color key="backgroundColor" red="0.98868423699999997" green="0.70770686859999998" blue="0.34490716459999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <constraints>
@@ -1305,6 +1305,7 @@
                                 </constraints>
                             </view>
                         </subviews>
+                        <viewLayoutGuide key="safeArea" id="dEs-Ui-Sxo"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="dEs-Ui-Sxo" firstAttribute="trailing" secondItem="vpq-Vu-Ipp" secondAttribute="trailing" id="Hyc-qY-wXa"/>
@@ -1312,7 +1313,6 @@
                             <constraint firstItem="vpq-Vu-Ipp" firstAttribute="leading" secondItem="dEs-Ui-Sxo" secondAttribute="leading" id="ae3-aE-t8U"/>
                             <constraint firstItem="vpq-Vu-Ipp" firstAttribute="top" secondItem="dEs-Ui-Sxo" secondAttribute="top" id="zZf-3u-gpo"/>
                         </constraints>
-                        <viewLayoutGuide key="safeArea" id="dEs-Ui-Sxo"/>
                     </view>
                     <navigationItem key="navigationItem" id="Hdr-Kb-F5W"/>
                     <connections>
@@ -1336,8 +1336,8 @@
     <resources>
         <image name="addFoodTab" width="30" height="30"/>
         <image name="addWaterTab" width="30" height="30"/>
+        <image name="homepage_item" width="1967" height="2000"/>
         <image name="icons8-dinner-100" width="100" height="100"/>
-        <image name="icons8-healthy-eating-100" width="100" height="100"/>
         <image name="icons8-healthy-food-90" width="90" height="90"/>
         <image name="icons8-meal-150" width="150" height="150"/>
         <image name="icons8-plus-48" width="48" height="48"/>
@@ -1346,7 +1346,7 @@
         <image name="icons8-wrap-100" width="100" height="100"/>
         <image name="mainpagrImage" width="120" height="120"/>
         <image name="newplusbtn" width="22" height="22"/>
-        <image name="person.circle.fill" catalog="system" width="128" height="121"/>
+        <image name="profile" width="24" height="24"/>
         <image name="searchTab" width="30" height="30"/>
         <image name="tabBarHome" width="30" height="30"/>
         <image name="trackCalories_100" width="100" height="100"/>
