@@ -1,0 +1,431 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097.2" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="75J-Zb-MSJ">
+    <device id="retina6_5" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Navigation Controller-->
+        <scene sceneID="zwt-ok-DGX">
+            <objects>
+                <navigationController id="75J-Zb-MSJ" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="EoY-aC-NcA">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="IHm-54-ALZ" kind="relationship" relationship="rootViewController" id="zK8-os-bj8"/>
+                        <segue destination="IHm-54-ALZ" kind="presentation" modalPresentationStyle="fullScreen" id="1lF-B6-L0S"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="nRR-cP-nGT" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="51" y="119"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="E9L-Al-Ahc">
+            <objects>
+                <viewController id="IHm-54-ALZ" customClass="ViewController" customModule="CalorieCounterApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="ZfS-cB-cxP">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="808"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="equalSpacing" alignment="center" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="rNJ-Tx-bxF">
+                                <rect key="frame" x="0.0" y="75" width="414" height="549"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Name" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MP7-KC-jXi" customClass="TitleLable" customModule="CalorieCounterApp" customModuleProvider="target">
+                                        <rect key="frame" x="10" y="0.0" width="394" height="32.666666666666664"/>
+                                        <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                                        <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="25"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="John Smith" textAlignment="center" adjustsFontForContentSizeCategory="YES" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="P7d-NL-NVg" userLabel="nameField">
+                                        <rect key="frame" x="10" y="63.666666666666657" width="394" height="34"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                        <textInputTraits key="textInputTraits" keyboardType="numbersAndPunctuation" returnKeyType="next" textContentType="name"/>
+                                    </textField>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Date Of Birth" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="122.3" translatesAutoresizingMaskIntoConstraints="NO" id="6Zh-6B-BdZ" customClass="TitleLable" customModule="CalorieCounterApp" customModuleProvider="target">
+                                        <rect key="frame" x="10" y="128.33333333333331" width="394" height="32.666666666666657"/>
+                                        <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                                        <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="25"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <datePicker contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="date" translatesAutoresizingMaskIntoConstraints="NO" id="0Cf-eI-Br1">
+                                        <rect key="frame" x="47" y="192" width="320" height="100"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="100" id="Rdx-f5-9XL"/>
+                                        </constraints>
+                                        <date key="minimumDate" timeIntervalSinceReferenceDate="-189349200">
+                                            <!--1995-01-01 11:00:00 +0000-->
+                                        </date>
+                                    </datePicker>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Current Weight" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jfU-do-uhq" userLabel="Weight" customClass="TitleLable" customModule="CalorieCounterApp" customModuleProvider="target">
+                                        <rect key="frame" x="10" y="323" width="394" height="32.666666666666686"/>
+                                        <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                                        <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="25"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="80 kg" textAlignment="center" adjustsFontForContentSizeCategory="YES" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="nJV-ED-xHk" userLabel="weightField">
+                                        <rect key="frame" x="10" y="386.66666666666663" width="394" height="34"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                        <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
+                                    </textField>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Current Height" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Pr2-XA-swT" userLabel="Height" customClass="TitleLable" customModule="CalorieCounterApp" customModuleProvider="target">
+                                        <rect key="frame" x="10" y="451.33333333333337" width="394" height="32.666666666666686"/>
+                                        <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                                        <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="25"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="158 cm" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="P49-Qd-Oy2" userLabel="heightField">
+                                        <rect key="frame" x="10" y="515" width="394" height="34"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                        <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
+                                    </textField>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="nJV-ED-xHk" secondAttribute="trailing" constant="10" id="1KJ-uj-kj0"/>
+                                    <constraint firstItem="jfU-do-uhq" firstAttribute="leading" secondItem="rNJ-Tx-bxF" secondAttribute="leading" constant="10" id="8pB-7c-gzn"/>
+                                    <constraint firstItem="Pr2-XA-swT" firstAttribute="leading" secondItem="rNJ-Tx-bxF" secondAttribute="leading" constant="10" id="HY3-5O-CHd"/>
+                                    <constraint firstAttribute="trailing" secondItem="Pr2-XA-swT" secondAttribute="trailing" constant="10" id="I8h-6J-pmn"/>
+                                    <constraint firstItem="MP7-KC-jXi" firstAttribute="leading" secondItem="rNJ-Tx-bxF" secondAttribute="leading" constant="10" id="Pcp-ME-NmR"/>
+                                    <constraint firstItem="6Zh-6B-BdZ" firstAttribute="leading" secondItem="rNJ-Tx-bxF" secondAttribute="leading" constant="10" id="bQ9-T8-Hqx"/>
+                                    <constraint firstItem="P49-Qd-Oy2" firstAttribute="leading" secondItem="rNJ-Tx-bxF" secondAttribute="leading" constant="10" id="f6Z-67-IAJ"/>
+                                    <constraint firstItem="nJV-ED-xHk" firstAttribute="leading" secondItem="rNJ-Tx-bxF" secondAttribute="leading" constant="10" id="hCP-gB-GyN"/>
+                                    <constraint firstAttribute="trailing" secondItem="P49-Qd-Oy2" secondAttribute="trailing" constant="10" id="j82-Ya-eA7"/>
+                                    <constraint firstAttribute="trailing" secondItem="MP7-KC-jXi" secondAttribute="trailing" constant="10" id="kSg-JK-pSx"/>
+                                    <constraint firstItem="P7d-NL-NVg" firstAttribute="leading" secondItem="rNJ-Tx-bxF" secondAttribute="leading" constant="10" id="pm9-0W-8p8"/>
+                                    <constraint firstAttribute="trailing" secondItem="jfU-do-uhq" secondAttribute="trailing" constant="10" id="rAN-9T-yij"/>
+                                    <constraint firstAttribute="trailing" secondItem="6Zh-6B-BdZ" secondAttribute="trailing" constant="10" id="vJY-8H-Vnv"/>
+                                    <constraint firstAttribute="trailing" secondItem="P7d-NL-NVg" secondAttribute="trailing" constant="10" id="xvZ-w9-E8a"/>
+                                </constraints>
+                            </stackView>
+                            <stackView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="258" distribution="fillEqually" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="2Oo-CB-dT3">
+                                <rect key="frame" x="10" y="674" width="394" height="40"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="f3k-zZ-rRG" customClass="orangeButton" customModule="CalorieCounterApp" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="0.0" width="187" height="40"/>
+                                        <color key="backgroundColor" red="0.93333333333333335" green="0.60392156862745094" blue="0.22352941176470587" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <accessibility key="accessibilityConfiguration">
+                                            <accessibilityTraits key="traits" button="YES" selected="YES"/>
+                                        </accessibility>
+                                        <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="20"/>
+                                        <state key="normal" title="Male">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="male_btn_listner:" destination="IHm-54-ALZ" eventType="touchUpInside" id="ULE-Xb-bJx"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pAD-aF-cDL" customClass="orangeButton" customModule="CalorieCounterApp" customModuleProvider="target">
+                                        <rect key="frame" x="207" y="0.0" width="187" height="40"/>
+                                        <color key="backgroundColor" red="0.93289974620000005" green="0.60551593029999995" blue="0.22184178190000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <accessibility key="accessibilityConfiguration">
+                                            <accessibilityTraits key="traits" button="YES" selected="YES"/>
+                                        </accessibility>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="60" id="kda-3g-QCZ"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                        <state key="normal" title="Female">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="female_btn_listener:" destination="IHm-54-ALZ" eventType="touchUpInside" id="GnX-HG-Kkk"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="Sqe-ZG-q9g"/>
+                                </constraints>
+                            </stackView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="First, we need some information" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="M4o-Cl-hFt" customClass="TitleLable" customModule="CalorieCounterApp" customModuleProvider="target">
+                                <rect key="frame" x="10" y="30" width="394" height="21"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="18"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZAt-Sb-af6" customClass="BlueButton" customModule="CalorieCounterApp" customModuleProvider="target">
+                                <rect key="frame" x="10" y="724" width="394" height="40"/>
+                                <color key="backgroundColor" red="0.30588235294117649" green="0.33333333333333331" blue="0.45490196078431372" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="2sd-tr-RZP"/>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="40" id="jsE-Yw-hvZ"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <state key="normal" title="Next">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="next_btn_listener:" destination="IHm-54-ALZ" eventType="touchUpInside" id="Wbn-ck-28p"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="GUU-9B-JFS" firstAttribute="trailing" secondItem="M4o-Cl-hFt" secondAttribute="trailing" constant="10" id="C3t-6B-YiX"/>
+                            <constraint firstItem="M4o-Cl-hFt" firstAttribute="top" secondItem="GUU-9B-JFS" secondAttribute="top" constant="30" id="NvA-DW-R0c"/>
+                            <constraint firstItem="ZAt-Sb-af6" firstAttribute="top" secondItem="2Oo-CB-dT3" secondAttribute="bottom" constant="10" id="Tan-eY-dfg"/>
+                            <constraint firstItem="M4o-Cl-hFt" firstAttribute="leading" secondItem="GUU-9B-JFS" secondAttribute="leading" constant="10" id="Xy3-k0-EvT"/>
+                            <constraint firstItem="ZAt-Sb-af6" firstAttribute="leading" secondItem="GUU-9B-JFS" secondAttribute="leading" constant="10" id="bo9-a0-0Qg"/>
+                            <constraint firstItem="GUU-9B-JFS" firstAttribute="trailing" secondItem="rNJ-Tx-bxF" secondAttribute="trailing" id="dza-M0-rjH"/>
+                            <constraint firstItem="2Oo-CB-dT3" firstAttribute="top" secondItem="rNJ-Tx-bxF" secondAttribute="bottom" constant="50" id="iPr-Xg-oqg"/>
+                            <constraint firstItem="GUU-9B-JFS" firstAttribute="trailing" secondItem="2Oo-CB-dT3" secondAttribute="trailing" constant="10" id="nuF-KF-pbU"/>
+                            <constraint firstItem="2Oo-CB-dT3" firstAttribute="leading" secondItem="GUU-9B-JFS" secondAttribute="leading" constant="10" id="ocl-uM-QUx"/>
+                            <constraint firstItem="GUU-9B-JFS" firstAttribute="trailing" secondItem="ZAt-Sb-af6" secondAttribute="trailing" constant="10" id="pgP-xJ-sqi"/>
+                            <constraint firstItem="rNJ-Tx-bxF" firstAttribute="leading" secondItem="ZfS-cB-cxP" secondAttribute="leading" id="pqW-gA-lz6"/>
+                            <constraint firstItem="rNJ-Tx-bxF" firstAttribute="top" secondItem="M4o-Cl-hFt" secondAttribute="bottom" constant="24" id="uU8-la-1rD"/>
+                            <constraint firstItem="GUU-9B-JFS" firstAttribute="bottom" secondItem="ZAt-Sb-af6" secondAttribute="bottom" constant="10" id="vAT-vz-2HB"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="GUU-9B-JFS"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="4fX-K2-5nn"/>
+                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" translucent="NO" prompted="NO"/>
+                    <connections>
+                        <outlet property="current_height" destination="P49-Qd-Oy2" id="0Pp-p6-0yI"/>
+                        <outlet property="current_weight" destination="nJV-ED-xHk" id="Und-hH-4gD"/>
+                        <outlet property="datePicker" destination="0Cf-eI-Br1" id="bZA-rR-x9h"/>
+                        <outlet property="female_btn" destination="pAD-aF-cDL" id="h2p-Ey-TKC"/>
+                        <outlet property="male_btn" destination="f3k-zZ-rRG" id="iyt-41-Ai3"/>
+                        <outlet property="name_txt" destination="P7d-NL-NVg" id="zhn-oe-yFc"/>
+                        <segue destination="WWE-Y5-ZcQ" kind="show" identifier="goal" id="FQX-ri-DVU"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Z1D-f9-unh" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1060" y="118.29085457271366"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="0NP-Th-n4U">
+            <objects>
+                <viewController id="WWE-Y5-ZcQ" customClass="ViewController" customModule="CalorieCounterApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="0U7-el-yJH">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="808"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="v7R-qZ-G6z" customClass="BlueButton" customModule="CalorieCounterApp" customModuleProvider="target">
+                                <rect key="frame" x="20" y="684" width="374" height="60"/>
+                                <color key="backgroundColor" red="0.30588235294117649" green="0.33333333333333331" blue="0.45490196078431372" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="60" id="A1s-z8-vqx"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <state key="normal" title="Next">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="goal_next_btn_listener:" destination="WWE-Y5-ZcQ" eventType="touchUpInside" id="mde-dm-zkG"/>
+                                </connections>
+                            </button>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="Bzt-yj-JCa">
+                                <rect key="frame" x="20" y="224" width="374" height="280"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="e7Z-m7-PhS" customClass="orangeButton" customModule="CalorieCounterApp" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="0.0" width="374" height="80"/>
+                                        <color key="backgroundColor" red="0.93289974620000005" green="0.60551593029999995" blue="0.22184178190000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="40" id="x0Z-uM-Ubj"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                        <state key="normal" title="Lose Weight">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="lose_weight_listener:" destination="WWE-Y5-ZcQ" eventType="touchUpInside" id="tsW-m3-CAf"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XWb-Ba-XtL" customClass="orangeButton" customModule="CalorieCounterApp" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="100" width="374" height="80"/>
+                                        <color key="backgroundColor" red="0.93289974620000005" green="0.60551593029999995" blue="0.22184178190000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                        <state key="normal" title="Maintain Weight">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="main_weight_listener:" destination="WWE-Y5-ZcQ" eventType="touchUpInside" id="JQZ-ei-OrB"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="woZ-Fb-bWh" customClass="orangeButton" customModule="CalorieCounterApp" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="200" width="374" height="80"/>
+                                        <color key="backgroundColor" red="0.93289974620000005" green="0.60551593029999995" blue="0.22184178190000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                        <state key="normal" title="Gain Weight">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="gain_weight_listener:" destination="WWE-Y5-ZcQ" eventType="touchUpInside" id="0vK-5n-6jh"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <rect key="contentStretch" x="0.050000000000000003" y="0.0" width="1" height="1"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="280" id="bSR-hK-LhM"/>
+                                </constraints>
+                            </stackView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="What's your goal?" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ffx-aM-zRl" customClass="TitleLable" customModule="CalorieCounterApp" customModuleProvider="target">
+                                <rect key="frame" x="10" y="20" width="394" height="104"/>
+                                <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="20"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="v7R-qZ-G6z" firstAttribute="top" secondItem="Bzt-yj-JCa" secondAttribute="bottom" constant="180" id="5FP-He-oZ0"/>
+                            <constraint firstItem="v7R-qZ-G6z" firstAttribute="leading" secondItem="Vbh-0p-Ucc" secondAttribute="leading" constant="20" id="5US-TO-a2H"/>
+                            <constraint firstItem="Vbh-0p-Ucc" firstAttribute="trailing" secondItem="Bzt-yj-JCa" secondAttribute="trailing" constant="20" id="Q98-9h-2Em"/>
+                            <constraint firstItem="Bzt-yj-JCa" firstAttribute="top" secondItem="ffx-aM-zRl" secondAttribute="bottom" constant="100" id="QL6-j2-Ig2"/>
+                            <constraint firstItem="Vbh-0p-Ucc" firstAttribute="bottom" secondItem="v7R-qZ-G6z" secondAttribute="bottom" constant="30" id="Tq0-MA-QAa"/>
+                            <constraint firstItem="Vbh-0p-Ucc" firstAttribute="trailing" secondItem="v7R-qZ-G6z" secondAttribute="trailing" constant="20" id="Wz2-4j-mp2"/>
+                            <constraint firstItem="Vbh-0p-Ucc" firstAttribute="trailing" secondItem="ffx-aM-zRl" secondAttribute="trailing" constant="10" id="Y5L-ZE-EXR"/>
+                            <constraint firstItem="ffx-aM-zRl" firstAttribute="leading" secondItem="Vbh-0p-Ucc" secondAttribute="leading" constant="10" id="fNb-sr-gKo"/>
+                            <constraint firstItem="ffx-aM-zRl" firstAttribute="top" secondItem="Vbh-0p-Ucc" secondAttribute="top" constant="20" id="p8j-UH-2Jk"/>
+                            <constraint firstItem="Bzt-yj-JCa" firstAttribute="leading" secondItem="Vbh-0p-Ucc" secondAttribute="leading" constant="20" id="sVv-bB-y7w"/>
+                            <constraint firstItem="ffx-aM-zRl" firstAttribute="centerX" secondItem="Vbh-0p-Ucc" secondAttribute="centerX" id="vrJ-4z-BJg"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="Vbh-0p-Ucc"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="Zcc-7Z-Lac"/>
+                    <connections>
+                        <outlet property="gain_weight_btn" destination="woZ-Fb-bWh" id="faD-pG-BiL"/>
+                        <outlet property="lose_weight_btn" destination="e7Z-m7-PhS" id="mlU-3i-lSS"/>
+                        <outlet property="matain_weight_btn" destination="XWb-Ba-XtL" id="3nR-fL-Z53"/>
+                        <segue destination="EvI-tv-lf0" kind="show" identifier="activity" id="hg2-HM-zSe"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ZsY-QF-8RH" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1908" y="602"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="SG1-Qa-d4b">
+            <objects>
+                <viewController id="EvI-tv-lf0" customClass="ViewController" customModule="CalorieCounterApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="lLe-CY-1EO">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="808"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6fk-SD-AWA" customClass="BlueButton" customModule="CalorieCounterApp" customModuleProvider="target">
+                                <rect key="frame" x="20" y="684" width="374" height="60"/>
+                                <color key="backgroundColor" red="0.30588235294117649" green="0.33333333333333331" blue="0.45490196078431372" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="60" id="GAv-U2-h7d"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <state key="normal" title="Finish">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="finish_listener:" destination="EvI-tv-lf0" eventType="touchUpInside" id="MeR-RP-zQ4"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="How active are you?" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="itf-So-7wb" customClass="TitleLable" customModule="CalorieCounterApp" customModuleProvider="target">
+                                <rect key="frame" x="10" y="20" width="394" height="28.666666666666671"/>
+                                <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="22"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="OlO-GK-ypG">
+                                <rect key="frame" x="20" y="148.66666666666663" width="374" height="288"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="q93-Kt-8x2" customClass="orangeButton" customModule="CalorieCounterApp" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="0.0" width="374" height="57"/>
+                                        <color key="backgroundColor" red="0.93289974620000005" green="0.60551593029999995" blue="0.22184178190000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="40" id="05O-3j-Lzw"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                        <state key="normal" title="Sedentary">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="secondary_btn_listener:" destination="EvI-tv-lf0" eventType="touchUpInside" id="7X9-mA-2Lj"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kci-eD-Cvp" customClass="orangeButton" customModule="CalorieCounterApp" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="77.000000000000028" width="374" height="57"/>
+                                        <color key="backgroundColor" red="0.93289974620000005" green="0.60551593029999995" blue="0.22184178190000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                        <state key="normal" title="Lightly Active">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="lightactive_btn_listener:" destination="EvI-tv-lf0" eventType="touchUpInside" id="JJf-cy-BZM"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="U4U-1f-2h7" customClass="orangeButton" customModule="CalorieCounterApp" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="154.00000000000003" width="374" height="57"/>
+                                        <color key="backgroundColor" red="0.93289974620000005" green="0.60551593029999995" blue="0.22184178190000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                        <state key="normal" title="Active">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="active_btn_listener:" destination="EvI-tv-lf0" eventType="touchUpInside" id="Ob0-nA-dCY"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6db-d0-8rc" customClass="orangeButton" customModule="CalorieCounterApp" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="231" width="374" height="57"/>
+                                        <color key="backgroundColor" red="0.93289974620000005" green="0.60551593029999995" blue="0.22184178190000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                        <state key="normal" title="Very Active">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="very_active_btn:" destination="EvI-tv-lf0" eventType="touchUpInside" id="l0O-fS-MIX"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="288" id="hLC-EK-f05"/>
+                                </constraints>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="OlO-GK-ypG" firstAttribute="top" secondItem="itf-So-7wb" secondAttribute="bottom" constant="100" id="2ik-5Q-FT1"/>
+                            <constraint firstItem="OlO-GK-ypG" firstAttribute="leading" secondItem="V7h-zs-ZMQ" secondAttribute="leading" constant="20" id="FMA-lw-Jb2"/>
+                            <constraint firstItem="V7h-zs-ZMQ" firstAttribute="trailing" secondItem="6fk-SD-AWA" secondAttribute="trailing" constant="20" id="FPX-G5-Lmg"/>
+                            <constraint firstItem="6fk-SD-AWA" firstAttribute="leading" secondItem="V7h-zs-ZMQ" secondAttribute="leading" constant="20" id="G3n-z0-H3b"/>
+                            <constraint firstItem="V7h-zs-ZMQ" firstAttribute="trailing" secondItem="OlO-GK-ypG" secondAttribute="trailing" constant="20" id="OIy-yu-TS8"/>
+                            <constraint firstItem="V7h-zs-ZMQ" firstAttribute="trailing" secondItem="itf-So-7wb" secondAttribute="trailing" constant="10" id="XXB-oD-z5W"/>
+                            <constraint firstItem="V7h-zs-ZMQ" firstAttribute="bottom" secondItem="6fk-SD-AWA" secondAttribute="bottom" constant="30" id="Zbx-be-ZdE"/>
+                            <constraint firstItem="itf-So-7wb" firstAttribute="leading" secondItem="V7h-zs-ZMQ" secondAttribute="leading" constant="10" id="af2-PK-69a"/>
+                            <constraint firstItem="itf-So-7wb" firstAttribute="top" secondItem="V7h-zs-ZMQ" secondAttribute="top" constant="20" id="id8-PI-cjA"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="V7h-zs-ZMQ"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="mcZ-UA-qfA"/>
+                    <connections>
+                        <outlet property="active_btn" destination="U4U-1f-2h7" id="q50-ER-vHC"/>
+                        <outlet property="lightly_active" destination="kci-eD-Cvp" id="c8T-Rk-Saa"/>
+                        <outlet property="secondary_btn" destination="q93-Kt-8x2" id="D45-pM-sw5"/>
+                        <outlet property="very_active_btn" destination="6db-d0-8rc" id="2Yt-ID-5ca"/>
+                        <segue destination="r0x-GM-snX" kind="presentation" identifier="finish" modalPresentationStyle="fullScreen" id="K9W-LW-GjM"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="CRv-0H-Cdm" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2688" y="118"/>
+        </scene>
+        <!--userKcalTracking-->
+        <scene sceneID="MEJ-P5-EmD">
+            <objects>
+                <viewControllerPlaceholder storyboardName="userKcalTracking" id="r0x-GM-snX" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="MjZ-fI-hkD"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="i00-Qj-x6x" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3447" y="119"/>
+        </scene>
+    </scenes>
+    <inferredMetricsTieBreakers>
+        <segue reference="1lF-B6-L0S"/>
+    </inferredMetricsTieBreakers>
+</document>
